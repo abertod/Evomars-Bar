@@ -774,6 +774,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textoIni: {fileID: 0}
   panel_Nombre: {fileID: 0}
+  timer: 0
 --- !u!114 &1288083088
 MonoBehaviour:
   m_ObjectHideFlags: 0
