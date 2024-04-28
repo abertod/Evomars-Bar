@@ -6,8 +6,10 @@ using UnityEngine.UI;
 
 public class AudioManager : MonoBehaviour
 {
+    //Para llamar al script desde cualquier lado
     public static AudioManager Instance;
 
+    //Añade sonidos
     public AudioClip bandaSonora;
     public AudioClip fxButton;
     AudioSource _audioSource;
@@ -18,7 +20,7 @@ public class AudioManager : MonoBehaviour
 
     
     
-
+    //Patrón Singletón.
     void Awake(){
         if(Instance != null && Instance != this){
             Destroy(this.gameObject);
@@ -34,6 +36,7 @@ public class AudioManager : MonoBehaviour
         
         _audioSource = GetComponent<AudioSource>();
 
+        //Aqui se carga la musica 
         audioMusic = musicObj.GetComponent<AudioSource>();
         audioMusic.clip = bandaSonora;
         audioMusic.Play();
@@ -44,11 +47,12 @@ public class AudioManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Activar musica
         if(Input.GetKeyDown(KeyCode.P)){
             audioMusic.Play();
             audioMusic.loop = true;
         }
-
+        //Parar musica
         if(Input.GetKeyDown(KeyCode.O)){
             audioMusic.Stop();
             audioMusic.loop = false;
