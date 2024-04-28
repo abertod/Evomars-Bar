@@ -17,7 +17,6 @@ public class Menu : MonoBehaviour
     void Start()
     {
         panelOpciones = GameObject.Find("Panel_Opciones");
-
         panelOpciones.SetActive(false);
 
         barra = GetComponent<Scrollbar>();
