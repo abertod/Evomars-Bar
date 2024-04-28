@@ -44,6 +44,10 @@ AudioMixerController:
   m_EnableSuspend: 1
   m_UpdateMode: 0
   m_ExposedParameters:
+  - guid: eb44be5dccdcd364b9b4da5012bdd604
+    name: volFx
+  - guid: fccfc56e811025d4dba50aa667f21608
+    name: volMaster
   - guid: 4c7d275430d06ef43bfa520b86873576
     name: volMusic
   m_AudioMixerGroupViews:
@@ -148,6 +152,20 @@ AudioMixerEffectController:
   m_MixLevel: ac33213cfa44818499edc8625c2cbbbb
   m_Parameters: []
   m_SendTarget: {fileID: -8952922735954633601}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &7762578633606602005
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: a1750ee367c668b42b8e65d23455a273
+  m_EffectName: Receive
+  m_MixLevel: 4cb2127adf0b878448f12a49f6ba7667
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
   m_Bypass: 0
 --- !u!244 &7927335371020165910

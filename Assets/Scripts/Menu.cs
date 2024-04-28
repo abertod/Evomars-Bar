@@ -4,19 +4,42 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.Audio;
+using TMPro;
 
 public class Menu : MonoBehaviour
 {
     //Abre panel opciones
     public GameObject panelOpciones;
 
-    
-    //public AudioMixer voluMusic;
-    //variables para usar el scrollbar como control de volumen
-    public Scrollbar barra;
+    //variables para usar el slider como control de volumen
+    public AudioMixer voluMusic;
+    //variable para activar la imagen de Estas Mute
     public float volMusica;
-    public Image imageMute;
+    public Image imageMuteMusic;
+    public Image imageMuteFx;
+    public Image imageMuteMaster;
+    
 
+
+    //public static int volumen;
+    //Que se vea cual es el texto
+    public GameObject numVolMus;
+    public GameObject numVolMaster;
+    public GameObject numVolFx;
+
+
+    //public Slider slider;
+    //Para llamar al slider y que se ponga en start en el numero que quiero
+    public GameObject sliderMaster;
+    public GameObject sliderMusic;
+    public GameObject sliderFx;
+    public int valor = 5;
+    /*public int minValue = -80;
+    public int maxValue = 20;*/
+
+
+    
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -24,43 +47,80 @@ public class Menu : MonoBehaviour
         panelOpciones = GameObject.Find("Panel_Opciones");
         panelOpciones.SetActive(false);
 
-        //Contro lde volumen
-        barra.value = PlayerPrefs.GetFloat("volumenAudio", 0.5f);
-        AudioListener.volume = barra.value;
-        RevisarSiEstoyMute();
+        //Para activar el metodo de estar silenciado al empezar
+        RevisarMuteMusic();
+        RevisarMuteMaster();
+        RevisarMuteFx();
+
+        //Al empezar, la música está a un volumen determinado
+        sliderMaster.GetComponent<Slider>().value = valor;
+        sliderMusic.GetComponent<Slider>().value = valor;
+        sliderFx.GetComponent<Slider>().value = valor;
+
         
+        //Debug.Log("Algo: "+volMusica);
+        //Debug.Log("Mus: "+numVolMus);
+        //Debug.Log("Fx: "+numVolFx);
+                
     }
 
+    
     // Update is called once per frame
     void Update()
     {
-        
+                
     }
-
-    public void CambiaAudio(float valor){
-        //Control de volumen
-        volMusica = valor;
-        PlayerPrefs.SetFloat("volumenAudio", volMusica);
-        AudioListener.volume = barra.value;
-        RevisarSiEstoyMute();
-    }
-
-    public void RevisarSiEstoyMute(){
+    
+//Método de Mute
+    public void RevisarMuteMusic(){
         //Si la música está en 0, se activa una imagen
         if(volMusica == 0){
-            imageMute.enabled = true;
+            imageMuteMusic.enabled = true;
         }else{
-            imageMute.enabled = false;
+            imageMuteMusic.enabled = false;
+        }
+    }
+    public void RevisarMuteMaster(){
+        //Si la música está en 0, se activa una imagen
+        if(volMusica == 0){
+            imageMuteMaster.enabled = true;
+        }else{
+            imageMuteMaster.enabled = false;
+        }
+    }
+    public void RevisarMuteFx(){
+        //Si la música está en 0, se activa una imagen
+        if(volMusica == 0){
+            imageMuteFx.enabled = true;
+        }else{
+            imageMuteFx.enabled = false;
         }
     }
 
-    public void CambiaVolumen(float volume){
+    public void VolumenMusica(float volume){
         //Debug.Log(volume);
-        //voluMusic.SetFloat("volMusic", volume);
-
-        //barra.value = audioMusic.volume; 
+        volMusica = volume;
+        voluMusic.SetFloat("volMusic", volume);
+        RevisarMuteMusic();
+        numVolMus.GetComponent<TextMeshProUGUI>().text = volMusica.ToString();
+    }
+    public void VolumenMaster(float volume){
+        //Debug.Log(volume);
+        volMusica = volume/10;
+        voluMusic.SetFloat("volMaster", volume);
+        RevisarMuteMaster();
+        numVolMaster.GetComponent<TextMeshProUGUI>().text = volMusica.ToString();
+    }
+    public void VolumenFx(float volume){
+        //Debug.Log(volume);
+        volMusica = volume;
+        voluMusic.SetFloat("volFx", volume);
+        RevisarMuteFx();
+        numVolFx.GetComponent<TextMeshProUGUI>().text = volMusica.ToString();
     }
   
+
+
     public void AJugar(){
         //Empieza el juego
         SceneManager.LoadScene("2NivelUno");
