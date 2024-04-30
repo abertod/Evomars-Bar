@@ -16,6 +16,12 @@ public class Salvapantallas : MonoBehaviour
     public float timer;
     public static bool activated = false;
 
+    //Poner nombre
+    public string nombre;
+    //panel de confirmacion
+    public GameObject confirmaNombre;
+    public GameObject textoConfirmacion;
+
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +31,11 @@ public class Salvapantallas : MonoBehaviour
         //escribir tu nombre empieza desactivado
         panel_Nombre = GameObject.Find("Panel_Nombre");
         panel_Nombre.SetActive(false);
+
+        //Panel de confirmar tu nombre
+        confirmaNombre = GameObject.Find("Seguro_Nombre");
+        confirmaNombre.SetActive(false);
+        //textoConfirmacion = GameObject.Find("Confirma_Nombre");
 
         
 
@@ -40,6 +51,18 @@ public class Salvapantallas : MonoBehaviour
         }
     }
 
+    //Poner Nombre
+    public void LeerNombre(string miNombre){
+        nombre = miNombre;
+        if (nombre == ""){
+            Debug.Log("Pepe");
+        } else {
+            Debug.Log(nombre);
+        }
+
+        textoConfirmacion.GetComponent<TextMeshProUGUI>().text = "¿Te llamas" +nombre+ "?";
+        
+    }
     
 
       // Update is called once per frame
@@ -64,7 +87,19 @@ public class Salvapantallas : MonoBehaviour
                 textoIni.GetComponent<TextMeshProUGUI>().enabled = false;
                 timer = 0;
           }
+
         
+        
+    }
+
+    public void EstasSeguro(){
+        //Carga el menu
+        confirmaNombre.SetActive(true);
+    }
+
+    public void ocultarSeguro(){
+        //Carga el menu
+        confirmaNombre.SetActive(false);
     }
 
     public void AMenu(){
