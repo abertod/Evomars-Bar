@@ -60,7 +60,7 @@ public class Salvapantallas : MonoBehaviour
             Debug.Log(nombre);
         }
 
-        textoConfirmacion.GetComponent<TextMeshProUGUI>().text = "¿Te llamas" +nombre+ "?";
+        
         
     }
     
@@ -88,7 +88,8 @@ public class Salvapantallas : MonoBehaviour
                 timer = 0;
           }
 
-        
+        textoConfirmacion.GetComponent<TextMeshProUGUI>().text = "¿Te llamas" +nombre+ "?";
+        Debug.Log("¿Te llamas" +nombre+ "?");
         
     }
 
