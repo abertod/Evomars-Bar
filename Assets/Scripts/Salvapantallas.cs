@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
+using Unity.VisualScripting;
 
 public class Salvapantallas : MonoBehaviour
 {
@@ -16,7 +17,7 @@ public class Salvapantallas : MonoBehaviour
     public float timer;
     public static bool activated = false;
 
-    //Poner nombre
+    //Poner nombre a tu personaje
     public string nombre;
     //panel de confirmacion
     public GameObject confirmaNombre;
@@ -35,7 +36,8 @@ public class Salvapantallas : MonoBehaviour
         //Panel de confirmar tu nombre
         confirmaNombre = GameObject.Find("Seguro_Nombre");
         confirmaNombre.SetActive(false);
-        //textoConfirmacion = GameObject.Find("Confirma_Nombre");
+        //Busca el objeto hijo de Seguro_Nombre
+        textoConfirmacion = confirmaNombre.transform.Find("Confirma_Nombre").gameObject;
 
         
 
@@ -51,24 +53,23 @@ public class Salvapantallas : MonoBehaviour
         }
     }
 
-    //Poner Nombre
+    //Poner Nombre al personaje que controlas para que cambie en la historia
     public void LeerNombre(string miNombre){
         nombre = miNombre;
         if (nombre == ""){
+            nombre =  "Pepe";
             Debug.Log("Pepe");
         } else {
             Debug.Log(nombre);
         }
 
-        
-        
     }
     
 
       // Update is called once per frame
     void Update()
     {
-        //Pulsa cualquier tecla (falta que texto parpadee)
+        //El texto que sale escrito al incio
         textoIni.GetComponent<TextMeshProUGUI>().text = "Pulsa cualquier tecla";
         //activa panel del nombre
         if(Input.anyKeyDown){
@@ -88,18 +89,24 @@ public class Salvapantallas : MonoBehaviour
                 timer = 0;
           }
 
-        textoConfirmacion.GetComponent<TextMeshProUGUI>().text = "¿Te llamas" +nombre+ "?";
-        Debug.Log("¿Te llamas" +nombre+ "?");
+        //Frase para confirmar tu nombre
+        if(nombre == ""){
+            textoConfirmacion.GetComponent<TextMeshProUGUI>().text = "¿Te llamas Pepe?";
+        }else {
+            textoConfirmacion.GetComponent<TextMeshProUGUI>().text = "¿Te llamas " +nombre+ "?";
+            Debug.Log("¿Te llamas " +nombre+ "?");
+        }
+        
         
     }
 
     public void EstasSeguro(){
-        //Carga el menu
+        //Carga el panel de confirmar tu nombre
         confirmaNombre.SetActive(true);
     }
 
     public void ocultarSeguro(){
-        //Carga el menu
+        //Oculta el panel de confirmar tu nombre
         confirmaNombre.SetActive(false);
     }
 
