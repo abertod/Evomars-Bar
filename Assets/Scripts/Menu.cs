@@ -33,10 +33,21 @@ public class Menu : MonoBehaviour
     public GameObject sliderMaster;
     public GameObject sliderMusic;
     public GameObject sliderFx;
-    public int valor = 5;
+
+        public int valor = 5;
     /*public int minValue = -80;
     public int maxValue = 20;*/
 
+
+    //El objeto que está por encima del Slider de Velocidad de texto. Primero llama y encuentra el objeto de Velocidad Texto y luego, 
+    //con otra variable y Find, se puede buscar al hijo, SliderVel
+    public GameObject velTexto;
+    public GameObject sliderVelTexto;
+    //Variable para cambiar texto a Normal, lento o rapido de velocidad
+    public GameObject textoVelociad;
+
+
+    
 
     
     
@@ -46,6 +57,18 @@ public class Menu : MonoBehaviour
         //Abre panel opciones empieza desactivado
         panelOpciones = GameObject.Find("Panel_Opciones");
         panelOpciones.SetActive(false);
+
+        // Busca los GameObjects
+        velTexto = panelOpciones.transform.Find("VelocidadTexto").gameObject;
+        sliderVelTexto = velTexto.transform.Find("SliderVel").gameObject;
+        textoVelociad = velTexto.transform.Find("TextoVelocidad").gameObject;
+        
+        //Pone el Slider de Velocidad Texto en 1
+        sliderVelTexto.GetComponent<Slider>().value = 1;
+
+        
+
+
 
         //Para activar el metodo de estar silenciado al empezar
         RevisarMuteMusic();
@@ -68,6 +91,25 @@ public class Menu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+               
+        //El texto que aparece en Velocidad texto es el numero del valor del Slider
+        //textoVelociad.GetComponent<TextMeshProUGUI>().text = sliderVelTexto.GetComponent<Slider>().value.ToString();
+        
+        //Depende del valor del SLider, aparece un texto diferente al que le acompaña la velocidad del efecto de escribir
+        if(sliderVelTexto.GetComponent<Slider>().value == 1){
+            textoVelociad.GetComponent<TextMeshProUGUI>().text = "Normal";
+            Dialogo.velTexto=0.1f;
+
+        }else if(sliderVelTexto.GetComponent<Slider>().value == 0){
+            textoVelociad.GetComponent<TextMeshProUGUI>().text = "Lento";
+            Dialogo.velTexto=0.2f;
+
+        }else if(sliderVelTexto.GetComponent<Slider>().value == 2){
+            textoVelociad.GetComponent<TextMeshProUGUI>().text = "Rápido";
+            Dialogo.velTexto=0.01f;
+
+        }
+
                 
     }
     

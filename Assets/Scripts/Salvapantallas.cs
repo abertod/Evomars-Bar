@@ -8,6 +8,7 @@ using Unity.VisualScripting;
 
 public class Salvapantallas : MonoBehaviour
 {
+    public static Salvapantallas Instance;
     //variable para texto de pulsar cualquier tecla
     public GameObject textoIni;
     //Panel opcional de escribir tu nombre
