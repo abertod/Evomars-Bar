@@ -13,6 +13,10 @@ public class Menu : MonoBehaviour
 
     //variables para usar el slider como control de volumen
     public AudioMixer voluMusic;
+    //
+    public GameObject volumenMaster;
+    public GameObject volumenMusic;
+    public GameObject volumenFx;
     //variable para activar la imagen de Estas Mute
     public float volMusica;
     public Image imageMuteMusic;
@@ -59,6 +63,19 @@ public class Menu : MonoBehaviour
         panelOpciones.SetActive(false);
 
         // Busca los GameObjects
+        volumenMaster = panelOpciones.transform.Find("VolumenMaster").gameObject;
+        volumenMusic = panelOpciones.transform.Find("VolumenMusic").gameObject;
+        volumenFx = panelOpciones.transform.Find("VolumenFx").gameObject;
+
+        sliderMaster = volumenMaster.transform.Find("SliderMaster").gameObject;
+        sliderMusic = volumenMusic.transform.Find("SliderMusic").gameObject;
+        sliderFx = volumenFx.transform.Find("SliderFx").gameObject;
+
+        numVolMaster = volumenMaster.transform.Find("NumVolumenMaster").gameObject;
+        numVolMus = volumenMusic.transform.Find("NumVolumenMusic").gameObject;
+        numVolFx = volumenFx.transform.Find("NumVolumenFx").gameObject;
+
+        //imageMuteMaster = volumenMaster.transform.Find("VolumenMaster").gameObject;;
         velTexto = panelOpciones.transform.Find("VelocidadTexto").gameObject;
         sliderVelTexto = velTexto.transform.Find("SliderVel").gameObject;
         textoVelociad = velTexto.transform.Find("TextoVelocidad").gameObject;
@@ -107,7 +124,6 @@ public class Menu : MonoBehaviour
         }else if(sliderVelTexto.GetComponent<Slider>().value == 2){
             textoVelociad.GetComponent<TextMeshProUGUI>().text = "Rápido";
             Dialogo.velTexto=0.01f;
-
         }
 
                 
@@ -139,19 +155,19 @@ public class Menu : MonoBehaviour
         }
     }
 
-    public void VolumenMusica(float volume){
-        //Debug.Log(volume);
-        volMusica = volume;
-        voluMusic.SetFloat("volMusic", volume);
-        RevisarMuteMusic();
-        numVolMus.GetComponent<TextMeshProUGUI>().text = volMusica.ToString();
-    }
     public void VolumenMaster(float volume){
         //Debug.Log(volume);
         volMusica = volume/10;
         voluMusic.SetFloat("volMaster", volume);
         RevisarMuteMaster();
         numVolMaster.GetComponent<TextMeshProUGUI>().text = volMusica.ToString();
+    }
+    public void VolumenMusica(float volume){
+        //Debug.Log(volume);
+        volMusica = volume;
+        voluMusic.SetFloat("volMusic", volume);
+        RevisarMuteMusic();
+        numVolMus.GetComponent<TextMeshProUGUI>().text = volMusica.ToString();
     }
     public void VolumenFx(float volume){
         //Debug.Log(volume);

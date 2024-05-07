@@ -1,7 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System.Threading.Tasks;
 
 public class Dialogo : MonoBehaviour
 {
@@ -10,12 +12,21 @@ public class Dialogo : MonoBehaviour
     public string[] lineas;
     public static float velTexto;
     int index;
+    //Para llamar al panel Dialogo
+    public GameObject panelDialogo;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        lineas = new string[7]{
+        //Busca y desactiva el Panel Dialogo
+        panelDialogo = GameObject.Find("Panel Dialogo");
+        panelDialogo.SetActive(false);
+
+        
+        //Lineas del dialogo
+        lineas = new string[8]{
+        "           Esta linea no se ve ",
         "aa aa a a a  a a a a aaa aa a a a  a a a a aaa aa a a a  a a a a aaa aa a a a  a a a a a  ",
         "bbb bb bb bb bb b bbb b b b b b bb bb b b b bb bb bbb bb bbbbbb b b bb bb b bb b b b b b bb b b b b ",
         "cccc c c c cccc c c ccccc c c ccccc c c ccccc c c ccccc c c ccccc c c ccccc c c ccccc c c c",
@@ -23,10 +34,11 @@ public class Dialogo : MonoBehaviour
         "bbb bb bb bb bb b bbb bbb bb bb bb b bbb bbb bb bb bb b bbb bbb bb bb bb b bbb bbb bb bb bb b bbb b",
         "cccc c c c  c c c cccc c c ccccc c c ccccc c c c cccc c c ccccc c c ccccc c c c cccc c c ccccc c c ccccc",
         "ssfdgsdg zfbkjdsvn djnvksdvlkjsdndvk cjx vzlnc lsjddvk<avñk k sdvñkl <sgv<klv kzxolkzx  xvoklzs kd"
-    };
-
+        };
         dialogoTexto.text = string.Empty;
         EmpiezaDialogo();
+        
+
 
         Debug.Log(velTexto);
     }
@@ -34,7 +46,9 @@ public class Dialogo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Primero, activa el panel, luego pasa los dialogos
         if (Input.GetKeyDown(KeyCode.T)){
+            panelDialogo.SetActive(true);
             if(dialogoTexto.text == lineas[index]){
                 SigLinea();
             }else{
@@ -66,4 +80,6 @@ public class Dialogo : MonoBehaviour
             gameObject.SetActive(false);
         }
     }
+
+        
 }
