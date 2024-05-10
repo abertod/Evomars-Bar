@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class AudioManager : MonoBehaviour
@@ -11,6 +12,7 @@ public class AudioManager : MonoBehaviour
 
     //Añade sonidos
     public AudioClip bandaSonora;
+    public AudioClip bandaSonora02;
     public AudioClip fxButton;
     AudioSource _audioSource;
 
@@ -57,6 +59,12 @@ public class AudioManager : MonoBehaviour
             audioMusic.Stop();
             audioMusic.loop = false;
         }
+
+        /*
+        if(Menu.AJugar() = true){
+            audioMusic.clip = bandaSonora02;
+        }
+        */
     }
 
         //método para hacer sonar clips de audio

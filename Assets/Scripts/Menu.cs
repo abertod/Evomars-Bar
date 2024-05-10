@@ -200,7 +200,7 @@ public class Menu : MonoBehaviour
   
 
 
-    public void AJugar(){
+    public static void AJugar(){
         //Empieza el juego
         SceneManager.LoadScene("2NivelUno");
         Debug.Log("A Jugar");
