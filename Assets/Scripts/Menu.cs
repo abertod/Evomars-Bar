@@ -5,15 +5,17 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.Audio;
 using TMPro;
+using Unity.Mathematics;
 
 public class Menu : MonoBehaviour
 {
+    public static Menu Instance;
     //Abre panel opciones
     public GameObject panelOpciones;
 
     //variables para usar el slider como control de volumen
     public AudioMixer voluMusic;
-    //
+    //variable para el nivel del volumen
     public GameObject volumenMaster;
     public GameObject volumenMusic;
     public GameObject volumenFx;
@@ -51,8 +53,17 @@ public class Menu : MonoBehaviour
     public GameObject textoVelociad;
 
 
-    
+    bool opcionOn = false;
 
+    
+    void Awake(){
+        if(Instance != null && Instance != this){
+            Destroy(this.gameObject);
+        }else{
+            Instance = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
+    }
     
     
     // Start is called before the first frame update
@@ -126,6 +137,16 @@ public class Menu : MonoBehaviour
             Dialogo.velTexto=0.01f;
         }
 
+        //Si el Panel Opciones está apagado y pulsas ESC, este se mostrará
+        if(Input.GetKeyDown(KeyCode.Escape) && opcionOn==false){
+            panelOpciones.SetActive(true);
+            opcionOn=true;
+            Debug.Log("panel desde tecla: " + opcionOn);
+        } else if(Input.GetKeyDown(KeyCode.Escape) && opcionOn==true){
+            panelOpciones.SetActive(false);
+            opcionOn=false;
+            Debug.Log("panel desde tecla: " + opcionOn);
+        }
                 
     }
     
@@ -157,7 +178,7 @@ public class Menu : MonoBehaviour
 
     public void VolumenMaster(float volume){
         //Debug.Log(volume);
-        volMusica = volume/10;
+        volMusica = volume;
         voluMusic.SetFloat("volMaster", volume);
         RevisarMuteMaster();
         numVolMaster.GetComponent<TextMeshProUGUI>().text = volMusica.ToString();
@@ -183,6 +204,7 @@ public class Menu : MonoBehaviour
         //Empieza el juego
         SceneManager.LoadScene("2NivelUno");
         Debug.Log("A Jugar");
+        
     }
 
     public void SuenaBoton(){
@@ -193,10 +215,14 @@ public class Menu : MonoBehaviour
         //Activa panel opciones
         //AudioManager.Instance.SonarCLipUnaVez(AudioManager.Instance.fxButton);
         panelOpciones.SetActive(true);
+        opcionOn=true;
+        Debug.Log("panel: " + opcionOn);
     }
 
     public void OcultarOpciones(){
         //Oculta panel opciones
         panelOpciones.SetActive(false);
+        opcionOn=false;
+        Debug.Log("panel: " + opcionOn);
     }
 }
