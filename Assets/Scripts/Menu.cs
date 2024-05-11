@@ -205,6 +205,7 @@ public class Menu : MonoBehaviour
         SceneManager.LoadScene("2NivelUno");
         Debug.Log("A Jugar");
         
+        
     }
 
     public void SuenaBoton(){

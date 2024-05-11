@@ -2777,10 +2777,10 @@ PrefabInstance:
     - target: {fileID: 6051081423530861215, guid: cf56bdb53508e9142803e325a7640b66, type: 3}
       propertyPath: bandaSonora.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8300000, guid: bfc70c7ff1a55b14b8b946c2e3499b40, type: 3}
     - target: {fileID: 6051081423530861215, guid: cf56bdb53508e9142803e325a7640b66, type: 3}
       propertyPath: bandaSonora.Array.data[1]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8300000, guid: 35b3e0041fbb2494dae0329d29bb330b, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf56bdb53508e9142803e325a7640b66, type: 3}

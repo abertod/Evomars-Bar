@@ -424,6 +424,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6051081423530861215, guid: cf56bdb53508e9142803e325a7640b66, type: 3}
+      propertyPath: bandaSonora
+      value: 
+      objectReference: {fileID: 8300000, guid: b477e794e216a5d468777c09492b795b, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf56bdb53508e9142803e325a7640b66, type: 3}
 --- !u!1 &1462082118

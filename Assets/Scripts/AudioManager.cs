@@ -12,12 +12,13 @@ public class AudioManager : MonoBehaviour
 
     //Añade sonidos
     public AudioClip bandaSonora;
+    
     public AudioClip bandaSonora02;
     public AudioClip fxButton;
     AudioSource _audioSource;
 
     public GameObject musicObj;
-    AudioSource audioMusic;
+    public static AudioSource audioMusic;
 
 
     
@@ -42,8 +43,9 @@ public class AudioManager : MonoBehaviour
         audioMusic = musicObj.GetComponent<AudioSource>();
         audioMusic.clip = bandaSonora;
         audioMusic.Play();
-        audioMusic.loop = false;
-        audioMusic.volume = 0.3f;
+        audioMusic.loop = true;
+        audioMusic.volume = 1f;
+        
     }
 
     // Update is called once per frame
@@ -53,6 +55,7 @@ public class AudioManager : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.P)){
             audioMusic.Play();
             audioMusic.loop = true;
+            Debug.Log("Esta sonando "+ bandaSonora);
         }
         //Parar musica
         if(Input.GetKeyDown(KeyCode.O)){
@@ -60,13 +63,19 @@ public class AudioManager : MonoBehaviour
             audioMusic.loop = false;
         }
 
-        /*
+       /* 
         if(Menu.AJugar() = true){
             audioMusic.clip = bandaSonora02;
         }
         */
-    }
 
+        
+
+        
+    }
+    
+
+   
         //método para hacer sonar clips de audio
     public void SonarCLipUnaVez(AudioClip ac){
         _audioSource.PlayOneShot(ac);
