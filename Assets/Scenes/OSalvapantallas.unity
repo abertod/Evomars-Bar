@@ -957,6 +957,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &909453358 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7056599365752465877, guid: cf56bdb53508e9142803e325a7640b66, type: 3}
+  m_PrefabInstance: {fileID: 6051081424282860489}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &915254208
 GameObject:
   m_ObjectHideFlags: 0
@@ -2774,6 +2779,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6051081423530861215, guid: cf56bdb53508e9142803e325a7640b66, type: 3}
+      propertyPath: musicObj2
+      value: 
+      objectReference: {fileID: 909453358}
     - target: {fileID: 6051081423530861215, guid: cf56bdb53508e9142803e325a7640b66, type: 3}
       propertyPath: bandaSonora.Array.data[0]
       value: 

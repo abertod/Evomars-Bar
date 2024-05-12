@@ -18,6 +18,7 @@ public class AudioManager : MonoBehaviour
     AudioSource _audioSource;
 
     public GameObject musicObj;
+    public GameObject musicObj2;
     public static AudioSource audioMusic;
     public static AudioSource audioMusic02;
 
@@ -68,12 +69,17 @@ public class AudioManager : MonoBehaviour
 
         scene = SceneManager.GetActiveScene();
 
-        if(scene.name == "0Salvapantallas"){
-            audioMusic02 = musicObj.GetComponent<AudioSource>();
+        if(scene.name == "1Menu"){
+            
+            audioMusic02 = musicObj2.GetComponent<AudioSource>();
             audioMusic02.clip = bandaSonora02;
             audioMusic02.Play();
             audioMusic02.loop = true;
             audioMusic02.volume = 1f;
+        }
+        if(scene.name == "2NivelUno"){
+            audioMusic.Stop();
+            
         }
 
         //CambioMusica();
