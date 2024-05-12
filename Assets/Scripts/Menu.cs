@@ -6,6 +6,7 @@ using UnityEngine.UI;
 using UnityEngine.Audio;
 using TMPro;
 using Unity.Mathematics;
+using System;
 
 public class Menu : MonoBehaviour
 {
@@ -20,7 +21,7 @@ public class Menu : MonoBehaviour
     public GameObject volumenMusic;
     public GameObject volumenFx;
     //variable para activar la imagen de Estas Mute
-    public float volMusica;
+    public float volMusica ;
     public Image imageMuteMusic;
     public Image imageMuteFx;
     public Image imageMuteMaster;
@@ -54,6 +55,7 @@ public class Menu : MonoBehaviour
 
 
     bool opcionOn = false;
+
 
     
     void Awake(){
@@ -153,7 +155,7 @@ public class Menu : MonoBehaviour
 //Método de Mute
     public void RevisarMuteMusic(){
         //Si la música está en 0, se activa una imagen
-        if(volMusica == 0){
+        if(volMusica == -50){
             imageMuteMusic.enabled = true;
         }else{
             imageMuteMusic.enabled = false;
@@ -161,7 +163,7 @@ public class Menu : MonoBehaviour
     }
     public void RevisarMuteMaster(){
         //Si la música está en 0, se activa una imagen
-        if(volMusica == 0){
+        if(volMusica == -50){
             imageMuteMaster.enabled = true;
         }else{
             imageMuteMaster.enabled = false;
@@ -169,7 +171,7 @@ public class Menu : MonoBehaviour
     }
     public void RevisarMuteFx(){
         //Si la música está en 0, se activa una imagen
-        if(volMusica == 0){
+        if(volMusica == -80){
             imageMuteFx.enabled = true;
         }else{
             imageMuteFx.enabled = false;
@@ -181,13 +183,29 @@ public class Menu : MonoBehaviour
         volMusica = volume;
         voluMusic.SetFloat("volMaster", volume);
         RevisarMuteMaster();
+        //Float volMusica hace un remap del volumen para que cuando en AudioMixer el valor sea -50, lo que se muestre sea 0, 
+        //y cuando el valor del AudioMixer sea 0, lo que se muestre sea 10. 
+        //Por el orden de lectura, la linea de remap tiene que estar debajo de las otras opciones que empiezan por volMusica. Si no, el remap no funciona
+        //Mathf.Round sirve para redondear, pero me los redondea sin decimales. Asi que perfecto. No necesito convertir el float en int.
+        volMusica = Mathf.Round(math.remap(-50, 0, 0, 10, volume));
+        
         numVolMaster.GetComponent<TextMeshProUGUI>().text = volMusica.ToString();
+        
+        
+/*
+        var dbVolume = Mathf.Log10(volume) * 20;
+        if (volume == 0.0f)
+        {
+            dbVolume = -80.0f;
+        }
+        */
     }
     public void VolumenMusica(float volume){
         //Debug.Log(volume);
         volMusica = volume;
         voluMusic.SetFloat("volMusic", volume);
         RevisarMuteMusic();
+        volMusica = Mathf.Round(math.remap(-50, 0, 0, 10, volume));
         numVolMus.GetComponent<TextMeshProUGUI>().text = volMusica.ToString();
     }
     public void VolumenFx(float volume){
@@ -195,6 +213,7 @@ public class Menu : MonoBehaviour
         volMusica = volume;
         voluMusic.SetFloat("volFx", volume);
         RevisarMuteFx();
+        volMusica = Mathf.Round(math.remap(-80, 10, 0, 10, volume));
         numVolFx.GetComponent<TextMeshProUGUI>().text = volMusica.ToString();
     }
   
