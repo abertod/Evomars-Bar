@@ -19,9 +19,11 @@ public class AudioManager : MonoBehaviour
 
     public GameObject musicObj;
     public static AudioSource audioMusic;
+    public static AudioSource audioMusic02;
 
 
-    
+    Scene scene;
+     LoadSceneMode mode;
     
     //Patrón Singletón.
     void Awake(){
@@ -31,6 +33,7 @@ public class AudioManager : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(this.gameObject);
         }
+        
     }
 
     // Start is called before the first frame update
@@ -55,7 +58,7 @@ public class AudioManager : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.P)){
             audioMusic.Play();
             audioMusic.loop = true;
-            Debug.Log("Esta sonando "+ bandaSonora);
+            //Debug.Log("Esta sonando "+ bandaSonora);
         }
         //Parar musica
         if(Input.GetKeyDown(KeyCode.O)){
@@ -63,18 +66,45 @@ public class AudioManager : MonoBehaviour
             audioMusic.loop = false;
         }
 
-       /* 
-        if(Menu.AJugar() = true){
-            audioMusic.clip = bandaSonora02;
+        scene = SceneManager.GetActiveScene();
+
+        if(scene.name == "0Salvapantallas"){
+            audioMusic02 = musicObj.GetComponent<AudioSource>();
+            audioMusic02.clip = bandaSonora02;
+            audioMusic02.Play();
+            audioMusic02.loop = true;
+            audioMusic02.volume = 1f;
         }
-        */
 
-        
-
-        
+        //CambioMusica();
     }
     
+   /* public void CambioMusica(){
+        Debug.Log("OnSceneLoaded: " + scene.name);
+        if(scene.name == "1Menu"){
+            audioMusic = musicObj.GetComponent<AudioSource>();
+            audioMusic.clip = bandaSonora02;
+            audioMusic.Stop();
+            audioMusic.loop = true;
+            audioMusic.volume = 1f;
+        }
+        
+        
+    }*/
+/*
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode){
+        if(){
+        audioMusic = musicObj.GetComponent<AudioSource>();
+        audioMusic.clip = bandaSonora02;
+        audioMusic.Play();
+        audioMusic.loop = true;
+        audioMusic.volume = 1f;
+        }
 
+        Debug.Log("OnSceneLoaded: " + scene.name);
+        Debug.Log("OnSceneLoadedmmmmmmm: " + mode);
+    }
+*/
    
         //método para hacer sonar clips de audio
     public void SonarCLipUnaVez(AudioClip ac){
