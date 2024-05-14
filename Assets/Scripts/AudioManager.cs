@@ -97,7 +97,7 @@ public class AudioManager : MonoBehaviour
 
         escena = SceneManager.GetActiveScene();
 
-        if(scene.name == "1Menu"){
+        if(escena.name == "1Menu"){
             
             audioMusic02 = musicObj2.GetComponent<AudioSource>();
             audioMusic02.clip = bandaSonora02;
@@ -105,7 +105,7 @@ public class AudioManager : MonoBehaviour
             audioMusic02.loop = true;
             audioMusic02.volume = 1f;
         }
-        if(scene.name == "2NivelUno"){
+        if(escena.name == "2NivelUno"){
             audioMusic.Stop();
             
         }
