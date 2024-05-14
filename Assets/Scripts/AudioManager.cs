@@ -11,11 +11,9 @@ public class AudioManager : MonoBehaviour
     public static AudioManager Instance;
 
     //Añade sonidos
-    //public AudioClip bandaSonora;
-    //public AudioClip bandaSonora02;
-
-    public AudioClip[] banda;
-
+    public AudioClip bandaSonora;
+    
+    public AudioClip bandaSonora02;
     public AudioClip fxButton;
     AudioSource _audioSource;
 
@@ -24,7 +22,6 @@ public class AudioManager : MonoBehaviour
     public static AudioSource audioMusic;
     public static AudioSource audioMusic02;
 
-    public float tiempo;
 
     Scene escena;
         
@@ -44,15 +41,19 @@ public class AudioManager : MonoBehaviour
     {
         
         _audioSource = GetComponent<AudioSource>();
+        
 
         //Aqui se carga la musica 
         audioMusic = musicObj.GetComponent<AudioSource>();
-        //audioMusic.clip = bandaSonora;
-        audioMusic.clip = banda[0];
-        audioMusic.playOnAwake = true;
+        audioMusic.clip = bandaSonora;
         audioMusic.Play();
         audioMusic.loop = true;
         audioMusic.volume = 1f;
+
+
+        audioMusic02 = musicObj2.GetComponent<AudioSource>();
+
+        
         
         /*if(tiempo == 4f){
             audioMusic.clip = bandaSonora;
@@ -96,42 +97,28 @@ public class AudioManager : MonoBehaviour
 
         escena = SceneManager.GetActiveScene();
 
-        //Escena01();
-        //Escena02();
-        
-        if(escena.name == "1Menu"){
-            //tiempo += Time.deltaTime;
-            //Debug.Log(tiempo);
+        if(scene.name == "1Menu"){
             
-            
-            //audioMusic.Pause();
-            audioMusic02.clip = banda[1];
+            audioMusic02 = musicObj2.GetComponent<AudioSource>();
+            audioMusic02.clip = bandaSonora02;
             audioMusic02.Play();
-            //audioMusic.playOnAwake = true;
-            //audioMusic.UnPause();
-            
-            //audioMusic.Pause();
-            //audioMusic.Play();
-            
-            
+            audioMusic02.loop = true;
+            audioMusic02.volume = 1f;
         }
-        if(escena.name == "2NivelUno"){
-            //audioMusic.Stop();
-            audioMusic.Pause();
-            //audioMusic.clip = banda[0];
-            //audioMusic.Play();
+        if(scene.name == "2NivelUno"){
+            audioMusic.Stop();
             
         }
 
-        
-        
-
+        //CambioMusica();
     }
-/*
-    public void Escena01(){
-        if(escena.name == "OSalvapantallas"){
-            if(Input.GetKeyDown(KeyCode.P)){
-            audioMusic.Play();
+    
+   /* public void CambioMusica(){
+        Debug.Log("OnSceneLoaded: " + scene.name);
+        if(scene.name == "1Menu"){
+            audioMusic = musicObj.GetComponent<AudioSource>();
+            audioMusic.clip = bandaSonora02;
+            audioMusic.Stop();
             audioMusic.loop = true;
             }
             if(Input.GetKeyDown(KeyCode.O)){
@@ -181,4 +168,5 @@ public class AudioManager : MonoBehaviour
         _audioSource.PlayOneShot(ac);
     }
 }
+
 
