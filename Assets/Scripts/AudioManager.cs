@@ -11,9 +11,11 @@ public class AudioManager : MonoBehaviour
     public static AudioManager Instance;
 
     //Añade sonidos
-    public AudioClip bandaSonora;
-    
-    public AudioClip bandaSonora02;
+    //public AudioClip bandaSonora;
+    //public AudioClip bandaSonora02;
+
+    public AudioClip[] banda;
+
     public AudioClip fxButton;
     AudioSource _audioSource;
 
@@ -22,10 +24,10 @@ public class AudioManager : MonoBehaviour
     public static AudioSource audioMusic;
     public static AudioSource audioMusic02;
 
+    public float tiempo;
 
-    Scene scene;
-     LoadSceneMode mode;
-    
+    Scene escena;
+        
     //Patrón Singletón.
     void Awake(){
         if(Instance != null && Instance != this){
@@ -45,72 +47,134 @@ public class AudioManager : MonoBehaviour
 
         //Aqui se carga la musica 
         audioMusic = musicObj.GetComponent<AudioSource>();
-        audioMusic.clip = bandaSonora;
+        //audioMusic.clip = bandaSonora;
+        audioMusic.clip = banda[0];
+        audioMusic.playOnAwake = true;
         audioMusic.Play();
         audioMusic.loop = true;
         audioMusic.volume = 1f;
         
+        /*if(tiempo == 4f){
+            audioMusic.clip = bandaSonora;
+            audioMusic.Play();
+            audioMusic.loop = true;
+            audioMusic.volume = 1f;
+        }*/
+        
+        audioMusic02 = musicObj2.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        //tiempo += Time.deltaTime;
+        //Debug.Log(tiempo);
+          //audioMusic = musicObj.GetComponent<AudioSource>();
         //Activar musica
+        /*
+        if(escena.name == "OSalvapantallas"){
+            ActivarMusica();
+            PararMusica();
+        }
+        */
+        //ActivarMusica();
+        //PararMusica();
+
         if(Input.GetKeyDown(KeyCode.P)){
             audioMusic.Play();
             audioMusic.loop = true;
-            //Debug.Log("Esta sonando "+ bandaSonora);
+            audioMusic02.Play();
+            audioMusic02.loop = true;
+            }
+        if(Input.GetKeyDown(KeyCode.O)){
+            audioMusic.Pause();
+            audioMusic.loop = false;
+            audioMusic02.Pause();
+            audioMusic02.loop = false;
         }
-        //Parar musica
+        
+
+        escena = SceneManager.GetActiveScene();
+
+        //Escena01();
+        //Escena02();
+        
+        if(escena.name == "1Menu"){
+            //tiempo += Time.deltaTime;
+            //Debug.Log(tiempo);
+            
+            
+            //audioMusic.Pause();
+            audioMusic02.clip = banda[1];
+            audioMusic02.Play();
+            //audioMusic.playOnAwake = true;
+            //audioMusic.UnPause();
+            
+            //audioMusic.Pause();
+            //audioMusic.Play();
+            
+            
+        }
+        if(escena.name == "2NivelUno"){
+            //audioMusic.Stop();
+            audioMusic.Pause();
+            //audioMusic.clip = banda[0];
+            //audioMusic.Play();
+            
+        }
+
+        
+        
+
+    }
+/*
+    public void Escena01(){
+        if(escena.name == "OSalvapantallas"){
+            if(Input.GetKeyDown(KeyCode.P)){
+            audioMusic.Play();
+            audioMusic.loop = true;
+            }
+            if(Input.GetKeyDown(KeyCode.O)){
+                audioMusic.Pause();
+                audioMusic.loop = false;
+            }
+        }
+        
+    }
+
+    public void Escena02(){
+    if(escena.name == "1Menu"){
+        if(Input.GetKeyDown(KeyCode.P)){
+            audioMusic.Play();
+            audioMusic.loop = true;
+        }
         if(Input.GetKeyDown(KeyCode.O)){
             audioMusic.Stop();
             audioMusic.loop = false;
         }
 
-        scene = SceneManager.GetActiveScene();
-
-        if(scene.name == "1Menu"){
-            
-            audioMusic02 = musicObj2.GetComponent<AudioSource>();
-            audioMusic02.clip = bandaSonora02;
-            audioMusic02.Play();
-            audioMusic02.loop = true;
-            audioMusic02.volume = 1f;
-        }
-        if(scene.name == "2NivelUno"){
-            audioMusic.Stop();
-            
-        }
-
-        //CambioMusica();
-    }
-    
-   /* public void CambioMusica(){
-        Debug.Log("OnSceneLoaded: " + scene.name);
-        if(scene.name == "1Menu"){
-            audioMusic = musicObj.GetComponent<AudioSource>();
-            audioMusic.clip = bandaSonora02;
-            audioMusic.Stop();
-            audioMusic.loop = true;
-            audioMusic.volume = 1f;
-        }
-        
-        
-    }*/
-/*
-    void OnSceneLoaded(Scene scene, LoadSceneMode mode){
-        if(){
-        audioMusic = musicObj.GetComponent<AudioSource>();
-        audioMusic.clip = bandaSonora02;
+        audioMusic.Pause();
+        audioMusic.clip = banda[1];
         audioMusic.Play();
-        audioMusic.loop = true;
-        audioMusic.volume = 1f;
-        }
-
-        Debug.Log("OnSceneLoaded: " + scene.name);
-        Debug.Log("OnSceneLoadedmmmmmmm: " + mode);
     }
-*/
+        
+    }
+
+    public void ActivarMusica(){
+        if(Input.GetKeyDown(KeyCode.P)){
+            audioMusic.Play();
+            audioMusic.loop = true;
+        }
+    }
+
+    public void PararMusica(){
+        //Parar musica
+        if(Input.GetKeyDown(KeyCode.O)){
+            audioMusic.Pause();
+            audioMusic.loop = false;
+        }
+    }*/
+    
    
         //método para hacer sonar clips de audio
     public void SonarCLipUnaVez(AudioClip ac){

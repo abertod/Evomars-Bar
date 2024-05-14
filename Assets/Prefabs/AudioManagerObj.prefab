@@ -47,10 +47,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c9acab60b4508747b0a8cad467f6377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bandaSonora: {fileID: 8300000, guid: b477e794e216a5d468777c09492b795b, type: 3}
-  bandaSonora02: {fileID: 8300000, guid: bd3e874682ef13e44b776daf2323608e, type: 3}
+  banda:
+  - {fileID: 8300000, guid: b477e794e216a5d468777c09492b795b, type: 3}
+  - {fileID: 8300000, guid: bd3e874682ef13e44b776daf2323608e, type: 3}
   fxButton: {fileID: 8300000, guid: 35b3e0041fbb2494dae0329d29bb330b, type: 3}
   musicObj: {fileID: 6051081423848961109}
+  musicObj2: {fileID: 7056599365752465877}
+  tiempo: 0
 --- !u!82 &6051081423530861201
 AudioSource:
   m_ObjectHideFlags: 0
