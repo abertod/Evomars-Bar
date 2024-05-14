@@ -3889,7 +3889,7 @@ MonoBehaviour:
   sliderMaster: {fileID: 0}
   sliderMusic: {fileID: 0}
   sliderFx: {fileID: 0}
-  valor: -10
+  valor: 0
   velTexto: {fileID: 0}
   sliderVelTexto: {fileID: 0}
   textoVelociad: {fileID: 0}
@@ -4578,6 +4578,7 @@ MonoBehaviour:
   bandaSonora02: {fileID: 8300000, guid: bd3e874682ef13e44b776daf2323608e, type: 3}
   fxButton: {fileID: 8300000, guid: 35b3e0041fbb2494dae0329d29bb330b, type: 3}
   musicObj: {fileID: 6051081423735508813}
+  musicObj2: {fileID: 0}
 --- !u!82 &6051081423509952905
 AudioSource:
   m_ObjectHideFlags: 0
