@@ -26,7 +26,7 @@ public class AudioManager : MonoBehaviour
 
 
     Scene scene;
-     LoadSceneMode mode;
+     //LoadSceneMode mode;
     
     //Patrón Singletón.
     void Awake(){
@@ -68,12 +68,16 @@ public class AudioManager : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.P)){
             audioMusic.Play();
             audioMusic.loop = true;
+            audioMusic02.Play();
+            audioMusic02.loop = true;
             //Debug.Log("Esta sonando "+ bandaSonora);
         }
         //Parar musica
         if(Input.GetKeyDown(KeyCode.O)){
             audioMusic.Pause();
             audioMusic.loop = false;
+            audioMusic02.Pause();
+            audioMusic02.loop = false;
         }
 
         scene = SceneManager.GetActiveScene();
@@ -84,9 +88,9 @@ public class AudioManager : MonoBehaviour
         audioMusic.Play();
         audioMusic.loop = true;
         audioMusic.volume = 1f;*/
-        audioMusic.Pause();
-        audioMusic.clip = banda[1];
-        audioMusic.Play();
+        //audioMusic.Pause();
+        audioMusic02.clip = banda[1];
+        audioMusic02.Play();
         
         
             /*
@@ -98,8 +102,8 @@ public class AudioManager : MonoBehaviour
         if(scene.name == "2NivelUno"){
             //audioMusic.Stop();
             audioMusic.Pause();
-        audioMusic.clip = banda[0];
-        audioMusic.Play();
+            audioMusic.clip = banda[0];
+            //audioMusic.Play();
             
         }
 
