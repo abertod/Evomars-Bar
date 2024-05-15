@@ -741,6 +741,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 392299120}
   m_CullTransparentMesh: 1
+--- !u!1 &441496527
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 441496529}
+  - component: {fileID: 441496528}
+  m_Layer: 0
+  m_Name: GestionMusica
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &441496528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441496527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a688ec50498b2449b5e7acca4a7eafe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musica: {fileID: 8300000, guid: b477e794e216a5d468777c09492b795b, type: 3}
+--- !u!4 &441496529
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441496527}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.229794, y: -0.41230083, z: 19.863024}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &463610956
 GameObject:
   m_ObjectHideFlags: 0
@@ -4545,7 +4590,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6051081423509952902
 Transform:
   m_ObjectHideFlags: 0
@@ -4574,11 +4619,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c9acab60b4508747b0a8cad467f6377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bandaSonora: {fileID: 8300000, guid: b477e794e216a5d468777c09492b795b, type: 3}
-  bandaSonora02: {fileID: 8300000, guid: bd3e874682ef13e44b776daf2323608e, type: 3}
   fxButton: {fileID: 8300000, guid: 35b3e0041fbb2494dae0329d29bb330b, type: 3}
-  musicObj: {fileID: 6051081423735508813}
-  musicObj2: {fileID: 0}
+  _audioSource: {fileID: 0}
+  audioMusic: {fileID: 0}
+  banda: []
 --- !u!82 &6051081423509952905
 AudioSource:
   m_ObjectHideFlags: 0

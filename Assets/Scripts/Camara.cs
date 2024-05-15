@@ -15,7 +15,7 @@ public class Camara : MonoBehaviour
     {
          Vector3 mousePos = Input.mousePosition;
             {
-                Debug.Log("Eje X " + mousePos.x + "Eje Y " + mousePos.y);
+                //Debug.Log("Eje X " + mousePos.x + "Eje Y " + mousePos.y);
                 //Debug.Log("Eje Y " + mousePos.y);
             }
     }
