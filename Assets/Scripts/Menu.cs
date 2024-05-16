@@ -245,4 +245,9 @@ public class Menu : MonoBehaviour
         opcionOn=false;
         Debug.Log("panel: " + opcionOn);
     }
+
+        public void ExitGame(){
+        Debug.Log("exit");
+        Application.Quit();
+    }
 }
