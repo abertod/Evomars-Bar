@@ -561,5 +561,6 @@ namespace DialogueEditor
                 }
             }
         }
+        
     }
 }

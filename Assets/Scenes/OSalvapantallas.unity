@@ -1896,11 +1896,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6051081423848961109, guid: cf56bdb53508e9142803e325a7640b66, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6051081423848961111, guid: cf56bdb53508e9142803e325a7640b66, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7056599365752465877, guid: cf56bdb53508e9142803e325a7640b66, type: 3}
       propertyPath: m_IsActive

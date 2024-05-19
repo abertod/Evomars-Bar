@@ -17,7 +17,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip fxButton;
     public AudioSource _audioSource;
 
-    // public GameObject musicObj;
+    public GameObject musicObj;
     //public GameObject musicObj2;
     public AudioSource audioMusic;
     //public static AudioSource audioMusic02;
@@ -42,6 +42,7 @@ public class AudioManager : MonoBehaviour
         }
 
         _audioSource = GetComponent<AudioSource>();
+        audioMusic = musicObj.GetComponent<AudioSource>();
 
     }
 
@@ -56,6 +57,8 @@ public class AudioManager : MonoBehaviour
         //audioMusic = musicObj.GetComponent<AudioSource>();
         //audioMusic.clip = bandaSonora;
         // audioMusic.clip = banda[0];
+        audioMusic.loop = true;
+        audioMusic.volume = 1f;
      
         //_audioSource.Play();
         _audioSource.loop = true;
@@ -74,19 +77,19 @@ public class AudioManager : MonoBehaviour
         //Activar musica
         if (Input.GetKeyDown(KeyCode.P))
         {
-            _audioSource.Play();
-            _audioSource.loop = true;
-            //audioMusic02.Play();
-            //audioMusic02.loop = true;
+            //_audioSource.Play();
+            //_audioSource.loop = true;
+            audioMusic.Play();
+            audioMusic.loop = true;
             //Debug.Log("Esta sonando "+ bandaSonora);
         }
         //Parar musica
         if (Input.GetKeyDown(KeyCode.O))
         {
-            _audioSource.Pause();
-            _audioSource.loop = false;
-            //audioMusic02.Pause();
-            //audioMusic02.loop = false;
+            //_audioSource.Pause();
+            //_audioSource.loop = false;
+            audioMusic.Pause();
+            audioMusic.loop = false;
         }
         /*
                 scene = SceneManager.GetActiveScene();
@@ -154,8 +157,11 @@ public class AudioManager : MonoBehaviour
 
     public void SonarMusica(AudioClip escena)
     {
-        _audioSource.clip = escena;
-        _audioSource.Play();
+        //_audioSource.clip = escena;
+        //_audioSource.Play();
+
+        audioMusic.clip = escena;
+        audioMusic.Play();
      
     }
 }

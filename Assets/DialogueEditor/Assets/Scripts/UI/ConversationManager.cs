@@ -1,4 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections;
+using TMPro;
+using System.Threading.Tasks;
+
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -32,7 +37,7 @@ namespace DialogueEditor
         // User-Facing options
         // Drawn by custom inspector
         public bool ScrollText;
-        public float ScrollSpeed = 1;
+        public float ScrollSpeed = Dialogo.velTexto;
         public Sprite BackgroundImage;
         public bool BackgroundImageSliced;
         public Sprite OptionImage;
@@ -100,6 +105,8 @@ namespace DialogueEditor
             NpcIcon.sprite = BlankSprite;
             DialogueText.text = "";
             TurnOffUI();
+
+            //ScrollSpeed = Dialogo.velTexto;
         }
 
         private void OnDestroy()
@@ -135,9 +142,54 @@ namespace DialogueEditor
                     TransitioningDialogueBoxOff_Update();
                     break;
             }
+
+            // Detectar la pulsación de tecla para detener el diálogo
+            if (Input.GetKeyDown(KeyCode.T))
+            {
+                if (m_state == eState.ScrollingText)
+                {
+                    // Detener el desplazamiento del texto
+                    DialogueText.maxVisibleCharacters = m_targetScrollTextCount;
+                    SetState(eState.TransitioningOptionsOn);
+                }
+            }
+
+/*
+            if (Input.GetKeyDown(KeyCode.T)){
+                ScrollText = false;
+                m_elapsedScrollTime < timePerChar;
+                Debug.Log("Pulsa T");
+            }else{
+                ScrollText = true;
+            }
+
+     /*           
+        //Primero, activa el panel, luego pasa los dialogos
+        if (Input.GetKeyDown(KeyCode.T)){
+            
+            if(DialogueText.text == speech.Text){
+                SigLinea();
+            }else{
+                StopAllCoroutines();
+                DialogueText.text = speech.Text;
+            }
+        }
+    */
         }
 
+/*
+         public void SigLinea(){
+        if (index < lineas.Length -1){
+            index++;
+            DialogueText.text = string.Empty;
+            StartCoroutine (EscribeLinea());
+        }else{
+            gameObject.SetActive(false);
+        }
+    }
+    
 
+*/
 
         //--------------------------------------
         // Public functions
@@ -340,9 +392,16 @@ namespace DialogueEditor
 
         private void ScrollingText_Update()
         {
+            //----------------------------- Debug --------------------------
+            Debug.Log("Vel " + Dialogo.velTexto);
+            //----------------------------- Fin Debug --------------------
+
+
+
+            //ScrollSpeed = Dialogo.velTexto;
             const float charactersPerSecond = 1500;
             float timePerChar = (60.0f / charactersPerSecond);
-            timePerChar *= ScrollSpeed;
+            timePerChar *= Dialogo.velTexto;
 
             m_elapsedScrollTime += Time.deltaTime;
 
@@ -354,11 +413,20 @@ namespace DialogueEditor
                 m_scrollIndex++;
 
                 // Finished?
-                if (m_scrollIndex >= m_targetScrollTextCount)
-                {
-                    SetState(eState.TransitioningOptionsOn);
-                }
+            if (DialogueText.maxVisibleCharacters >= m_targetScrollTextCount)
+            {
+                SetState(eState.TransitioningOptionsOn);
             }
+            }
+
+            /*
+            if (Input.GetKeyDown(KeyCode.T)){
+                ScrollText = false;
+                //m_elapsedScrollTime < timePerChar;
+                Debug.Log("Pulsa T");
+            }else{
+                ScrollText = true;
+            }*/
         }
 
         private void TransitionOptionsOn_Update()
@@ -457,6 +525,8 @@ namespace DialogueEditor
 
         private void SetupSpeech(SpeechNode speech)
         {
+
+            
             if (speech == null)
             {
                 EndConversation();
@@ -464,6 +534,7 @@ namespace DialogueEditor
             }
 
             m_currentSpeech = speech;
+            DialogueText.text = m_currentSpeech.Text;
 
             // Clear current options
             ClearOptions();
@@ -495,18 +566,30 @@ namespace DialogueEditor
             // Set text
             if (string.IsNullOrEmpty(speech.Text))
             {
+
+
+
                 if (ScrollText)
                 {
-                    DialogueText.text = "";
+                   /* DialogueText.text = "";
                     m_targetScrollTextCount = 0;
                     DialogueText.maxVisibleCharacters = 0;
                     m_elapsedScrollTime = 0f;
                     m_scrollIndex = 0;
+                    SetState(eState.ScrollingText);*/
+                    m_scrollIndex = 0;
+                    m_elapsedScrollTime = 0f;
+                    m_targetScrollTextCount = m_currentSpeech.Text.Length;
+                    DialogueText.maxVisibleCharacters = 0;
+                    SetState(eState.ScrollingText);
                 }
                 else
                 {
-                    DialogueText.text = "";
+                    /*DialogueText.text = "";
                     DialogueText.maxVisibleCharacters = 1;
+                    SetState(eState.TransitioningOptionsOn);*/
+                    DialogueText.maxVisibleCharacters = m_currentSpeech.Text.Length;
+                    SetState(eState.TransitioningOptionsOn);
                 }
             }
             else
@@ -525,6 +608,9 @@ namespace DialogueEditor
                     DialogueText.maxVisibleCharacters = speech.Text.Length;
                 }
             }
+            
+
+
 
             // Call the event
             if (speech.Event != null)
@@ -547,8 +633,32 @@ namespace DialogueEditor
             else
             {
                 SetState(eState.TransitioningOptionsOn);
-            }            
+            }  
+
+
+
+
         }
+
+
+
+
+// Lineas añadidas para acabar linea directamente al pulsar una tecla
+//
+//----------------------------------
+/*
+    IEnumerator EscribeLinea(){
+        foreach (char letras in speech.Text.ToCharArray()){
+            DialogueText.text += letras;
+            yield return new WaitForSeconds(ScrollSpeed);
+        }
+    }  
+
+*/
+//Hasta aqui 
+//----------------------------------------
+
+
 
 
 

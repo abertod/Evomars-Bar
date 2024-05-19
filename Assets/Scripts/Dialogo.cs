@@ -56,6 +56,12 @@ public class Dialogo : MonoBehaviour
                 dialogoTexto.text = lineas[index];
             }
         }
+
+        
+
+
+
+        
     }
 
     public void EmpiezaDialogo(){

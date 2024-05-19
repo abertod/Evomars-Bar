@@ -65,6 +65,8 @@ public class Menu : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(this.gameObject);
         }
+
+
     }
     
     
@@ -110,6 +112,7 @@ public class Menu : MonoBehaviour
         sliderMusic.GetComponent<Slider>().value = valor;
         sliderFx.GetComponent<Slider>().value = valor;
 
+
         
         //Debug.Log("Algo: "+volMusica);
         //Debug.Log("Mus: "+numVolMus);
@@ -128,14 +131,17 @@ public class Menu : MonoBehaviour
         //Depende del valor del SLider, aparece un texto diferente al que le acompaña la velocidad del efecto de escribir
         if(sliderVelTexto.GetComponent<Slider>().value == 1){
             textoVelociad.GetComponent<TextMeshProUGUI>().text = "Normal";
-            Dialogo.velTexto=0.1f;
+            //Dialogo.velTexto=0.1f;
+            Dialogo.velTexto=10f;
 
         }else if(sliderVelTexto.GetComponent<Slider>().value == 0){
             textoVelociad.GetComponent<TextMeshProUGUI>().text = "Lento";
-            Dialogo.velTexto=0.2f;
+            //Dialogo.velTexto=0.2f;
+            Dialogo.velTexto=20f;
 
         }else if(sliderVelTexto.GetComponent<Slider>().value == 2){
             textoVelociad.GetComponent<TextMeshProUGUI>().text = "Rápido";
+            //Dialogo.velTexto=0.01f;
             Dialogo.velTexto=0.01f;
         }
 
@@ -221,7 +227,7 @@ public class Menu : MonoBehaviour
 
     public static void AJugar(){
         //Empieza el juego
-        SceneManager.LoadScene("2NivelUno");
+        SceneManager.LoadScene(2);
         Debug.Log("A Jugar");
         
         
