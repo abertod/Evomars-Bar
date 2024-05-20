@@ -5,20 +5,23 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.Audio;
 using TMPro;
+using Unity.Mathematics;
+using System;
 
 public class Menu : MonoBehaviour
 {
+    public static Menu Instance;
     //Abre panel opciones
     public GameObject panelOpciones;
 
     //variables para usar el slider como control de volumen
     public AudioMixer voluMusic;
-    //
+    //variable para el nivel del volumen
     public GameObject volumenMaster;
     public GameObject volumenMusic;
     public GameObject volumenFx;
     //variable para activar la imagen de Estas Mute
-    public float volMusica;
+    public float volMusica ;
     public Image imageMuteMusic;
     public Image imageMuteFx;
     public Image imageMuteMaster;
@@ -51,8 +54,20 @@ public class Menu : MonoBehaviour
     public GameObject textoVelociad;
 
 
-    
+    bool opcionOn = false;
 
+
+    
+    void Awake(){
+        if(Instance != null && Instance != this){
+            Destroy(this.gameObject);
+        }else{
+            Instance = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
+
+
+    }
     
     
     // Start is called before the first frame update
@@ -97,6 +112,7 @@ public class Menu : MonoBehaviour
         sliderMusic.GetComponent<Slider>().value = valor;
         sliderFx.GetComponent<Slider>().value = valor;
 
+
         
         //Debug.Log("Algo: "+volMusica);
         //Debug.Log("Mus: "+numVolMus);
@@ -115,24 +131,37 @@ public class Menu : MonoBehaviour
         //Depende del valor del SLider, aparece un texto diferente al que le acompaña la velocidad del efecto de escribir
         if(sliderVelTexto.GetComponent<Slider>().value == 1){
             textoVelociad.GetComponent<TextMeshProUGUI>().text = "Normal";
-            Dialogo.velTexto=0.1f;
+            //Dialogo.velTexto=0.1f;
+            Dialogo.velTexto=10f;
 
         }else if(sliderVelTexto.GetComponent<Slider>().value == 0){
             textoVelociad.GetComponent<TextMeshProUGUI>().text = "Lento";
-            Dialogo.velTexto=0.2f;
+            //Dialogo.velTexto=0.2f;
+            Dialogo.velTexto=20f;
 
         }else if(sliderVelTexto.GetComponent<Slider>().value == 2){
             textoVelociad.GetComponent<TextMeshProUGUI>().text = "Rápido";
+            //Dialogo.velTexto=0.01f;
             Dialogo.velTexto=0.01f;
         }
 
+        //Si el Panel Opciones está apagado y pulsas ESC, este se mostrará
+        if(Input.GetKeyDown(KeyCode.Escape) && opcionOn==false){
+            panelOpciones.SetActive(true);
+            opcionOn=true;
+            Debug.Log("panel desde tecla: " + opcionOn);
+        } else if(Input.GetKeyDown(KeyCode.Escape) && opcionOn==true){
+            panelOpciones.SetActive(false);
+            opcionOn=false;
+            Debug.Log("panel desde tecla: " + opcionOn);
+        }
                 
     }
     
 //Método de Mute
     public void RevisarMuteMusic(){
         //Si la música está en 0, se activa una imagen
-        if(volMusica == 0){
+        if(volMusica == -50){
             imageMuteMusic.enabled = true;
         }else{
             imageMuteMusic.enabled = false;
@@ -140,7 +169,7 @@ public class Menu : MonoBehaviour
     }
     public void RevisarMuteMaster(){
         //Si la música está en 0, se activa una imagen
-        if(volMusica == 0){
+        if(volMusica == -50){
             imageMuteMaster.enabled = true;
         }else{
             imageMuteMaster.enabled = false;
@@ -148,7 +177,7 @@ public class Menu : MonoBehaviour
     }
     public void RevisarMuteFx(){
         //Si la música está en 0, se activa una imagen
-        if(volMusica == 0){
+        if(volMusica == -80){
             imageMuteFx.enabled = true;
         }else{
             imageMuteFx.enabled = false;
@@ -157,16 +186,32 @@ public class Menu : MonoBehaviour
 
     public void VolumenMaster(float volume){
         //Debug.Log(volume);
-        volMusica = volume/10;
+        volMusica = volume;
         voluMusic.SetFloat("volMaster", volume);
         RevisarMuteMaster();
+        //Float volMusica hace un remap del volumen para que cuando en AudioMixer el valor sea -50, lo que se muestre sea 0, 
+        //y cuando el valor del AudioMixer sea 0, lo que se muestre sea 10. 
+        //Por el orden de lectura, la linea de remap tiene que estar debajo de las otras opciones que empiezan por volMusica. Si no, el remap no funciona
+        //Mathf.Round sirve para redondear, pero me los redondea sin decimales. Asi que perfecto. No necesito convertir el float en int.
+        volMusica = Mathf.Round(math.remap(-50, 0, 0, 10, volume));
+        
         numVolMaster.GetComponent<TextMeshProUGUI>().text = volMusica.ToString();
+        
+        
+/*
+        var dbVolume = Mathf.Log10(volume) * 20;
+        if (volume == 0.0f)
+        {
+            dbVolume = -80.0f;
+        }
+        */
     }
     public void VolumenMusica(float volume){
         //Debug.Log(volume);
         volMusica = volume;
         voluMusic.SetFloat("volMusic", volume);
         RevisarMuteMusic();
+        volMusica = Mathf.Round(math.remap(-50, 0, 0, 10, volume));
         numVolMus.GetComponent<TextMeshProUGUI>().text = volMusica.ToString();
     }
     public void VolumenFx(float volume){
@@ -174,15 +219,18 @@ public class Menu : MonoBehaviour
         volMusica = volume;
         voluMusic.SetFloat("volFx", volume);
         RevisarMuteFx();
+        volMusica = Mathf.Round(math.remap(-80, 10, 0, 10, volume));
         numVolFx.GetComponent<TextMeshProUGUI>().text = volMusica.ToString();
     }
   
 
 
-    public void AJugar(){
+    public static void AJugar(){
         //Empieza el juego
-        SceneManager.LoadScene("2NivelUno");
+        SceneManager.LoadScene(2);
         Debug.Log("A Jugar");
+        
+        
     }
 
     public void SuenaBoton(){
@@ -193,10 +241,19 @@ public class Menu : MonoBehaviour
         //Activa panel opciones
         //AudioManager.Instance.SonarCLipUnaVez(AudioManager.Instance.fxButton);
         panelOpciones.SetActive(true);
+        opcionOn=true;
+        Debug.Log("panel: " + opcionOn);
     }
 
     public void OcultarOpciones(){
         //Oculta panel opciones
         panelOpciones.SetActive(false);
+        opcionOn=false;
+        Debug.Log("panel: " + opcionOn);
+    }
+
+        public void ExitGame(){
+        Debug.Log("exit");
+        Application.Quit();
     }
 }

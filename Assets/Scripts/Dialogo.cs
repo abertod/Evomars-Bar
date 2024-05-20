@@ -10,7 +10,7 @@ public class Dialogo : MonoBehaviour
     public static Dialogo Instance;
     public TextMeshProUGUI dialogoTexto;
     public string[] lineas;
-    public static float velTexto;
+    public static float velTexto =0.1f;
     int index;
     //Para llamar al panel Dialogo
     public GameObject panelDialogo;
@@ -26,7 +26,7 @@ public class Dialogo : MonoBehaviour
         
         //Lineas del dialogo
         lineas = new string[8]{
-        "           Esta linea no se ve ",
+        "           Esta linea no avanza ",
         "aa aa a a a  a a a a aaa aa a a a  a a a a aaa aa a a a  a a a a aaa aa a a a  a a a a a  ",
         "bbb bb bb bb bb b bbb b b b b b bb bb b b b bb bb bbb bb bbbbbb b b bb bb b bb b b b b b bb b b b b ",
         "cccc c c c cccc c c ccccc c c ccccc c c ccccc c c ccccc c c ccccc c c ccccc c c ccccc c c c",
@@ -56,6 +56,12 @@ public class Dialogo : MonoBehaviour
                 dialogoTexto.text = lineas[index];
             }
         }
+
+        
+
+
+
+        
     }
 
     public void EmpiezaDialogo(){
