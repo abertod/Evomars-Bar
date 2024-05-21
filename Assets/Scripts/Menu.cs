@@ -41,7 +41,7 @@ public class Menu : MonoBehaviour
     public GameObject sliderMusic;
     public GameObject sliderFx;
 
-        public int valor = 5;
+        public int valor;
     /*public int minValue = -80;
     public int maxValue = 20;*/
 
@@ -132,12 +132,12 @@ public class Menu : MonoBehaviour
         if(sliderVelTexto.GetComponent<Slider>().value == 1){
             textoVelociad.GetComponent<TextMeshProUGUI>().text = "Normal";
             //Dialogo.velTexto=0.1f;
-            Dialogo.velTexto=10f;
+            Dialogo.velTexto=1f;
 
         }else if(sliderVelTexto.GetComponent<Slider>().value == 0){
             textoVelociad.GetComponent<TextMeshProUGUI>().text = "Lento";
             //Dialogo.velTexto=0.2f;
-            Dialogo.velTexto=20f;
+            Dialogo.velTexto=10f;
 
         }else if(sliderVelTexto.GetComponent<Slider>().value == 2){
             textoVelociad.GetComponent<TextMeshProUGUI>().text = "Rápido";
