@@ -236,8 +236,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b3b72e10388e1d04f8553b6c364ff002, type: 2}
-  m_sharedMaterial: {fileID: -5979472187469073911, guid: b3b72e10388e1d04f8553b6c364ff002, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4b88c85905a84c34983d0b3291df8c61, type: 2}
+  m_sharedMaterial: {fileID: -3991855338030744941, guid: 4b88c85905a84c34983d0b3291df8c61, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -535,8 +535,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Pon un texto
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b3b72e10388e1d04f8553b6c364ff002, type: 2}
-  m_sharedMaterial: {fileID: -5979472187469073911, guid: b3b72e10388e1d04f8553b6c364ff002, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4b88c85905a84c34983d0b3291df8c61, type: 2}
+  m_sharedMaterial: {fileID: -3991855338030744941, guid: 4b88c85905a84c34983d0b3291df8c61, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1329,8 +1329,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\xBFC\xF3mo te llamas?"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b3b72e10388e1d04f8553b6c364ff002, type: 2}
-  m_sharedMaterial: {fileID: -5979472187469073911, guid: b3b72e10388e1d04f8553b6c364ff002, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4b88c85905a84c34983d0b3291df8c61, type: 2}
+  m_sharedMaterial: {fileID: -3991855338030744941, guid: 4b88c85905a84c34983d0b3291df8c61, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1587,8 +1587,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "S\xED"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b3b72e10388e1d04f8553b6c364ff002, type: 2}
-  m_sharedMaterial: {fileID: -5979472187469073911, guid: b3b72e10388e1d04f8553b6c364ff002, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4b88c85905a84c34983d0b3291df8c61, type: 2}
+  m_sharedMaterial: {fileID: -3991855338030744941, guid: 4b88c85905a84c34983d0b3291df8c61, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2156,8 +2156,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: ACEPTAR
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b3b72e10388e1d04f8553b6c364ff002, type: 2}
-  m_sharedMaterial: {fileID: -5979472187469073911, guid: b3b72e10388e1d04f8553b6c364ff002, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4b88c85905a84c34983d0b3291df8c61, type: 2}
+  m_sharedMaterial: {fileID: -3991855338030744941, guid: 4b88c85905a84c34983d0b3291df8c61, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2319,6 +2319,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1288083087}
         m_TargetAssemblyTypeName: Salvapantallas, Assembly-CSharp
         m_MethodName: EstasSeguro
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1288083087}
+        m_TargetAssemblyTypeName: Salvapantallas, Assembly-CSharp
+        m_MethodName: SuenaBoton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2746,8 +2758,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: No
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b3b72e10388e1d04f8553b6c364ff002, type: 2}
-  m_sharedMaterial: {fileID: -5979472187469073911, guid: b3b72e10388e1d04f8553b6c364ff002, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4b88c85905a84c34983d0b3291df8c61, type: 2}
+  m_sharedMaterial: {fileID: -3991855338030744941, guid: 4b88c85905a84c34983d0b3291df8c61, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

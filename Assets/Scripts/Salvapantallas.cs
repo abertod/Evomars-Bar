@@ -70,6 +70,7 @@ public class Salvapantallas : MonoBehaviour
       // Update is called once per frame
     void Update()
     {
+        //Debug.Log(Input.touchCount);
         //El texto que sale escrito al incio
         textoIni.GetComponent<TextMeshProUGUI>().text = "Pulsa cualquier tecla";
         //activa panel del nombre
