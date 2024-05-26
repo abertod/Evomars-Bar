@@ -25,9 +25,10 @@ public class Dialogo : MonoBehaviour
 
         
         //Lineas del dialogo
-        lineas = new string[8]{
+        lineas = new string[9]{
         "           Esta linea no avanza ",
         "aa aa a a a  a a a a aaa aa a a a  a a a a aaa aa a a a  a a a a aaa aa a a a  a a a a a  ",
+        "Sonrisa",
         "bbb bb bb bb bb b bbb b b b b b bb bb b b b bb bb bbb bb bbbbbb b b bb bb b bb b b b b b bb b b b b ",
         "cccc c c c cccc c c ccccc c c ccccc c c ccccc c c ccccc c c ccccc c c ccccc c c ccccc c c c",
         "aa aa a a a  a a a a a aa aa a a a  a a a a aaa aa a a a  a a a a aaa aa a a a  a a a a aaa aa a a a  a a a a a",
