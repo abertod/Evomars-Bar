@@ -16,7 +16,7 @@ public class ApareceBoton : MonoBehaviour
     {
         btn = GameObject.Find("Botones");
         btn.SetActive(false);
-        Debug.Log("boton esta: " + activated);
+        //Debug.Log("boton esta: " + activated);
         //Añade un listener al botón para que llame a la función OnButtonClick cuando se pulse
         //btn.GetComponent<Button>().onClick.AddListener(OnButtonClick);
         
@@ -27,7 +27,7 @@ public class ApareceBoton : MonoBehaviour
         // Desactiva el botón
         btn.SetActive(false);
         activated = true;
-        Debug.Log("boton esta: " + activated);
+        //Debug.Log("boton esta: " + activated);
     }
 
 
@@ -42,7 +42,8 @@ public class ApareceBoton : MonoBehaviour
         {
             btn.SetActive(true);
             activated = true;
-            Debug.Log("boton esta: " + activated);
+            //Debug.Log("boton esta: " + activated);
+            
         }
 
         // Para mostrar el número de toques en pantalla
