@@ -48,7 +48,7 @@ namespace DialogueEditor
             EditorGUILayout.EndVertical();
 
             // Background image
-            GUILayout.Label("Dialogue Image Options", EditorStyles.boldLabel);
+            GUILayout.Label("Dialogue Image Background Options", EditorStyles.boldLabel);
             EditorGUILayout.PropertyField(BackgroundImageProperty);
             EditorGUILayout.PropertyField(BackgroundImageSlicedProperty); 
             EditorGUILayout.Space();
@@ -163,7 +163,7 @@ namespace DialogueEditor
                     GUI.DrawTexture(optionRect, t.OptionImage.texture, ScaleMode.StretchToFill);
                 }
             }
-            EditorGUI.LabelField(optionTextRect, "Option.", textStyle);
+            EditorGUI.LabelField(optionTextRect, "Opcion.", textStyle);
         }
     }
 }

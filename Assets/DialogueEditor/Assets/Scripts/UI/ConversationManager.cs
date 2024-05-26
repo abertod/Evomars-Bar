@@ -50,6 +50,7 @@ namespace DialogueEditor
         // Base panels
         public RectTransform DialoguePanel;
         public RectTransform OptionsPanel;
+        public GameObject AvanzarPanel;
         // Dialogue UI
         public Image DialogueBackground;
         public Image NpcIcon;
@@ -104,6 +105,9 @@ namespace DialogueEditor
 
             NpcIcon.sprite = BlankSprite;
             DialogueText.text = "";
+
+            AvanzarPanel = GameObject.Find("Panel_Avanzar");
+
             TurnOffUI();
 
             //ScrollSpeed = Dialogo.velTexto;
@@ -738,6 +742,7 @@ namespace DialogueEditor
         {
             DialoguePanel.gameObject.SetActive(true);
             OptionsPanel.gameObject.SetActive(true);
+            AvanzarPanel.gameObject.SetActive(true);
 
             if (BackgroundImage != null)
             {
@@ -756,6 +761,8 @@ namespace DialogueEditor
         {
             DialoguePanel.gameObject.SetActive(false);
             OptionsPanel.gameObject.SetActive(false);
+            AvanzarPanel.gameObject.SetActive(false);
+
             SetState(eState.Off);
 #if UNITY_EDITOR
             // Debug.Log("[ConversationManager]: Conversation UI off.");
