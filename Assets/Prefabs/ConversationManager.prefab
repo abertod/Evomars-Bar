@@ -68,8 +68,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Name.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4b88c85905a84c34983d0b3291df8c61, type: 2}
-  m_sharedMaterial: {fileID: -3991855338030744941, guid: 4b88c85905a84c34983d0b3291df8c61, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7c8521af513c6114ba6c5ba6369745a0, type: 2}
+  m_sharedMaterial: {fileID: -851124970698165954, guid: 7c8521af513c6114ba6c5ba6369745a0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -93,7 +93,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 23.35
+  m_fontSize: 24
   m_fontSizeBase: 15
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -204,8 +204,8 @@ MonoBehaviour:
   m_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4b88c85905a84c34983d0b3291df8c61, type: 2}
-  m_sharedMaterial: {fileID: -3991855338030744941, guid: 4b88c85905a84c34983d0b3291df8c61, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7c8521af513c6114ba6c5ba6369745a0, type: 2}
+  m_sharedMaterial: {fileID: -851124970698165954, guid: 7c8521af513c6114ba6c5ba6369745a0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -809,8 +809,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Pulsa T para avanzar di\xE1logo"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4b88c85905a84c34983d0b3291df8c61, type: 2}
-  m_sharedMaterial: {fileID: -3991855338030744941, guid: 4b88c85905a84c34983d0b3291df8c61, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7c8521af513c6114ba6c5ba6369745a0, type: 2}
+  m_sharedMaterial: {fileID: -851124970698165954, guid: 7c8521af513c6114ba6c5ba6369745a0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
