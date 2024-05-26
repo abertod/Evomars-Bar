@@ -67,6 +67,8 @@ namespace DialogueEditor
         /// <summary> The Icon of the speaking NPC </summary>
         public Sprite Icon;
 
+        public Sprite Icon02;
+
         public AudioClip Audio;
         public float Volume;
 

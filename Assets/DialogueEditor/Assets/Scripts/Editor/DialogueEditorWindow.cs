@@ -667,6 +667,17 @@ namespace DialogueEditor
                 CurrentAsset.DefaultSprite = (Sprite)EditorGUILayout.ObjectField(CurrentAsset.DefaultSprite, typeof(Sprite), false, GUILayout.MaxWidth(fieldWidth));
                 EditorGUILayout.EndHorizontal();
 
+
+
+                EditorGUILayout.BeginHorizontal();
+                EditorGUILayout.LabelField("Default Icon02:", GUILayout.MinWidth(labelWidth), GUILayout.MaxWidth(labelWidth));
+                CurrentAsset.DefaultSprite02 = (Sprite)EditorGUILayout.ObjectField(CurrentAsset.DefaultSprite02, typeof(Sprite), false, GUILayout.MaxWidth(fieldWidth));
+                EditorGUILayout.EndHorizontal();
+
+
+
+
+
                 EditorGUILayout.BeginHorizontal();
                 EditorGUILayout.LabelField("Default Font:", GUILayout.MinWidth(labelWidth), GUILayout.MaxWidth(labelWidth));
                 CurrentAsset.DefaultFont = (TMPro.TMP_FontAsset)EditorGUILayout.ObjectField(CurrentAsset.DefaultFont, typeof(TMPro.TMP_FontAsset), false, GUILayout.MaxWidth(fieldWidth));
@@ -733,6 +744,14 @@ namespace DialogueEditor
                         GUILayout.Label("Icon", EditorStyles.boldLabel);
                         node.Icon = (Sprite)EditorGUILayout.ObjectField(node.Icon, typeof(Sprite), false, GUILayout.ExpandWidth(true));
                         EditorGUILayout.Space();
+
+
+
+                        GUILayout.Label("Icon02", EditorStyles.boldLabel);
+                        node.Icon02 = (Sprite)EditorGUILayout.ObjectField(node.Icon02, typeof(Sprite), false, GUILayout.ExpandWidth(true));
+                        EditorGUILayout.Space();
+
+
 
                         GUILayout.Label("Audio Options", EditorStyles.boldLabel);
                         GUILayout.Label("Audio");
@@ -1291,6 +1310,10 @@ namespace DialogueEditor
             // Give the speech it's default values
             newSpeech.Name = CurrentAsset.DefaultName;
             newSpeech.Icon = CurrentAsset.DefaultSprite;
+
+                        newSpeech.Icon02 = CurrentAsset.DefaultSprite02;
+
+                        
             newSpeech.TMPFont = CurrentAsset.DefaultFont;
 
             // Set this new speech as the options child

@@ -9,6 +9,8 @@ namespace DialogueEditor
         private const string PREVIEW_TEXT = "Placeholder text. This image acts as a preview of the in-game GUI.";
         private const float BOX_HEIGHT = 75;
         private const float BUFFER = 15;
+
+        private const float BUFFER02 = 250;
         private const float ICON_SIZE = 50;
         private const float OPTION_HEIGHT = 35;
         private const float OPTION_BUFFER = 5;
@@ -23,6 +25,11 @@ namespace DialogueEditor
         SerializedProperty ScrollTextSpeedProperty;
         SerializedProperty AllowMouseInteractionProperty;
 
+        SerializedProperty BlankSprite02;
+        SerializedProperty BlankSprite;
+        SerializedProperty NpcIcon02;
+        SerializedProperty PanelAvance;
+
         private void OnEnable()
         {
             BackgroundImageProperty = serializedObject.FindProperty("BackgroundImage");
@@ -32,6 +39,10 @@ namespace DialogueEditor
             ScrollTextProperty = serializedObject.FindProperty("ScrollText");
             ScrollTextSpeedProperty = serializedObject.FindProperty("ScrollSpeed");
             AllowMouseInteractionProperty = serializedObject.FindProperty("AllowMouseInteraction");
+            BlankSprite02 = serializedObject.FindProperty("BlankSprite02");
+            BlankSprite = serializedObject.FindProperty("BlankSprite");
+            NpcIcon02 = serializedObject.FindProperty("NpcIcon02");
+            PanelAvance = serializedObject.FindProperty("AvanzarPanel");
         }
 
         public override void OnInspectorGUI()
@@ -69,6 +80,16 @@ namespace DialogueEditor
             // Interaction options
             GUILayout.Label("Interaction options", EditorStyles.boldLabel);
             EditorGUILayout.PropertyField(AllowMouseInteractionProperty);
+
+            EditorGUILayout.PropertyField(BlankSprite02);
+            EditorGUILayout.PropertyField(BlankSprite);
+
+            EditorGUILayout.PropertyField(NpcIcon02);
+
+            EditorGUILayout.PropertyField(PanelAvance);
+
+
+
 
             // Apply changes to the serializedProperty - always do this in the end of OnInspectorGUI.
             serializedObject.ApplyModifiedProperties();
@@ -120,16 +141,38 @@ namespace DialogueEditor
             tmpt.y += ICON_SIZE * 0.1f;
             EditorGUI.LabelField(tmpt, "<Icon>");
 
+
+            Rect iconRect02 = new Rect(boxRect.x + BUFFER02, boxRect.y + difference * 0.5f, ICON_SIZE, ICON_SIZE);
+            EditorGUI.DrawRect(iconRect02, Color.red);
+            Rect tmpt02 = new Rect(iconRect02);
+            tmpt02.x += 1f;
+            tmpt02.y += ICON_SIZE * 0.1f;
+            EditorGUI.LabelField(tmpt02, "<Icon02>");
+
+
+
+
             // Draw text
             float text_x, text_wid;
             text_x = iconRect.x + iconRect.width + difference * 0.5f;
-            text_wid = ((boxRect.x + boxRect.width) - difference * 0.5f) - text_x;
+            text_wid = ((boxRect.x + boxRect.width) - difference * 0.5f) - text_x*1.4f;
             Rect textRect = new Rect(text_x, iconRect.y, text_wid, ICON_SIZE);
             GUIStyle textStyle = new GUIStyle();
             textStyle.normal.textColor = Color.white;
             textStyle.wordWrap = true;
             textStyle.clipping = TextClipping.Clip;
             EditorGUI.LabelField(textRect, PREVIEW_TEXT, textStyle);
+
+
+
+            text_x = iconRect02.x + iconRect02.width + difference * 0.2f;
+            text_wid = ((boxRect.x + boxRect.width) - difference * 0.5f) - text_x;
+            Rect textRect02 = new Rect(text_x, iconRect02.y, text_wid, ICON_SIZE);
+            GUIStyle textStyle02 = new GUIStyle();
+            textStyle02.normal.textColor = Color.blue;
+            textStyle02.wordWrap = true;
+            textStyle02.clipping = TextClipping.Clip;
+            EditorGUI.LabelField(textRect02, PREVIEW_TEXT, textStyle02);
 
 
             // Option (left)

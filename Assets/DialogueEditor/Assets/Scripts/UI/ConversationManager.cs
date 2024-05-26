@@ -54,6 +54,7 @@ namespace DialogueEditor
         // Dialogue UI
         public Image DialogueBackground;
         public Image NpcIcon;
+        public Image NpcIcon02;
         public TMPro.TextMeshProUGUI NameText;
         public TMPro.TextMeshProUGUI DialogueText;
         // Components
@@ -62,6 +63,8 @@ namespace DialogueEditor
         public UIConversationButton ButtonPrefab;
         // Default values
         public Sprite BlankSprite;
+
+        public Sprite BlankSprite02;
 
         // Getter properties
         public bool IsConversationActive
@@ -103,7 +106,12 @@ namespace DialogueEditor
 
             m_uiOptions = new List<UIConversationButton>();
 
+            //NpcIcon02 = transform.Find("ConversationManager/NPCIcon02").GetComponent<Image>();
+
+            
+
             NpcIcon.sprite = BlankSprite;
+            NpcIcon02.sprite = BlankSprite02;
             DialogueText.text = "";
 
             AvanzarPanel = GameObject.Find("Panel_Avanzar");
@@ -328,6 +336,7 @@ namespace DialogueEditor
                 case eState.TransitioningDialogueBoxOn:
                     SetColorAlpha(DialogueBackground, 1);
                     SetColorAlpha(NpcIcon, 1);
+                    SetColorAlpha(NpcIcon02, 1);
                     SetColorAlpha(NameText, 1);
                     break;
             }
@@ -342,11 +351,15 @@ namespace DialogueEditor
                     {
                         SetColorAlpha(DialogueBackground, 0);
                         SetColorAlpha(NpcIcon, 0);
+                        SetColorAlpha(NpcIcon02, 0);
                         SetColorAlpha(NameText, 0);
 
                         DialogueText.text = "";
                         NameText.text = m_currentSpeech.Name;
                         NpcIcon.sprite = m_currentSpeech.Icon != null ? m_currentSpeech.Icon : BlankSprite;
+
+
+                        NpcIcon02.sprite = m_currentSpeech.Icon02 != null ? m_currentSpeech.Icon02 : BlankSprite02;
                     }
                     break;
 
@@ -391,6 +404,8 @@ namespace DialogueEditor
 
             SetColorAlpha(DialogueBackground, t);
             SetColorAlpha(NpcIcon, t);
+
+            SetColorAlpha(NpcIcon02, t);
             SetColorAlpha(NameText, t);
         }
 
@@ -517,6 +532,9 @@ namespace DialogueEditor
 
             SetColorAlpha(DialogueBackground, 1 - t);
             SetColorAlpha(NpcIcon, 1 - t);
+
+            SetColorAlpha(NpcIcon02, 1 - t);
+
             SetColorAlpha(NameText, 1 - t);
         }
 
@@ -552,6 +570,15 @@ namespace DialogueEditor
             else
             {
                 NpcIcon.sprite = speech.Icon;
+            }
+
+            if (speech.Icon02 == null)
+            {
+                NpcIcon02.sprite = BlankSprite02;
+            }
+            else
+            {
+                NpcIcon02.sprite = speech.Icon02;
             }
 
             // Set font
@@ -755,6 +782,8 @@ namespace DialogueEditor
             }
 
             NpcIcon.sprite = BlankSprite;
+
+            NpcIcon02.sprite = BlankSprite02;
         }
 
         private void TurnOffUI()

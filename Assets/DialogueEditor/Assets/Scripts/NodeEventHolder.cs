@@ -14,6 +14,10 @@ namespace DialogueEditor
         [SerializeField] public int NodeID;
         [SerializeField] public TMPro.TMP_FontAsset TMPFont;
         [SerializeField] public Sprite Icon;
+
+        [SerializeField] public Sprite Icon02;
+
+        
         [SerializeField] public AudioClip Audio;
     }
 }

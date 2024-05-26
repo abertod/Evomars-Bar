@@ -36,6 +36,11 @@ namespace DialogueEditor
         [SerializeField] private int saveVersion;
         [SerializeField] public string DefaultName;
         [SerializeField] public Sprite DefaultSprite;
+
+
+        [SerializeField] public Sprite DefaultSprite02;
+
+
         [SerializeField] public TMPro.TMP_FontAsset DefaultFont;
         [FormerlySerializedAs("Events")]
         [SerializeField] private List<NodeEventHolder> NodeSerializedDataList;
@@ -391,6 +396,10 @@ namespace DialogueEditor
             speech.TimeUntilAdvance = editableNode.TimeUntilAdvance;
             speech.TMPFont = editableNode.TMPFont;
             speech.Icon = editableNode.Icon;
+
+            speech.Icon02 = editableNode.Icon02;
+
+            
             speech.Audio = editableNode.Audio;
             speech.Volume = editableNode.Volume;
 
