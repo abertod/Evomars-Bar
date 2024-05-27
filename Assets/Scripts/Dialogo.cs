@@ -59,10 +59,6 @@ public class Dialogo : MonoBehaviour
         }
 
         
-
-
-
-        
     }
 
     public void EmpiezaDialogo(){
