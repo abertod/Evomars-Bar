@@ -255,8 +255,13 @@ public class Menu : MonoBehaviour
         Debug.Log("panel: " + opcionOn);
     }
 
-        public void ExitGame(){
+    public void ExitGame(){
         Debug.Log("exit");
         Application.Quit();
+    }
+
+    public void AMenu(){
+        //Carga el menu
+        SceneManager.LoadScene("1Menu");
     }
 }
