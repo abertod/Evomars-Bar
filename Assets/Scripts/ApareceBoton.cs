@@ -10,6 +10,9 @@ public class ApareceBoton : MonoBehaviour
     public float timear = 0;
     public bool activated = false;
 
+    public GameObject KoemiInicio;
+    public GameObject KaneInicio;
+
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +23,11 @@ public class ApareceBoton : MonoBehaviour
         //Añade un listener al botón para que llame a la función OnButtonClick cuando se pulse
         //btn.GetComponent<Button>().onClick.AddListener(OnButtonClick);
         
+
+        KoemiInicio = GameObject.Find("Character - [Koemi]");
+        KaneInicio = GameObject.Find("Character - [Kane]");
+        KoemiInicio.SetActive(true);
+        KaneInicio.SetActive(true);
     }
 
     public void DesactivarBtn()
@@ -28,6 +36,11 @@ public class ApareceBoton : MonoBehaviour
         btn.SetActive(false);
         activated = true;
         //Debug.Log("boton esta: " + activated);
+    }
+
+    public void DesactivarFrameInicial(){
+        KoemiInicio.SetActive(false);
+        KaneInicio.SetActive(false);
     }
 
 

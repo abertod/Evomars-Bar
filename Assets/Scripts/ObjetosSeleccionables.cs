@@ -11,6 +11,9 @@ public class ObjetosSeleccionables : MonoBehaviour
     // Color más transparente al pasar el ratón
     public Color colorAlPasarElRaton = new Color(1f, 1f, 1f, 0.5f); 
 
+    public float timer;
+    public static bool activated = false;
+
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -35,6 +38,17 @@ public class ObjetosSeleccionables : MonoBehaviour
         spriteRenderer.color = colorOriginal;
     }
 
+    //Metodo del parpadeo
+    void exit()
+    {
+        if (Input.touchCount > 0 && activated == false)
+        {
+            //spriteRenderer.SetActive(false);
+            spriteRenderer.flipX = false;
+            spriteRenderer.color = Random.ColorHSV();
+            activated = true;
+        }
+    }
     
     void Seleccionar()
     {
@@ -46,7 +60,21 @@ public class ObjetosSeleccionables : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
+        //Es una prueba. Es para intentar que parpadeen con un brillo para que se sepa que son objetos interactuables
+        exit();
+          timer = timer + Time.deltaTime;
+          if(timer >= 0.5)
+          {
+                spriteRenderer.flipX = true;
+                spriteRenderer.color = Random.ColorHSV();
+          }
+          if(timer >= 2)
+          {
+                spriteRenderer.flipX = false;
+                spriteRenderer.color = Random.ColorHSV();
+                timer = 0;
+          }
     }
 
 
