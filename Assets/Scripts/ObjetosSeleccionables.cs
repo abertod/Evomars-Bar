@@ -14,6 +14,8 @@ public class ObjetosSeleccionables : MonoBehaviour
     public float timer;
     public static bool activated = false;
 
+    //public Shader shader = new Shader("");
+
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -67,7 +69,7 @@ public class ObjetosSeleccionables : MonoBehaviour
           if(timer >= 0.5)
           {
                 spriteRenderer.flipX = true;
-                spriteRenderer.color = Random.ColorHSV();
+                spriteRenderer.color = colorOriginal;
           }
           if(timer >= 2)
           {
