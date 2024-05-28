@@ -9,8 +9,8 @@ public class EmotionsKane : MonoBehaviour
     SpriteRenderer sr;
 
     public Sprite spriteDefault;
-    public Sprite enfadado;
-    public Sprite contento;
+    public Sprite sus;
+    public Sprite smirk;
 
     // Start is called before the first frame update
     void Start()
@@ -30,12 +30,12 @@ public class EmotionsKane : MonoBehaviour
 
         switch (emotion)
         {
-            case "enfadado":
-                sr.sprite = enfadado;
+            case "sus":
+                sr.sprite = sus;
             break;
 
-            case "contento":
-                sr.sprite = contento;
+            case "smirk":
+                sr.sprite = smirk;
             break;
             
             default:
