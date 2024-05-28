@@ -263,5 +263,6 @@ public class Menu : MonoBehaviour
     public void AMenu(){
         //Carga el menu
         SceneManager.LoadScene("1Menu");
+        panelOpciones.SetActive(false);
     }
 }
