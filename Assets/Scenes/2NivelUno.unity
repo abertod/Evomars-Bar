@@ -430,8 +430,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.81075, y: 0.6751499, z: 0}
-    m_Extent: {x: 5.97965, y: 5.37785, z: 0}
+    m_Center: {x: -0.7984998, y: 0.6667001, z: 0}
+    m_Extent: {x: 5.984, y: 5.3749, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1025,8 +1025,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.10140002, y: 0.048999965, z: 0}
-    m_Extent: {x: 0.6279, y: 1.0578, z: 0}
+    m_Center: {x: -0.09865001, y: 0.047450006, z: 0}
+    m_Extent: {x: 0.62125003, y: 1.0560501, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -2060,8 +2060,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.50855005, y: -2.6967, z: 0}
-    m_Extent: {x: 0.99735, y: 1.1086999, z: 0}
+    m_Center: {x: 0.49715, y: -2.6915998, z: 0}
+    m_Extent: {x: 0.99855, y: 1.1019, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -3746,8 +3746,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.06965001, y: -1.4612501, z: 0}
-    m_Extent: {x: 0.51805, y: 1.17255, z: 0}
+    m_Center: {x: 0.0775, y: -1.46055, z: 0}
+    m_Extent: {x: 0.5245, y: 1.17215, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -4346,8 +4346,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.02229999, y: -1.01145, z: 0}
-    m_Extent: {x: 0.3566, y: 1.26685, z: 0}
+    m_Center: {x: -0.02364999, y: -1.01425, z: 0}
+    m_Extent: {x: 0.35615, y: 1.27105, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -5537,33 +5537,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 23
-<<<<<<< HEAD
-  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":530.400269,\"yPos\":183},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":\"\",\"Text\":\"I've
-    traveled from afar in seek of new magical spells.\",\"parentUIDs\":[0],\"SpeechUID\":3},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":851,\"yPos\":184},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":\"\",\"Text\":\"I
-    come in search of a quest.\",\"parentUIDs\":[0],\"SpeechUID\":4},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":897,\"yPos\":384.999939},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":\"\",\"Text\":\"Yes!\",\"parentUIDs\":[4],\"SpeechUID\":10},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":673.000061,\"yPos\":384.999939},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":\"\",\"Text\":\"No...
-    I've changed my mind. \",\"parentUIDs\":[3,4],\"SpeechUID\":9},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":410.0003,\"yPos\":377.999939},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":\"\",\"Text\":\"Yes!\",\"parentUIDs\":[3],\"SpeechUID\":8},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":199.6004,\"yPos\":114},\"ID\":12,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Siguiente
-    dialogo es largo\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":15}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1253.00049,\"yPos\":92},\"ID\":14,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Cuarta
-    opcion. Minijuego\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":22}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1045.5,\"yPos\":873},\"ID\":20,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"No
-    es lo que he pedido\",\"parentUIDs\":[19],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1381.50049,\"yPos\":892},\"ID\":21,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Es
-    lo que he pedido\",\"parentUIDs\":[19],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":690,\"yPos\":81},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":\"\",\"Text\":\"Hello
-    traveler. I see you've come from far.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":\"\",\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"IconGUID\":\"2c2a5be59b4a36648a911535c6e46ab8\",\"Name\":\"\xC9l\",\"OptionUIDs\":[1,2],\"SpeechUID\":-1,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":530.000244,\"yPos\":267},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":\"\",\"Text\":\"Some
+  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":346.999939,\"yPos\":154.8},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":\"\",\"Text\":\"I've
+    traveled from afar in seek of new magical spells.\",\"parentUIDs\":[0],\"SpeechUID\":3},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":667.5997,\"yPos\":155.8},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":\"\",\"Text\":\"I
+    come in search of a quest.\",\"parentUIDs\":[0],\"SpeechUID\":4},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":713.5997,\"yPos\":356.799927},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":\"\",\"Text\":\"Yes!\",\"parentUIDs\":[4],\"SpeechUID\":10},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":489.599731,\"yPos\":356.799927},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":\"\",\"Text\":\"No...
+    I've changed my mind. \",\"parentUIDs\":[3,4],\"SpeechUID\":9},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":226.599991,\"yPos\":349.799927},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":\"\",\"Text\":\"Yes!\",\"parentUIDs\":[3],\"SpeechUID\":8},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":16.2000732,\"yPos\":85.8},\"ID\":12,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Siguiente
+    dialogo es largo\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":15}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1069.6001,\"yPos\":63.8000031},\"ID\":14,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Cuarta
+    opcion. Minijuego\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":22}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":862.0997,\"yPos\":844.8},\"ID\":20,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"No
+    es lo que he pedido\",\"parentUIDs\":[19],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1198.1001,\"yPos\":863.8},\"ID\":21,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Es
+    lo que he pedido\",\"parentUIDs\":[19],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":506.59967,\"yPos\":52.8000031},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":\"\",\"Text\":\"Hello
+    traveler. I see you've come from far.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":\"\",\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"IconGUID\":\"2c2a5be59b4a36648a911535c6e46ab8\",\"Name\":\"\xC9l\",\"OptionUIDs\":[1,2],\"SpeechUID\":-1,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":346.5999,\"yPos\":238.8},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":\"\",\"Text\":\"Some
     magic, are you prepared?\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":\"\",\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"IconGUID\":\"2c2a5be59b4a36648a911535c6e46ab8\",\"Name\":\"The
-    great wizard\",\"OptionUIDs\":[7,6],\"SpeechUID\":-1,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":850,\"yPos\":271.000031},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":\"\",\"Text\":\"Are
+    great wizard\",\"OptionUIDs\":[7,6],\"SpeechUID\":-1,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":666.5997,\"yPos\":242.800034},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":\"\",\"Text\":\"Are
     you sure?\",\"parentUIDs\":[2],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":\"\",\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"IconGUID\":\"2c2a5be59b4a36648a911535c6e46ab8\",\"Name\":\"The
-    great wizard\",\"OptionUIDs\":[5,6],\"SpeechUID\":-1,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":416.0003,\"yPos\":463.999878},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":\"\",\"Text\":\"Very
+    great wizard\",\"OptionUIDs\":[5,6],\"SpeechUID\":-1,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":232.599991,\"yPos\":435.799866},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":\"\",\"Text\":\"Very
     well, I will teach you the ancient magic. \",\"parentUIDs\":[7],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":\"\",\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"IconGUID\":\"2c2a5be59b4a36648a911535c6e46ab8\",\"Name\":\"The
-    great wizard\",\"OptionUIDs\":[],\"SpeechUID\":-1,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":673.000061,\"yPos\":460.999878},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":\"\",\"Text\":\"Fare
+    great wizard\",\"OptionUIDs\":[],\"SpeechUID\":-1,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":489.599731,\"yPos\":432.799866},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":\"\",\"Text\":\"Fare
     the well, traveler. \",\"parentUIDs\":[6],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":\"\",\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"IconGUID\":\"2c2a5be59b4a36648a911535c6e46ab8\",\"Name\":\"The
-    great wizard\",\"OptionUIDs\":[],\"SpeechUID\":-1,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":903,\"yPos\":462.999878},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":\"\",\"Text\":\"Very
+    great wizard\",\"OptionUIDs\":[],\"SpeechUID\":-1,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":719.5997,\"yPos\":434.799866},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":\"\",\"Text\":\"Very
     well, You may begin your quest. \",\"parentUIDs\":[5],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":\"\",\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"IconGUID\":\"2c2a5be59b4a36648a911535c6e46ab8\",\"Name\":\"The
-    great wizard\",\"OptionUIDs\":[],\"SpeechUID\":-1,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":131.0003,\"yPos\":226},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"afg
+    great wizard\",\"OptionUIDs\":[],\"SpeechUID\":-1,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-52.40001,\"yPos\":197.8},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"afg
     a  fghsdfgb sdfb sfgn gdfn sdfgbnsf sfb sdf nbsfb sfdb sdfb sdfb b sdfb s dfbd
     dsg fhg h ndn nain  naldk vnlkn lkan dlknma lk lk alk alkd lakml lknm  kam klma
-    lk laknm alksnm a lkn lakn \",\"parentUIDs\":[12],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"IconGUID\":null,\"Name\":\"Ella\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1257.00049,\"yPos\":181},\"ID\":15,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Despu\xE9s
-    viene una l\xEDnea de di\xE1logo m\xE1s\",\"parentUIDs\":[14],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"IconGUID\":null,\"Name\":\"Ella\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":18}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1315.00049,\"yPos\":439.999878},\"ID\":16,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ahora,
-    aparecer\xE1 el minijuego\",\"parentUIDs\":[17],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"IconGUID\":null,\"Name\":\"El\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":16}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1343.00049,\"yPos\":309.999939},\"ID\":17,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Los
-    sprite de los personajes cambian\",\"parentUIDs\":[15],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":19}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1288.00049,\"yPos\":605},\"ID\":18,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\".\",\"parentUIDs\":[16],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":20},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":21}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1259.00049,\"yPos\":753},\"ID\":19,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Toma\",\"parentUIDs\":[18],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1042.5,\"yPos\":973.000244},\"ID\":22,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"dgsv
-
+    lk laknm alksnm a lkn lakn \",\"parentUIDs\":[12],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"IconGUID\":null,\"Name\":\"Ella\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1073.6001,\"yPos\":152.8},\"ID\":15,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Despu\xE9s
+    viene una l\xEDnea de di\xE1logo m\xE1s\",\"parentUIDs\":[14],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"IconGUID\":null,\"Name\":\"Ella\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":18}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1131.6001,\"yPos\":411.799866},\"ID\":16,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ahora,
+    aparecer\xE1 el minijuego\",\"parentUIDs\":[17],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"IconGUID\":null,\"Name\":\"El\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":16}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1159.6001,\"yPos\":281.799927},\"ID\":17,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Los
+    sprite de los personajes cambian\",\"parentUIDs\":[15],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":19}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1104.6001,\"yPos\":576.8},\"ID\":18,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\".\",\"parentUIDs\":[16],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":20},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":21}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1075.6001,\"yPos\":724.8},\"ID\":19,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Toma\",\"parentUIDs\":[18],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":859.0997,\"yPos\":944.800232},\"ID\":22,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"dgsv
     dv \",\"parentUIDs\":[20],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"IconGUID\":null,\"Name\":\"El\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
   DefaultName: 
@@ -5597,10 +5595,6 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-<<<<<<< HEAD
-      m_Calls: []
-=======
-<<<<<<< HEAD
       m_Calls:
       - m_Target: {fileID: 1816887989}
         m_TargetAssemblyTypeName: ApareceMinijuego, Assembly-CSharp
@@ -5614,10 +5608,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-=======
-      m_Calls: []
->>>>>>> 14ec553 (Cambio diálogos 1)
->>>>>>> ba00289a3d23e4903b84d8e28e96cd1a077905ad
 --- !u!4 &1420362903
 Transform:
   m_ObjectHideFlags: 0
@@ -5927,8 +5917,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.012099981, y: 0.035700023, z: 0}
-    m_Extent: {x: 1.0404, y: 0.7252, z: 0}
+    m_Center: {x: -0.010849953, y: 0.029350013, z: 0}
+    m_Extent: {x: 1.04995, y: 0.71774995, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -6411,8 +6401,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.23680001, y: -3.01675, z: 0}
-    m_Extent: {x: 0.6689, y: 3.26835, z: 0}
+    m_Center: {x: 0.2438, y: -3.01385, z: 0}
+    m_Extent: {x: 0.6765, y: 3.2727501, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -7896,8 +7886,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.07429999, y: -1.3045001, z: 0}
-    m_Extent: {x: 0.45499998, y: 0.88710004, z: 0}
+    m_Center: {x: 0.07585001, y: -1.3045499, z: 0}
+    m_Extent: {x: 0.45305002, y: 0.89115, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
