@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Bebida_Acido
+  - Bebida_Dulce
+  - Bebida_Picante
   layers:
   - Default
   - TransparentFX
