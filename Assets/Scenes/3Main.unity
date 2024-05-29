@@ -702,7 +702,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 471e169fc92061347b8bdb1a0f07245e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorAlPasarElRaton: {r: 1, g: 1, b: 1, a: 0.5}
+  escala: 0
   timer: 0
 --- !u!212 &286471443
 SpriteRenderer:
@@ -1672,7 +1672,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 471e169fc92061347b8bdb1a0f07245e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorAlPasarElRaton: {r: 1, g: 1, b: 1, a: 0.5}
+  escala: 0
   timer: 0
 --- !u!212 &387347690
 SpriteRenderer:
@@ -2501,8 +2501,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.07585001, y: -1.2941, z: 0}
-    m_Extent: {x: 0.44875002, y: 0.8952, z: 0}
+    m_Center: {x: 0.07124999, y: -1.3002999, z: 0}
+    m_Extent: {x: 0.44445, y: 0.88729995, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -3874,7 +3874,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 471e169fc92061347b8bdb1a0f07245e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorAlPasarElRaton: {r: 1, g: 1, b: 1, a: 0.5}
+  escala: 0
   timer: 0
 --- !u!212 &757414088
 SpriteRenderer:
@@ -5428,7 +5428,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 471e169fc92061347b8bdb1a0f07245e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorAlPasarElRaton: {r: 1, g: 1, b: 1, a: 0.5}
+  escala: 0
   timer: 0
 --- !u!212 &1171257561
 SpriteRenderer:
@@ -6488,8 +6488,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0141, y: -1.0123, z: 0}
-    m_Extent: {x: 0.3577, y: 1.266, z: 0}
+    m_Center: {x: -0.012800008, y: -1.01555, z: 0}
+    m_Extent: {x: 0.3533, y: 1.2738501, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -6622,7 +6622,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 471e169fc92061347b8bdb1a0f07245e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorAlPasarElRaton: {r: 1, g: 1, b: 1, a: 0.5}
+  escala: 0
   timer: 0
 --- !u!212 &1463431991
 SpriteRenderer:
@@ -6877,8 +6877,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.06954999, y: -1.4551499, z: 0}
-    m_Extent: {x: 0.53235, y: 1.18135, z: 0}
+    m_Center: {x: 0.069749996, y: -1.4533, z: 0}
+    m_Extent: {x: 0.52854997, y: 1.1763, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -7971,8 +7971,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.2345, y: -3.0184002, z: 0}
-    m_Extent: {x: 0.6722, y: 3.2728, z: 0}
+    m_Center: {x: 0.24635, y: -3.02375, z: 0}
+    m_Extent: {x: 0.67895, y: 3.26625, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -8184,8 +8184,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.50670004, y: -2.69425, z: 0}
-    m_Extent: {x: 0.9948, y: 1.09645, z: 0}
+    m_Center: {x: 0.50485003, y: -2.7023501, z: 0}
+    m_Extent: {x: 1.00085, y: 1.10055, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
