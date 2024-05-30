@@ -22,9 +22,22 @@ public class ObjetosSeleccionables : MonoBehaviour
          // Referencia al texto en la escena donde se mostrará el nombre de la botella seleccionada
     public TMP_Text nombreBotellaText;
 
-    // Array para almacenar los valores de las botellas seleccionadas (máximo 3)
-    private int[] valoresSeleccionados = new int[3];
-    private int indiceActual = 0;
+    // Variables para el registro de pulsaciones
+    public static List<string> pulsacionesRecientes = new List<string>();
+    public static int contadorPulsaciones = 0;
+    public static bool permitirNuevasPulsaciones = true;
+
+    // Array para los textos que mostrarán los nombres de las botellas
+    public TMP_Text[] textosPulsaciones; 
+
+
+    public static int sumaPicante = 0;
+    public static int sumaDulce = 0;
+    public static int sumaAcido = 0;
+
+    public static int sumaTotal;
+
+    private int cuadradosRellenados = 0;
 
 
     void Awake(){
@@ -40,19 +53,33 @@ public class ObjetosSeleccionables : MonoBehaviour
         tamañoOriginal = transform.localScale;
 
         nombreBotellaText = GameObject.Find("Texto").GetComponent<TMP_Text>();
+
+        textosPulsaciones = new TMP_Text[5];
+        for (int i = 0; i < 5; i++)
+        {
+            textosPulsaciones[i] = GameObject.Find("Texto" + (i + 1)).GetComponent<TMP_Text>();
+        }
+
+       
     }
 
     void OnMouseDown()
     {
-        // Esta función se activará cuando el jugador haga clic en la imagen
-        Seleccionar();
+       if (permitirNuevasPulsaciones && contadorPulsaciones < 5)
+        {
+            Seleccionar();
+        }
+
     }
 
     void OnMouseEnter()
     {
         // Cuando el ratón entra en el objeto
         //spriteRenderer.color = colorAlPasarElRaton;
-        transform.localScale = tamañoOriginal*escala;
+        if (permitirNuevasPulsaciones && contadorPulsaciones < 5)
+        {
+            transform.localScale = tamañoOriginal * escala;
+        }
         
     }
 
@@ -63,64 +90,78 @@ public class ObjetosSeleccionables : MonoBehaviour
         transform.localScale = tamañoOriginal;
         
     }
+
+ 
     
-
-
-
-
     
     public void Seleccionar()
     {
-        // Aquí se realizará la selección
-        Debug.Log("Imagen seleccionada: " + gameObject.name);
-
-        // Verifica si todavía hay espacio para seleccionar más botellas
-        if (indiceActual < 3)
-        {
-            // Obtener el valor de la botella seleccionada
-            int valorBotella = ObtenerValorBotella(gameObject);
-
-            // Almacenar el valor de la botella seleccionada
-            valoresSeleccionados[indiceActual] = valorBotella;
-            indiceActual++;
-
-            // Mostrar el nombre de la botella seleccionada en la escena
-            MostrarNombreBotella(gameObject.name);
-        }
-        else
-        {
-            Debug.Log("Ya se han seleccionado 3 botellas.");
-        }
+        
+        if (permitirNuevasPulsaciones && contadorPulsaciones < 5) // Verificar si aún se pueden hacer nuevas pulsaciones y si no se ha alcanzado el límite de 5
+    {
+        string nombreBebida = gameObject.name;
+        Debug.Log("Imagen seleccionada: " + nombreBebida);
+        pulsacionesRecientes.Insert(0, nombreBebida);
+        contadorPulsaciones++;
+        ActualizarTextos();
+        
+    }
+       
     }
 
-    // Método para obtener el valor de la botella seleccionada
-    int ObtenerValorBotella(GameObject botella)
+    void ActualizarSumaTotal()
     {
-        if (botella.CompareTag("Bebida_Acido"))
-        {
-            return botella.GetComponent<Bebida_Acido>().acido;
-        }
-        else if (botella.CompareTag("Bebida_Dulce"))
-        {
-            return botella.GetComponent<Bebida_Dulce>().dulce;
-        }
-        else if (botella.CompareTag("Bebida_Picante"))
-        {
-            return botella.GetComponent<Bebida_Picante>().picante;
-        }
-        else
-        {
-            // En caso de que la etiqueta no esté definida, devuelve 0
-            Debug.LogWarning("La etiqueta de la botella no está definida correctamente.");
-            return 0;
-        }
+        sumaTotal = sumaPicante + sumaDulce + sumaAcido;
+
+        if (sumaTotal >= 5)
+    {
+        permitirNuevasPulsaciones = false;
+        Debug.Log("Se ha alcanzado el límite de suma total.");
+    }
     }
 
-
-    // Método para mostrar el nombre de la botella seleccionada en la escena
-    private void MostrarNombreBotella(string nombre)
+    void ActualizarTextos()
     {
-        nombreBotellaText.text = "Botella seleccionada: " + nombre;
+        for (int i = 0; i < 5; i++)
+        {
+            if (i < contadorPulsaciones)
+            {
+                textosPulsaciones[i].text = pulsacionesRecientes[i];
+            }
+            else
+            {
+                textosPulsaciones[i].text = "";
+            }
+        }
+
+        if (contadorPulsaciones >= 5)
+        {
+            permitirNuevasPulsaciones = false;
+            Debug.Log("Ya no se pueden registrar más pulsaciones.");
+        }
+
+       // Calcula la suma total
+    ActualizarSumaTotal(); 
+
+    // Muestra las sumas individuales y la suma total
+    Debug.Log("Suma picante: " + sumaPicante);
+    Debug.Log("Suma dulce: " + sumaDulce);
+    Debug.Log("Suma ácido: " + sumaAcido);
+    Debug.Log("Suma total: " + sumaTotal);
+
+    
+    
+    }
+
+    public void Reiniciar()
+    {
+        permitirNuevasPulsaciones = true;
+        pulsacionesRecientes.Clear();
+        contadorPulsaciones = 0;
+        sumaPicante = 0;
+        sumaDulce = 0;
+        sumaAcido = 0;
+        sumaTotal = 0;
     }
 
     

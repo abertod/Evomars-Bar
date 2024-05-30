@@ -7,7 +7,7 @@ public class Bebida_Picante : MonoBehaviour
 {
 
     // Valores de la botella
-    public int picante = 3;
+    public int picante = 1;
 
     // Referencias a los cuadrados de UI
     public SpriteRenderer[] picanteCuadrados;
@@ -16,45 +16,95 @@ public class Bebida_Picante : MonoBehaviour
     public Sprite cuadradoLleno;
     public Sprite cuadradoVacio;
 
-// Referencia al script de selección
-    private ObjetosSeleccionables objetosSeleccionables;
-
+    private bool valorMantenido = false; // Flag para indicar si la botella ha sido seleccionada
+    private int cuadradosRellenados  = 0;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        objetosSeleccionables = GameObject.Find("Minijuego").GetComponent<ObjetosSeleccionables>();
+        
+    }
+    void OnMouseDown()
+    {
+        if (ObjetosSeleccionables.sumaTotal < 5)
+    {
+        MantenerValor();
+        SumarValor();
+    }
+    else
+    {
+        Debug.Log("No se puede pulsar más, suma total es 5 o mayor.");
+    }
+    }
+
+    void MantenerValor()
+    {
+        valorMantenido = true;
+        cuadradosRellenados++;
+        MostrarValores();
     }
 
     void OnMouseEnter()
     {
 
-        MostrarValores(true);
+        if (ObjetosSeleccionables.sumaTotal < 5)
+    {
+        if (!valorMantenido)
+        {
+            MostrarValores();
+        }
+        MostrarSiguienteCuadradoLleno();
+    }
     }
 
     void OnMouseExit()
     {
 
-        MostrarValores(false);
+        if (ObjetosSeleccionables.sumaTotal < 5)
+    {
+        if (valorMantenido)
+        {
+            MostrarValores(); // Volver al estado original cuando el ratón sale de la botella
+        }
+        else
+        {
+            LimpiarPrevisualizacion(); // Limpiar la previsualización
+        }
+    }
     }
 
-   /* void OnMouseDown()
+    void MostrarValores()
     {
-        objetosSeleccionables.SeleccionarBotella(picante, "Bebida Picante");
-    }*/
+        RellenarCuadrados(picanteCuadrados, cuadradosRellenados);
+    }
+    void MostrarSiguienteCuadradoLleno()
+{
+    
+    if (cuadradosRellenados < picanteCuadrados.Length && ObjetosSeleccionables.sumaTotal < 5 && !valorMantenido)
+    {
+        for (int i = 0; i <= cuadradosRellenados; i++)
+        {
+            picanteCuadrados[i].sprite = cuadradoLleno;
+        }
+    }
+}
 
-    void MostrarValores(bool mostrar)
+
+    void LimpiarPrevisualizacion()
     {
-        // Rellenar o vaciar los cuadrados de acuerdo al valor
-        RellenarCuadrados(picanteCuadrados, picante, mostrar);
+        if (cuadradosRellenados < picanteCuadrados.Length && ObjetosSeleccionables.sumaTotal < 5)
+        {
+            picanteCuadrados[cuadradosRellenados].sprite = cuadradoVacio;
+        }
     }
 
-    void RellenarCuadrados(SpriteRenderer[] cuadrados, int valor, bool mostrar)
+    void RellenarCuadrados(SpriteRenderer[] cuadrados, int cantidad)
     {
+    
         for (int i = 0; i < cuadrados.Length; i++)
         {
-            if (mostrar && i < valor)
+            if (i < cantidad && ObjetosSeleccionables.sumaTotal < 5)
             {
                 cuadrados[i].sprite = cuadradoLleno;
             }
@@ -64,6 +114,32 @@ public class Bebida_Picante : MonoBehaviour
             }
         }
     }
+ 
+
+    void SumarValor()
+    {
+        // Verificar si se alcanzó el límite de pulsaciones
+    if (ObjetosSeleccionables.sumaTotal >= 5)
+    {
+        Debug.Log("Se ha alcanzado el límite de pulsaciones.");
+        return; // Salir del método sin sumar el valor
+    }
+
+    // Sumar el valor solo si no se ha alcanzado el límite de pulsaciones
+    ObjetosSeleccionables.sumaPicante += picante;
+    ObjetosSeleccionables.sumaTotal += picante;
+    Debug.Log("Valor actual de picante: " + ObjetosSeleccionables.sumaPicante);
+
+    }
+
+    public void Reiniciar()
+    {
+        // Reiniciar los valores específicos de la botella picante
+        cuadradosRellenados = 0;
+        valorMantenido = false;
+        LimpiarPrevisualizacion();
+    }
+    
 
     // Update is called once per frame
     void Update()
