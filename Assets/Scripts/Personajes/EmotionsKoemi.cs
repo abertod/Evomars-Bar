@@ -1,9 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
-public class EmocionesKoemi : MonoBehaviour
+public class EmotionsKoemi : MonoBehaviour
 {
 
     SpriteRenderer sr;
@@ -15,12 +14,13 @@ public class EmocionesKoemi : MonoBehaviour
     public Sprite talk;
     public Sprite worriedOpen;
     public Sprite worried;
-    
+
+
 
     // Start is called before the first frame update
     void Start()
     {
-        sr = GetComponent<SpriteRenderer>();
+        
     }
 
     // Update is called once per frame
@@ -28,8 +28,6 @@ public class EmocionesKoemi : MonoBehaviour
     {
         
     }
-
-
 
     public void SetEmotion(string emotion){
 
@@ -61,13 +59,7 @@ public class EmocionesKoemi : MonoBehaviour
             case "worried":
                 sr.sprite = worried;
             break;
-
         }
-
-
-
-
     }
-
 
 }

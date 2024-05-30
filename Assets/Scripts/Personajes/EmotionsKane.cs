@@ -3,19 +3,19 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class EmocionesKoemi : MonoBehaviour
+public class EmotionsKane : MonoBehaviour
 {
 
     SpriteRenderer sr;
 
     public Sprite spriteDefault;
-    public Sprite sonrisaNoTilted;
-    public Sprite sonrisa;
-    public Sprite sorpresa;
+    public Sprite sus;
+    public Sprite smirk;
+    public Sprite anotating;
+    public Sprite blink;
+    public Sprite deeplyAsking;
+    public Sprite smirkCejas;
     public Sprite talk;
-    public Sprite worriedOpen;
-    public Sprite worried;
-    
 
     // Start is called before the first frame update
     void Start()
@@ -38,30 +38,34 @@ public class EmocionesKoemi : MonoBehaviour
             default:
                 sr.sprite = spriteDefault;
             break;
-            case "sonrisa no tilted":
-                sr.sprite = sonrisaNoTilted;
+            case "sus":
+                sr.sprite = sus;
             break;
 
-            case "sonrisa":
-                sr.sprite = sonrisa;
+            case "smirk":
+                sr.sprite = smirk;
             break;
 
-            case "sorpresa":
-                sr.sprite = sorpresa;
+            case "anotating":
+                sr.sprite = anotating;
+            break;
+
+            case "blink":
+                sr.sprite = blink;
+            break;
+
+            case "deeply asking":
+                sr.sprite = deeplyAsking;
+            break;
+
+            case "smirk cejas":
+                sr.sprite = smirkCejas;
             break;
 
             case "talk":
                 sr.sprite = talk;
             break;
-
-            case "worried open":
-                sr.sprite = worriedOpen;
-            break;
-
-            case "worried":
-                sr.sprite = worried;
-            break;
-
+            
         }
 
 

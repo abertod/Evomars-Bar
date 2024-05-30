@@ -1386,6 +1386,11 @@ MonoBehaviour:
   spriteDefault: {fileID: 201221213, guid: 05f57af4acbad224f89fefe599134855, type: 3}
   sus: {fileID: -2025841361, guid: 22e7ef51449934c4abfb6fe8f4283019, type: 3}
   smirk: {fileID: -331967786, guid: bac3482f353301e4382f08087ff22cee, type: 3}
+  anotating: {fileID: -1836182839, guid: 336651cbc6227d942884bb978493f187, type: 3}
+  blink: {fileID: -202641374, guid: d81e220a45d376d4593186bff82e867b, type: 3}
+  deeplyAsking: {fileID: 1323327665, guid: 52f61f5a2f8c7dd4f92ea5817b097600, type: 3}
+  smirkCejas: {fileID: 28752932, guid: 097a56c7fce2cae49a4c13dd3892bf78, type: 3}
+  talk: {fileID: 1768580626, guid: 3045f88bd24d3eb469cd9aca181453a9, type: 3}
 --- !u!1001 &379789321
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2347,8 +2352,13 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
+<<<<<<< HEAD
     m_Center: {x: -0.01715, y: -1.0157, z: 0}
     m_Extent: {x: 0.35764998, y: 1.2752, z: 0}
+=======
+    m_Center: {x: -0.022049993, y: -1.0134, z: 0}
+    m_Extent: {x: 0.35395, y: 1.2729, z: 0}
+>>>>>>> d14164f (Script emociones kane y koemi)
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -2855,8 +2865,13 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
+<<<<<<< HEAD
     m_Center: {x: 0.072950006, y: -1.3074499, z: 0}
     m_Extent: {x: 0.44695002, y: 0.88914996, z: 0}
+=======
+    m_Center: {x: 0.07085, y: -1.2981, z: 0}
+    m_Extent: {x: 0.44774997, y: 0.89790004, z: 0}
+>>>>>>> d14164f (Script emociones kane y koemi)
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -5537,6 +5552,8 @@ GameObject:
   - component: {fileID: 1105423722}
   - component: {fileID: 1105423724}
   - component: {fileID: 1105423723}
+  - component: {fileID: 1105423726}
+  - component: {fileID: 1105423725}
   m_Layer: 0
   m_Name: Image
   m_TagString: Untagged
@@ -5602,6 +5619,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1105423721}
   m_CullTransparentMesh: 1
+--- !u!114 &1105423725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1105423721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 301e61a85556b834c986a8acc677c52f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteDefault: {fileID: -310361756, guid: d4a7bd4021483184884d2ebba840d598, type: 3}
+  sonrisaNoTilted: {fileID: -1883830555, guid: d396579ec2bab0742b1b9635db2b9820, type: 3}
+  sonrisa: {fileID: -1327087289, guid: eb8c4b8398180074cb9244c175597bf7, type: 3}
+  sorpresa: {fileID: -1852138353, guid: 727694578c6097b4e953a8eb5ffd1ca6, type: 3}
+  talk: {fileID: 1269664602, guid: ed7a77e269c2a674c9b413506fb3d1be, type: 3}
+  worriedOpen: {fileID: 276543731, guid: f2016ce0721b6914c8ac686e4ab4acc8, type: 3}
+  worried: {fileID: 1160223230, guid: 1c448fc6ddd03334092994eec3126cc4, type: 3}
+--- !u!114 &1105423726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1105423721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b987dbb8059a3bb428506462087afe26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1125002888
 GameObject:
   m_ObjectHideFlags: 0
@@ -6892,8 +6940,13 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
+<<<<<<< HEAD
     m_Center: {x: -0.019000009, y: -1.0207499, z: 0}
     m_Extent: {x: 0.3528, y: 1.26275, z: 0}
+=======
+    m_Center: {x: -0.012000009, y: -1.02205, z: 0}
+    m_Extent: {x: 0.35369998, y: 1.26515, z: 0}
+>>>>>>> d14164f (Script emociones kane y koemi)
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -7281,8 +7334,13 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
+<<<<<<< HEAD
     m_Center: {x: 0.07305001, y: -1.4583501, z: 0}
     m_Extent: {x: 0.51795, y: 1.18095, z: 0}
+=======
+    m_Center: {x: 0.073300004, y: -1.4543, z: 0}
+    m_Extent: {x: 0.5213, y: 1.1683, z: 0}
+>>>>>>> d14164f (Script emociones kane y koemi)
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -8192,8 +8250,13 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
+<<<<<<< HEAD
     m_Center: {x: 0.07574998, y: -1.3082, z: 0}
     m_Extent: {x: 0.45244998, y: 0.89250004, z: 0}
+=======
+    m_Center: {x: 0.07095, y: -1.30405, z: 0}
+    m_Extent: {x: 0.44595, y: 0.8921499, z: 0}
+>>>>>>> d14164f (Script emociones kane y koemi)
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -8457,8 +8520,13 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
+<<<<<<< HEAD
     m_Center: {x: 0.24559999, y: -3.0213, z: 0}
     m_Extent: {x: 0.6738, y: 3.2752001, z: 0}
+=======
+    m_Center: {x: 0.2393, y: -3.02235, z: 0}
+    m_Extent: {x: 0.6852, y: 3.27405, z: 0}
+>>>>>>> d14164f (Script emociones kane y koemi)
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -8670,8 +8738,13 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
+<<<<<<< HEAD
     m_Center: {x: 0.5051, y: -2.69585, z: 0}
     m_Extent: {x: 0.9936, y: 1.09995, z: 0}
+=======
+    m_Center: {x: 0.50545, y: -2.7014499, z: 0}
+    m_Extent: {x: 1.00035, y: 1.1055499, z: 0}
+>>>>>>> d14164f (Script emociones kane y koemi)
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
