@@ -812,10 +812,6 @@ MonoBehaviour:
   escala: 0
   timer: 0
   nombreBotellaText: {fileID: 0}
-<<<<<<< HEAD
-  textosPulsaciones: []
-=======
->>>>>>> 855e41c (Animación 1Menu tren incrustado. Cambio de tamaño de opciones de jugar, opciones y exit)
 --- !u!212 &286471443
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2064,10 +2060,6 @@ MonoBehaviour:
   escala: 0
   timer: 0
   nombreBotellaText: {fileID: 0}
-<<<<<<< HEAD
-  textosPulsaciones: []
-=======
->>>>>>> 855e41c (Animación 1Menu tren incrustado. Cambio de tamaño de opciones de jugar, opciones y exit)
 --- !u!212 &387347690
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2418,8 +2410,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<< HEAD
-=======
 --- !u!1 &460853866
 GameObject:
   m_ObjectHideFlags: 0
@@ -2502,7 +2492,6 @@ Transform:
   m_Father: {fileID: 2116762830}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> 855e41c (Animación 1Menu tren incrustado. Cambio de tamaño de opciones de jugar, opciones y exit)
 --- !u!1 &493314583
 GameObject:
   m_ObjectHideFlags: 0
@@ -2914,8 +2903,6 @@ Transform:
   m_Father: {fileID: 1824814842}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
-=======
 --- !u!1 &571898770
 GameObject:
   m_ObjectHideFlags: 0
@@ -2998,7 +2985,6 @@ MonoBehaviour:
   - {x: 0.45953417, y: -2.1333349, z: 0}
   - {x: 0.4422474, y: -0.47773933, z: 0}
   - {x: -0.31341517, y: -0.4687934, z: 0}
->>>>>>> 855e41c (Animación 1Menu tren incrustado. Cambio de tamaño de opciones de jugar, opciones y exit)
 --- !u!1 &585245685
 GameObject:
   m_ObjectHideFlags: 0
@@ -4313,10 +4299,6 @@ MonoBehaviour:
   escala: 0
   timer: 0
   nombreBotellaText: {fileID: 0}
-<<<<<<< HEAD
-  textosPulsaciones: []
-=======
->>>>>>> 855e41c (Animación 1Menu tren incrustado. Cambio de tamaño de opciones de jugar, opciones y exit)
 --- !u!212 &757414088
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6069,10 +6051,6 @@ MonoBehaviour:
   escala: 0
   timer: 0
   nombreBotellaText: {fileID: 0}
-<<<<<<< HEAD
-  textosPulsaciones: []
-=======
->>>>>>> 855e41c (Animación 1Menu tren incrustado. Cambio de tamaño de opciones de jugar, opciones y exit)
 --- !u!212 &1171257561
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7269,13 +7247,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-<<<<<<< HEAD
-    m_Center: {x: -0.019250005, y: -1.0148, z: 0}
-    m_Extent: {x: 0.35635, y: 1.2717, z: 0}
-=======
     m_Center: {x: -0.010299996, y: -1.0139, z: 0}
     m_Extent: {x: 0.35119998, y: 1.2619, z: 0}
->>>>>>> 855e41c (Animación 1Menu tren incrustado. Cambio de tamaño de opciones de jugar, opciones y exit)
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -7411,10 +7384,6 @@ MonoBehaviour:
   escala: 0
   timer: 0
   nombreBotellaText: {fileID: 0}
-<<<<<<< HEAD
-  textosPulsaciones: []
-=======
->>>>>>> 855e41c (Animación 1Menu tren incrustado. Cambio de tamaño de opciones de jugar, opciones y exit)
 --- !u!212 &1463431991
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7602,8 +7571,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1475490728}
   m_CullTransparentMesh: 0
-<<<<<<< HEAD
-=======
 --- !u!1 &1479317640
 GameObject:
   m_ObjectHideFlags: 0
@@ -7686,7 +7653,6 @@ MonoBehaviour:
   - {x: 0.53285193, y: -2.573238, z: 0}
   - {x: 0.5232823, y: -0.3889866, z: 0}
   - {x: -0.3597206, y: -0.34145284, z: 0}
->>>>>>> 855e41c (Animación 1Menu tren incrustado. Cambio de tamaño de opciones de jugar, opciones y exit)
 --- !u!1 &1526132502
 GameObject:
   m_ObjectHideFlags: 0
@@ -8531,8 +8497,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
-=======
 --- !u!1 &1838054736
 GameObject:
   m_ObjectHideFlags: 0
@@ -8615,7 +8579,6 @@ Transform:
   m_Father: {fileID: 2116762830}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> 855e41c (Animación 1Menu tren incrustado. Cambio de tamaño de opciones de jugar, opciones y exit)
 --- !u!1 &1867873886
 GameObject:
   m_ObjectHideFlags: 0
@@ -8784,8 +8747,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<< HEAD
-=======
 --- !u!1 &1914294684
 GameObject:
   m_ObjectHideFlags: 0
@@ -8868,7 +8829,6 @@ MonoBehaviour:
   - {x: 0.8554325, y: -6.211583, z: 0}
   - {x: 0.8085537, y: 0.17670083, z: 0}
   - {x: -0.31123304, y: 0.19191009, z: 0}
->>>>>>> 855e41c (Animación 1Menu tren incrustado. Cambio de tamaño de opciones de jugar, opciones y exit)
 --- !u!1 &1937345461
 GameObject:
   m_ObjectHideFlags: 0
@@ -9000,8 +8960,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   frecuenciaTintineo: 1
   potenciaTintineo: 22.34
-<<<<<<< HEAD
-=======
 --- !u!1 &2001341900
 GameObject:
   m_ObjectHideFlags: 0
@@ -9084,7 +9042,6 @@ MonoBehaviour:
   - {x: 1.4255793, y: -3.737465, z: 0}
   - {x: 1.4448225, y: -1.6528511, z: 0}
   - {x: -0.43426943, y: -1.6776006, z: 0}
->>>>>>> 855e41c (Animación 1Menu tren incrustado. Cambio de tamaño de opciones de jugar, opciones y exit)
 --- !u!1 &2002629047
 GameObject:
   m_ObjectHideFlags: 0
