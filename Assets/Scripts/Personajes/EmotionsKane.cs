@@ -11,6 +11,11 @@ public class EmotionsKane : MonoBehaviour
     public Sprite spriteDefault;
     public Sprite sus;
     public Sprite smirk;
+    public Sprite anotating;
+    public Sprite blink;
+    public Sprite deeplyAsking;
+    public Sprite smirkCejas;
+    public Sprite talk;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +35,9 @@ public class EmotionsKane : MonoBehaviour
 
         switch (emotion)
         {
+            default:
+                sr.sprite = spriteDefault;
+            break;
             case "sus":
                 sr.sprite = sus;
             break;
@@ -37,10 +45,27 @@ public class EmotionsKane : MonoBehaviour
             case "smirk":
                 sr.sprite = smirk;
             break;
-            
-            default:
-                sr.sprite = spriteDefault;
+
+            case "anotating":
+                sr.sprite = anotating;
             break;
+
+            case "blink":
+                sr.sprite = blink;
+            break;
+
+            case "deeply asking":
+                sr.sprite = deeplyAsking;
+            break;
+
+            case "smirk cejas":
+                sr.sprite = smirkCejas;
+            break;
+
+            case "talk":
+                sr.sprite = talk;
+            break;
+            
         }
 
 
