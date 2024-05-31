@@ -81,7 +81,7 @@ public class Bebida_Picante : MonoBehaviour
     void MostrarSiguienteCuadradoLleno()
 {
     
-    if (cuadradosRellenados < picanteCuadrados.Length && ObjetosSeleccionables.sumaTotal < 5 && !valorMantenido)
+    if (cuadradosRellenados < picanteCuadrados.Length && ObjetosSeleccionables.sumaTotal < 5 )
     {
         for (int i = 0; i <= cuadradosRellenados; i++)
         {

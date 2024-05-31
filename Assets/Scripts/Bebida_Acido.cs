@@ -74,7 +74,7 @@ public class Bebida_Acido : MonoBehaviour
 
     void MostrarSiguienteCuadradoLleno()
 {
-    if (cuadradosRellenados < acidoCuadrados.Length && ObjetosSeleccionables.sumaTotal < 5 && !valorMantenido)
+    if (cuadradosRellenados < acidoCuadrados.Length && ObjetosSeleccionables.sumaTotal < 5 )
     {
         for (int i = 0; i <= cuadradosRellenados; i++)
         {

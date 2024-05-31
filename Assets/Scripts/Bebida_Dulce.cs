@@ -75,7 +75,7 @@ public class Bebida_Dulce : MonoBehaviour
 
     void MostrarSiguienteCuadradoLleno()
 {
-    if (cuadradosRellenados < dulceCuadrados.Length && ObjetosSeleccionables.sumaTotal < 5 && !valorMantenido)
+    if (cuadradosRellenados < dulceCuadrados.Length && ObjetosSeleccionables.sumaTotal < 5 )
     {
         for (int i = 0; i <= cuadradosRellenados; i++)
         {
