@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ApareceMinijuego : MonoBehaviour
 {
+    public bool activado;
     //public static ApareceMinijuego Instance;
 
     public GameObject pantallaMinijuego;
