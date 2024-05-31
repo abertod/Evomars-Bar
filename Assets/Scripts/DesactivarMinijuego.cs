@@ -12,6 +12,10 @@ public class DesactivarMinijuego : MonoBehaviour
 
     public GameObject pantallaMinijuego;
 
+    public ApareceBebidas apareceBebidas;
+
+    public ReiniciarJuego reiniciarJuego;
+
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -44,6 +48,14 @@ public class DesactivarMinijuego : MonoBehaviour
         // Aquí se realizará la selección
         Debug.Log("Imagen seleccionada: " + gameObject.name);
         pantallaMinijuego.SetActive(false);
+        apareceBebidas.timearAparicion = 0;
+        apareceBebidas.empiezaContar = false;
+        apareceBebidas.prepBebida01.SetActive(false);
+        apareceBebidas.prepBebida02.SetActive(false);
+        apareceBebidas.prepBebida03.SetActive(false);
+        apareceBebidas.prepBebida04.SetActive(false);
+
+        reiniciarJuego.Reiniciar();
     }
 
     // Update is called once per frame

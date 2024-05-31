@@ -18,9 +18,9 @@ public class ReiniciarJuego : MonoBehaviour
 
     void Start()
     {
-        // Buscar referencias a los textos
+        
         textoConsola = GameObject.Find("TextoConsola").GetComponent<TMP_Text>();
-
+        //Texto de las últimas 5 botellas pulsadas
         textosPulsaciones = new TMP_Text[5];
         for (int i = 0; i < 5; i++)
         {
@@ -30,38 +30,38 @@ public class ReiniciarJuego : MonoBehaviour
 
     public void Reiniciar()
     {
-        // Reiniciar las sumas
+        //Reinicio de las sumas
         ObjetosSeleccionables.sumaTotal = 0;
         ObjetosSeleccionables.sumaPicante = 0;
         ObjetosSeleccionables.sumaDulce = 0;
         ObjetosSeleccionables.sumaAcido = 0;
 
-        // Reiniciar el contador de pulsaciones y permitir nuevas pulsaciones
+        //Reiniciar la cuenta de pulsaciones y permitir nuevas pulsaciones. Maximo 5
         ObjetosSeleccionables.contadorPulsaciones = 0;
         ObjetosSeleccionables.permitirNuevasPulsaciones = true;
 
-        // Limpiar la lista de pulsaciones recientes
+        //Limpiar la lista de pulsaciones recientes
         ObjetosSeleccionables.pulsacionesRecientes.Clear();
 
-        // Limpiar los textos de pulsaciones
+        //Limpiar los textos de pulsaciones
         for (int i = 0; i < textosPulsaciones.Length; i++)
         {
             textosPulsaciones[i].text = "";
         }
 
-        // Limpiar el texto de la consola
+        //Limpiar el texto de la consola de depués de 5 pulsaciones
         textoConsola.text = "";
 
-        // Reiniciar los cuadrados de UI
+        //Reiniciar los cuadrados de la barra 
         RellenarCuadrados(bebidaPicante.picanteCuadrados, 0);
         RellenarCuadrados(bebidaDulce.dulceCuadrados, 0);
         RellenarCuadrados(bebidaAcido.acidoCuadrados, 0);
 
-        // Reiniciar los valores en los scripts de las botellas
+        //Reiniciar los valores en los scripts de las botellas
         bebidaPicante.Reiniciar();
         bebidaDulce.Reiniciar();
         bebidaAcido.Reiniciar();
-        objetosSeleccionables.Reiniciar();
+        //objetosSeleccionables.Reiniciar();
 
         Debug.Log("El juego ha sido reiniciado.");
     }

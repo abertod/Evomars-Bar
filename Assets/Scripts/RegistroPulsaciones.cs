@@ -14,6 +14,7 @@ public class RegistroPulsaciones : MonoBehaviour
 
     void Update()
     {
+        //Si las pulsaciones llegan a 5 se muestra este mensaje
         if (ObjetosSeleccionables.contadorPulsaciones >= 5)
         {
             ObjetosSeleccionables.permitirNuevasPulsaciones = false;

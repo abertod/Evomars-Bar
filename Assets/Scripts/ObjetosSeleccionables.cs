@@ -19,7 +19,7 @@ public class ObjetosSeleccionables : MonoBehaviour
     public float timer;
     public static bool activated = false;
 
-         // Referencia al texto en la escena donde se mostrará el nombre de la botella seleccionada
+    //Referencia al texto en la escena donde se mostrará el nombre de la botella seleccionada
     public TMP_Text nombreBotellaText;
 
     // Variables para el registro de pulsaciones
@@ -27,7 +27,7 @@ public class ObjetosSeleccionables : MonoBehaviour
     public static int contadorPulsaciones = 0;
     public static bool permitirNuevasPulsaciones = true;
 
-    // Array para los textos que mostrarán los nombres de las botellas
+    //Array para los textos que mostrarán los nombres de las bebidas
     public TMP_Text[] textosPulsaciones; 
 
 
@@ -37,7 +37,7 @@ public class ObjetosSeleccionables : MonoBehaviour
 
     public static int sumaTotal;
 
-    private int cuadradosRellenados = 0;
+    //private int cuadradosRellenados = 0;
 
 
     void Awake(){
@@ -54,6 +54,7 @@ public class ObjetosSeleccionables : MonoBehaviour
 
         nombreBotellaText = GameObject.Find("Texto").GetComponent<TMP_Text>();
 
+        //Busca los textos donde se mostrará el nombre de la bebida o el ingrediente
         textosPulsaciones = new TMP_Text[5];
         for (int i = 0; i < 5; i++)
         {
@@ -65,6 +66,7 @@ public class ObjetosSeleccionables : MonoBehaviour
 
     void OnMouseDown()
     {
+        //Se activa el método Seleccionar si se cumplen esas condiciones
        if (permitirNuevasPulsaciones && contadorPulsaciones < 5)
         {
             Seleccionar();
@@ -74,7 +76,7 @@ public class ObjetosSeleccionables : MonoBehaviour
 
     void OnMouseEnter()
     {
-        // Cuando el ratón entra en el objeto
+        //Cuando el ratón entra en el objeto
         //spriteRenderer.color = colorAlPasarElRaton;
         if (permitirNuevasPulsaciones && contadorPulsaciones < 5)
         {
@@ -85,7 +87,7 @@ public class ObjetosSeleccionables : MonoBehaviour
 
     void OnMouseExit()
     {
-        // Cuando el ratón sale del objeto
+        //Cuando el ratón sale del objeto
         //spriteRenderer.color = colorOriginal;
         transform.localScale = tamañoOriginal;
         
@@ -96,28 +98,29 @@ public class ObjetosSeleccionables : MonoBehaviour
     
     public void Seleccionar()
     {
+        //Verificar si aún se pueden hacer nuevas pulsaciones y si no se ha alcanzado el límite de 5. Entonces se realiza lo de dentro
+        if (permitirNuevasPulsaciones && contadorPulsaciones < 5) 
+        {
+            string nombreBebida = gameObject.name;
+            Debug.Log("Imagen seleccionada: " + nombreBebida);
+            pulsacionesRecientes.Insert(0, nombreBebida);
+            contadorPulsaciones++;
+            ActualizarTextos();
         
-        if (permitirNuevasPulsaciones && contadorPulsaciones < 5) // Verificar si aún se pueden hacer nuevas pulsaciones y si no se ha alcanzado el límite de 5
-    {
-        string nombreBebida = gameObject.name;
-        Debug.Log("Imagen seleccionada: " + nombreBebida);
-        pulsacionesRecientes.Insert(0, nombreBebida);
-        contadorPulsaciones++;
-        ActualizarTextos();
-        
-    }
+        }
        
     }
 
     void ActualizarSumaTotal()
     {
+        //Suma los clics hechos entre las tres botellas y para si llega a 5
         sumaTotal = sumaPicante + sumaDulce + sumaAcido;
 
         if (sumaTotal >= 5)
-    {
-        permitirNuevasPulsaciones = false;
-        Debug.Log("Se ha alcanzado el límite de suma total.");
-    }
+        {
+            permitirNuevasPulsaciones = false;
+            Debug.Log("Se ha alcanzado el límite de suma total.");
+        }
     }
 
     void ActualizarTextos()
@@ -140,19 +143,20 @@ public class ObjetosSeleccionables : MonoBehaviour
             Debug.Log("Ya no se pueden registrar más pulsaciones.");
         }
 
-       // Calcula la suma total
-    ActualizarSumaTotal(); 
+       //Calcula la suma total
+        ActualizarSumaTotal(); 
 
-    // Muestra las sumas individuales y la suma total
-    Debug.Log("Suma picante: " + sumaPicante);
-    Debug.Log("Suma dulce: " + sumaDulce);
-    Debug.Log("Suma ácido: " + sumaAcido);
-    Debug.Log("Suma total: " + sumaTotal);
+        //Muestra las sumas individuales y la suma total
+        Debug.Log("Suma picante: " + sumaPicante);
+        Debug.Log("Suma dulce: " + sumaDulce);
+        Debug.Log("Suma ácido: " + sumaAcido);
+        Debug.Log("Suma total: " + sumaTotal);
 
     
     
     }
 
+/*   Este método está dentro de ReiniciarJuego
     public void Reiniciar()
     {
         permitirNuevasPulsaciones = true;
@@ -163,7 +167,7 @@ public class ObjetosSeleccionables : MonoBehaviour
         sumaAcido = 0;
         sumaTotal = 0;
     }
-
+*/
     
     // Update is called once per frame
     void Update()

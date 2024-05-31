@@ -11,7 +11,7 @@ public class ApareceBebidas : MonoBehaviour
     public GameObject prepBebida04;
     //public GameObject botonPrep;
     public float timearAparicion = 0;
-    public bool activated = false;
+    //public bool activated = false;
 
     //para controlar si se debe empezar a contar el tiempo
     public bool empiezaContar = false; 
