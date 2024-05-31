@@ -18,7 +18,7 @@ public class RegistroPulsaciones : MonoBehaviour
         if (ObjetosSeleccionables.contadorPulsaciones >= 5)
         {
             ObjetosSeleccionables.permitirNuevasPulsaciones = false;
-            textoConsola.text = "Ya no se pueden registrar más pulsaciones.";
+            textoConsola.text = "Ya has combinado cinco bebidas.";
         }
     }
 

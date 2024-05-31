@@ -6,6 +6,8 @@ using UnityEngine;
 public class Bebida_Picante : MonoBehaviour
 {
 
+    public ObjetosSeleccionables objetosSeleccionables;
+
     // Valores de la botella
     public int picante = 1;
 
@@ -23,11 +25,11 @@ public class Bebida_Picante : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        objetosSeleccionables = GameObject.Find("Bebida_1").GetComponent<ObjetosSeleccionables>();
     }
     void OnMouseDown()
     {
-        if (ObjetosSeleccionables.sumaTotal < 5)
+        if (objetosSeleccionables.sumaTotal < 5)
     {
         MantenerValor();
         SumarValor();
@@ -48,7 +50,7 @@ public class Bebida_Picante : MonoBehaviour
     void OnMouseEnter()
     {
 
-        if (ObjetosSeleccionables.sumaTotal < 5)
+        if (objetosSeleccionables.sumaTotal < 5)
     {
         if (!valorMantenido)
         {
@@ -61,7 +63,7 @@ public class Bebida_Picante : MonoBehaviour
     void OnMouseExit()
     {
 
-        if (ObjetosSeleccionables.sumaTotal < 5)
+        if (objetosSeleccionables.sumaTotal < 5)
     {
         if (valorMantenido)
         {
@@ -81,7 +83,7 @@ public class Bebida_Picante : MonoBehaviour
     void MostrarSiguienteCuadradoLleno()
 {
     
-    if (cuadradosRellenados < picanteCuadrados.Length && ObjetosSeleccionables.sumaTotal < 5 )
+    if (cuadradosRellenados < picanteCuadrados.Length && objetosSeleccionables.sumaTotal < 5 )
     {
         for (int i = 0; i <= cuadradosRellenados; i++)
         {
@@ -93,7 +95,7 @@ public class Bebida_Picante : MonoBehaviour
 
     void LimpiarPrevisualizacion()
     {
-        if (cuadradosRellenados < picanteCuadrados.Length && ObjetosSeleccionables.sumaTotal < 5)
+        if (cuadradosRellenados < picanteCuadrados.Length && objetosSeleccionables.sumaTotal < 5)
         {
             picanteCuadrados[cuadradosRellenados].sprite = cuadradoVacio;
         }
@@ -104,7 +106,7 @@ public class Bebida_Picante : MonoBehaviour
     
         for (int i = 0; i < cuadrados.Length; i++)
         {
-            if (i < cantidad && ObjetosSeleccionables.sumaTotal < 5)
+            if (i < cantidad && objetosSeleccionables.sumaTotal < 5)
             {
                 cuadrados[i].sprite = cuadradoLleno;
             }
@@ -119,16 +121,16 @@ public class Bebida_Picante : MonoBehaviour
     void SumarValor()
     {
         // Verificar si se alcanzó el límite de pulsaciones
-    if (ObjetosSeleccionables.sumaTotal >= 5)
+    if (objetosSeleccionables.sumaTotal >= 5)
     {
         Debug.Log("Se ha alcanzado el límite de pulsaciones.");
         return; // Salir del método sin sumar el valor
     }
 
     // Sumar el valor solo si no se ha alcanzado el límite de pulsaciones
-    ObjetosSeleccionables.sumaPicante += picante;
-    ObjetosSeleccionables.sumaTotal += picante;
-    Debug.Log("Valor actual de picante: " + ObjetosSeleccionables.sumaPicante);
+    objetosSeleccionables.sumaPicante += picante;
+    objetosSeleccionables.sumaTotal += picante;
+    Debug.Log("Valor actual de picante: " + objetosSeleccionables.sumaPicante);
 
     }
 

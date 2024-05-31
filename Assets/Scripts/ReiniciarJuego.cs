@@ -5,6 +5,7 @@ using TMPro;
 
 public class ReiniciarJuego : MonoBehaviour
 {
+    
     public Bebida_Picante bebidaPicante;
     public Bebida_Dulce bebidaDulce;
     public Bebida_Acido bebidaAcido;
@@ -26,15 +27,17 @@ public class ReiniciarJuego : MonoBehaviour
         {
             textosPulsaciones[i] = GameObject.Find("Texto" + (i + 1)).GetComponent<TMP_Text>();
         }
+
+        objetosSeleccionables = GameObject.Find("Bebida_1").GetComponent<ObjetosSeleccionables>();
     }
 
     public void Reiniciar()
     {
         //Reinicio de las sumas
-        ObjetosSeleccionables.sumaTotal = 0;
-        ObjetosSeleccionables.sumaPicante = 0;
-        ObjetosSeleccionables.sumaDulce = 0;
-        ObjetosSeleccionables.sumaAcido = 0;
+        objetosSeleccionables.sumaTotal = 0;
+        objetosSeleccionables.sumaPicante = 0;
+        objetosSeleccionables.sumaDulce = 0;
+        objetosSeleccionables.sumaAcido = 0;
 
         //Reiniciar la cuenta de pulsaciones y permitir nuevas pulsaciones. Maximo 5
         ObjetosSeleccionables.contadorPulsaciones = 0;

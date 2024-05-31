@@ -11,20 +11,27 @@ public class Reiniciar_Bebida : MonoBehaviour
     // Color más transparente al pasar el ratón
     public Color colorAlPasarElRaton = new Color(1f, 1f, 1f, 0.5f); 
 
-    public GameObject reiniciarBebida;
+    
+
+    public ApareceBebidas apareceBebidas;
+    
 
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         colorOriginal = spriteRenderer.color;
 
-        reiniciarBebida = GameObject.Find("Reiniciar_Bebida");
+        
+
+        
     }
 
     void OnMouseDown()
     {
         // Esta función se activará cuando el jugador haga clic en la imagen
         Seleccionar();
+        apareceBebidas.AparecenBebidas();
+        apareceBebidas.AparecenImagenesPreparación();
     }
 
     void OnMouseEnter()

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Bebida_Acido : MonoBehaviour
 {
+    public ObjetosSeleccionables objetosSeleccionables;
 
     // Valores de la botella
     public int acido = 1;
@@ -21,12 +22,12 @@ public class Bebida_Acido : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        objetosSeleccionables = GameObject.Find("Bebida_1").GetComponent<ObjetosSeleccionables>();
     }
 
     void OnMouseDown()
     {
-        if (ObjetosSeleccionables.sumaTotal < 5)
+        if (objetosSeleccionables.sumaTotal < 5)
     {
         MantenerValor();
         SumarValor();
@@ -42,7 +43,7 @@ public class Bebida_Acido : MonoBehaviour
     void OnMouseEnter()
     {
 
-        if (ObjetosSeleccionables.sumaTotal < 5)
+        if (objetosSeleccionables.sumaTotal < 5)
     {
         if (!valorMantenido)
         {
@@ -54,7 +55,7 @@ public class Bebida_Acido : MonoBehaviour
 
     void OnMouseExit()
     {
-        if (ObjetosSeleccionables.sumaTotal < 5)
+        if (objetosSeleccionables.sumaTotal < 5)
     {
         if (valorMantenido)
         {
@@ -74,7 +75,7 @@ public class Bebida_Acido : MonoBehaviour
 
     void MostrarSiguienteCuadradoLleno()
 {
-    if (cuadradosRellenados < acidoCuadrados.Length && ObjetosSeleccionables.sumaTotal < 5 )
+    if (cuadradosRellenados < acidoCuadrados.Length && objetosSeleccionables.sumaTotal < 5 )
     {
         for (int i = 0; i <= cuadradosRellenados; i++)
         {
@@ -85,7 +86,7 @@ public class Bebida_Acido : MonoBehaviour
 
     void LimpiarPrevisualizacion()
     {
-        if (cuadradosRellenados < acidoCuadrados.Length && ObjetosSeleccionables.sumaTotal < 5)
+        if (cuadradosRellenados < acidoCuadrados.Length && objetosSeleccionables.sumaTotal < 5)
         {
             acidoCuadrados[cuadradosRellenados].sprite = cuadradoVacio;
         }
@@ -96,7 +97,7 @@ public class Bebida_Acido : MonoBehaviour
         
         for (int i = 0; i < cuadrados.Length; i++)
         {
-            if (i < cantidad && ObjetosSeleccionables.sumaTotal < 5)
+            if (i < cantidad && objetosSeleccionables.sumaTotal < 5)
             {
                 cuadrados[i].sprite = cuadradoLleno;
             }
@@ -110,15 +111,15 @@ public class Bebida_Acido : MonoBehaviour
     void SumarValor()
     {
         // Verificar si se alcanzó el límite de pulsaciones
-    if (ObjetosSeleccionables.sumaTotal >= 5)
+    if (objetosSeleccionables.sumaTotal >= 5)
     {
         Debug.Log("Se ha alcanzado el límite de pulsaciones.");
         return; // Salir del método sin sumar el valor
     }
 
-        ObjetosSeleccionables.sumaAcido += acido;
-        ObjetosSeleccionables.sumaTotal += acido;
-        Debug.Log("Valor actual de ácido: " + ObjetosSeleccionables.sumaAcido);
+        objetosSeleccionables.sumaAcido += acido;
+        objetosSeleccionables.sumaTotal += acido;
+        Debug.Log("Valor actual de ácido: " + objetosSeleccionables.sumaAcido);
     }
 
 

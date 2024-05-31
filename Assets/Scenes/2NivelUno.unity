@@ -4961,7 +4961,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &995473207
 Transform:
   m_ObjectHideFlags: 0
@@ -4970,12 +4970,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 995473206}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 808, y: -455, z: -1108.9998}
+  m_LocalPosition: {x: 808.00006, y: -455.00006, z: -1108.9998}
   m_LocalScale: {x: 41.400005, y: 41.400005, z: 41.400005}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 1816887986}
-  m_RootOrder: 5
+  m_Father: {fileID: 1377632779}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!60 &995473209
 PolygonCollider2D:
@@ -5071,7 +5071,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colorAlPasarElRaton: {r: 1, g: 1, b: 1, a: 0.5}
-  reiniciarBebida: {fileID: 0}
+  apareceBebidas: {fileID: 1282153948}
 --- !u!1 &999893299
 GameObject:
   m_ObjectHideFlags: 0
@@ -5295,6 +5295,10 @@ MonoBehaviour:
   timer: 0
   nombreBotellaText: {fileID: 0}
   textosPulsaciones: []
+  sumaPicante: 0
+  sumaDulce: 0
+  sumaAcido: 0
+  sumaTotal: 0
 --- !u!212 &1022056748
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5359,6 +5363,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 062f2eae37c67b845b1020442a805855, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objetosSeleccionables: {fileID: 0}
   dulce: 1
   dulceCuadrados:
   - {fileID: 896236572}
@@ -6002,6 +6007,10 @@ MonoBehaviour:
   timer: 0
   nombreBotellaText: {fileID: 0}
   textosPulsaciones: []
+  sumaPicante: 0
+  sumaDulce: 0
+  sumaAcido: 0
+  sumaTotal: 0
 --- !u!212 &1117127369
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6323,6 +6332,10 @@ MonoBehaviour:
   timer: 0
   nombreBotellaText: {fileID: 0}
   textosPulsaciones: []
+  sumaPicante: 0
+  sumaDulce: 0
+  sumaAcido: 0
+  sumaTotal: 0
 --- !u!212 &1202705143
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6387,6 +6400,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df97910475707514aba36327b2ef7ab0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objetosSeleccionables: {fileID: 0}
   picante: 1
   picanteCuadrados:
   - {fileID: 356295084}
@@ -7352,6 +7366,58 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &1377632778
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1377632779}
+  - component: {fileID: 1377632780}
+  m_Layer: 5
+  m_Name: Botones-Servir_Reiniciar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1377632779
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377632778}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 995473207}
+  m_Father: {fileID: 1816887986}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1377632780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377632778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea6f3178f5f1a3c499032b58ae36e56d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reiniciarBebida: {fileID: 0}
+  objetosSeleccionables: {fileID: 0}
 --- !u!1 &1420362901
 GameObject:
   m_ObjectHideFlags: 0
@@ -8913,6 +8979,7 @@ MonoBehaviour:
   m_UpKey: 273
   m_DownKey: 274
   m_SelectKey: 101
+  apareceMinijuego: {fileID: 1816887989}
 --- !u!4 &1816684941
 Transform:
   m_ObjectHideFlags: 0
@@ -9042,7 +9109,7 @@ RectTransform:
   - {fileID: 177187026}
   - {fileID: 864996378}
   - {fileID: 1827396421}
-  - {fileID: 995473207}
+  - {fileID: 1377632779}
   - {fileID: 1282153947}
   - {fileID: 292203468}
   - {fileID: 285292911}
@@ -9124,7 +9191,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1827396421
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10145,6 +10212,10 @@ MonoBehaviour:
   timer: 0
   nombreBotellaText: {fileID: 0}
   textosPulsaciones: []
+  sumaPicante: 0
+  sumaDulce: 0
+  sumaAcido: 0
+  sumaTotal: 0
 --- !u!212 &1994085396
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10209,6 +10280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53e5a3bdb693f754e9c0019dc239103f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objetosSeleccionables: {fileID: 0}
   acido: 1
   acidoCuadrados:
   - {fileID: 1855540855}
@@ -11143,6 +11215,10 @@ MonoBehaviour:
   timer: 0
   nombreBotellaText: {fileID: 0}
   textosPulsaciones: []
+  sumaPicante: 0
+  sumaDulce: 0
+  sumaAcido: 0
+  sumaTotal: 0
 --- !u!212 &2112881503
 SpriteRenderer:
   m_ObjectHideFlags: 0

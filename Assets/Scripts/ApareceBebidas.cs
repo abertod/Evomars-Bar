@@ -42,10 +42,8 @@ public class ApareceBebidas : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
+    public void AparecenImagenesPreparación()
     {
-        
         // Si empiezaContar es verdadero, comienza a contar el tiempo
         if (empiezaContar)
         {
@@ -75,6 +73,14 @@ public class ApareceBebidas : MonoBehaviour
                 //Debug.Log("boton está: " + prepBebida03);
             }
         }
+    }
+
+    // Update is called once per frame
+    public void Update()
+    {
+
+        AparecenImagenesPreparación();
         
     }
 }
+

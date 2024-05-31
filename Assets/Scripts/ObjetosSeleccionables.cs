@@ -31,11 +31,11 @@ public class ObjetosSeleccionables : MonoBehaviour
     public TMP_Text[] textosPulsaciones; 
 
 
-    public static int sumaPicante = 0;
-    public static int sumaDulce = 0;
-    public static int sumaAcido = 0;
+    public int sumaPicante = 0;
+    public int sumaDulce = 0;
+    public int sumaAcido = 0;
 
-    public static int sumaTotal;
+    public int sumaTotal;
 
     //private int cuadradosRellenados = 0;
 
