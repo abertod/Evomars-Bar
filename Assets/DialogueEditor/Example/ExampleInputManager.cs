@@ -10,6 +10,8 @@ namespace DialogueEditor
         public KeyCode m_DownKey;
         public KeyCode m_SelectKey;
 
+        public ApareceMinijuego apareceMinijuego;
+
         private void Update()
         {
             if (ConversationManager.Instance != null)
@@ -20,7 +22,7 @@ namespace DialogueEditor
 
         private void UpdateConversationInput()
         {
-            if (ConversationManager.Instance.IsConversationActive)
+            if (ConversationManager.Instance.IsConversationActive && !apareceMinijuego.pantallaMinijuego.activeSelf)
             {
                 if (Input.GetKeyDown(m_UpKey))
                     ConversationManager.Instance.SelectPreviousOption();
