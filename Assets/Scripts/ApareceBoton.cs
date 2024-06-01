@@ -48,7 +48,7 @@ public class ApareceBoton : MonoBehaviour
     void Update()
     {
   
-        timear = timear + Time.deltaTime;
+        timear += Time.deltaTime;
  
         // Activa el botón después de 2 segundos
         if (timear > 2 && !btn.activeSelf && !activated)

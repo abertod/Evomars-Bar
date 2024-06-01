@@ -20,7 +20,7 @@ public class tintineoEstrella : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log (Mathf.PerlinNoise(Time.time*frecuenciaTintineo, 0.0f));
+        //Debug.Log (Mathf.PerlinNoise(Time.time*frecuenciaTintineo, 0.0f));
         float intensidad = Mathf.PerlinNoise(Time.time, 0.0f);
         luz2D.intensity = intensidad*potenciaTintineo;
     }
