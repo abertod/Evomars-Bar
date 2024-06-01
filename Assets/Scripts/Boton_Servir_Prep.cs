@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class Boton_Servir_Prep : MonoBehaviour
 {
+    public GameObject prepararBebida;
     public GameObject reiniciarBebida;
     public ObjetosSeleccionables objetosSeleccionables;
 
     // Start is called before the first frame update
     void Start()
     {
+        prepararBebida = GameObject.Find("Preparar_Bebida"); 
+        prepararBebida.SetActive(false);
+
         reiniciarBebida = GameObject.Find("Reiniciar_Bebida"); 
         reiniciarBebida.SetActive(false);
 
@@ -18,10 +22,14 @@ public class Boton_Servir_Prep : MonoBehaviour
     }
     public void ApareceBotonServir(){
         if(objetosSeleccionables.sumaTotal == 0){
+            prepararBebida.SetActive(false);
             reiniciarBebida.SetActive(false);
+
         }
         if(objetosSeleccionables.sumaTotal >= 1){
+            prepararBebida.SetActive(true);
             reiniciarBebida.SetActive(true);
+
         }
     }
 

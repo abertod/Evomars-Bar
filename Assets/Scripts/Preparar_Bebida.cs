@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Reiniciar_Bebida : MonoBehaviour
+public class Preparar_Bebida : MonoBehaviour
 {
 
     private SpriteRenderer spriteRenderer;

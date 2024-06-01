@@ -81,6 +81,7 @@ public class ObjetosSeleccionables : MonoBehaviour
         if (permitirNuevasPulsaciones && contadorPulsaciones < 5)
         {
             transform.localScale = tamañoOriginal * escala;
+            AudioManager.Instance.SonarCLipUnaVez(AudioManager.Instance.fx[0]);
         }
         
     }
@@ -105,6 +106,7 @@ public class ObjetosSeleccionables : MonoBehaviour
             Debug.Log("Imagen seleccionada: " + nombreBebida);
             pulsacionesRecientes.Insert(0, nombreBebida);
             contadorPulsaciones++;
+            AudioManager.Instance.SonarCLipUnaVez(AudioManager.Instance.fx[1]);
             ActualizarTextos();
         
         }

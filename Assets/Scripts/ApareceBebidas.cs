@@ -55,16 +55,19 @@ public class ApareceBebidas : MonoBehaviour
             if (timearAparicion > 0.5 && !prepBebida01.activeSelf)
             {
                 prepBebida01.SetActive(true);
+                AudioManager.Instance.SonarCLipUnaVez(AudioManager.Instance.fx[2]);
                 //Debug.Log("boton está: " + prepBebida01);
             }
             else if (timearAparicion > 1.2 && !prepBebida02.activeSelf)
             {
                 prepBebida02.SetActive(true);
+                AudioManager.Instance.SonarCLipUnaVez(AudioManager.Instance.fx[3]);
                 //Debug.Log("boton está: " + prepBebida02);
             }
             else if (timearAparicion > 2 && !prepBebida03.activeSelf)
             {
                 prepBebida03.SetActive(true);
+                AudioManager.Instance.SonarCLipUnaVez(AudioManager.Instance.fx[4]);
                 //Debug.Log("boton está: " + prepBebida03);
             }
             else if (timearAparicion > 3 && !prepBebida04.activeSelf)

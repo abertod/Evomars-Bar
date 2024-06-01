@@ -50,6 +50,9 @@ MonoBehaviour:
   fx:
   - {fileID: 8300000, guid: f7df9bc0ed4f7da4e8287398016e48df, type: 3}
   - {fileID: 8300000, guid: 2cfedfcb46e1b47449866358645afda6, type: 3}
+  - {fileID: 8300000, guid: 7a7efd5513e7dd64c8352b164968a075, type: 3}
+  - {fileID: 8300000, guid: 64b87d68f340297489ad2ca2808522f8, type: 3}
+  - {fileID: 8300000, guid: d82a3c9388b86354795ab81143952dce, type: 3}
   _audioSource: {fileID: 0}
   musicObj: {fileID: 6051081423848961109}
   audioMusic: {fileID: 0}
