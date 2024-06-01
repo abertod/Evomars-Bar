@@ -4234,7 +4234,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 864996378}
-  - component: {fileID: 864996379}
   m_Layer: 0
   m_Name: ObjetosClicables
   m_TagString: Untagged
@@ -4262,26 +4261,6 @@ Transform:
   m_Father: {fileID: 1816887986}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &864996379
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 864996377}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 471e169fc92061347b8bdb1a0f07245e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  escala: 0
-  timer: 0
-  nombreBotellaText: {fileID: 0}
-  textosPulsaciones: []
-  sumaPicante: 0
-  sumaDulce: 0
-  sumaAcido: 0
-  sumaTotal: 0
 --- !u!1 &871040015
 GameObject:
   m_ObjectHideFlags: 0
@@ -5095,6 +5074,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   colorAlPasarElRaton: {r: 1, g: 1, b: 1, a: 0.5}
   apareceBebidas: {fileID: 1282153948}
+  objetosSeleccionables: {fileID: 1202705142}
 --- !u!1 &999893299
 GameObject:
   m_ObjectHideFlags: 0

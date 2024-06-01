@@ -14,6 +14,7 @@ public class Preparar_Bebida : MonoBehaviour
     
 
     public ApareceBebidas apareceBebidas;
+    public ObjetosSeleccionables objetosSeleccionables;
     
 
     void Start()
@@ -33,6 +34,10 @@ public class Preparar_Bebida : MonoBehaviour
         apareceBebidas.AparecenBebidas();
         apareceBebidas.AparecenImagenesPreparación();
         AudioManager.Instance.SonarCLipUnaVez(AudioManager.Instance.fx[1]);
+        Debug.Log("Has seleccionado: "  + objetosSeleccionables.sumaAcido + " de Ácido, "
+                                        + objetosSeleccionables.sumaDulce + " de Dulce, " 
+                                        + objetosSeleccionables.sumaPicante + " de Picante, " 
+                                        + objetosSeleccionables.sumaTotal + " entre todas."  );
     }
 
     void OnMouseEnter()
