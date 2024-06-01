@@ -22,7 +22,7 @@ public class RegistroPulsaciones : MonoBehaviour
         }
     }
 
-    public void MostrarPulsacionesConsola()
+    /*public void MostrarPulsacionesConsola()
     {
         if (ObjetosSeleccionables.contadorPulsaciones == 0)
         {
@@ -35,5 +35,5 @@ public class RegistroPulsaciones : MonoBehaviour
         {
             textoConsola.text += "Pulsación " + (i + 1) + ": " + ObjetosSeleccionables.pulsacionesRecientes[i] + "\n";
         }
-    }
+    }*/
 }

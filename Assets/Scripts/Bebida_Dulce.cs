@@ -22,7 +22,7 @@ public class Bebida_Dulce : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        objetosSeleccionables = GameObject.Find("Bebida_1").GetComponent<ObjetosSeleccionables>();
+        objetosSeleccionables = GameObject.Find("Picante").GetComponent<ObjetosSeleccionables>();
     }
 
     void OnMouseDown()

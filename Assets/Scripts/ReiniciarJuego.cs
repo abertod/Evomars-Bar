@@ -36,7 +36,7 @@ public class ReiniciarJuego : MonoBehaviour
             textosPulsaciones[i] = GameObject.Find("Texto" + (i + 1)).GetComponent<TMP_Text>();
         }
 
-        objetosSeleccionables = GameObject.Find("Bebida_1").GetComponent<ObjetosSeleccionables>();
+        objetosSeleccionables = GameObject.Find("Picante").GetComponent<ObjetosSeleccionables>();
 
         spriteRenderer = GetComponent<SpriteRenderer>();
         colorOriginal = spriteRenderer.color;
@@ -69,10 +69,10 @@ public class ReiniciarJuego : MonoBehaviour
     public void Reiniciar()
     {
         //Reinicio de las sumas
-        objetosSeleccionables.sumaTotal = 0;
         objetosSeleccionables.sumaPicante = 0;
         objetosSeleccionables.sumaDulce = 0;
         objetosSeleccionables.sumaAcido = 0;
+        objetosSeleccionables.sumaTotal = 0;
 
         //Reiniciar la cuenta de pulsaciones y permitir nuevas pulsaciones. Maximo 5
         ObjetosSeleccionables.contadorPulsaciones = 0;
@@ -108,7 +108,7 @@ public class ReiniciarJuego : MonoBehaviour
     {
         for (int i = 0; i < cuadrados.Length; i++)
         {
-            if (i < cantidad)
+            if (i < cantidad && objetosSeleccionables.sumaTotal < 5)
             {
                 cuadrados[i].sprite = cuadradoLleno;
             }
