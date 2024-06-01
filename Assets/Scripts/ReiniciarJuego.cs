@@ -68,18 +68,8 @@ public class ReiniciarJuego : MonoBehaviour
 
     public void Reiniciar()
     {
-        //Reinicio de las sumas
-        objetosSeleccionables.sumaPicante = 0;
-        objetosSeleccionables.sumaDulce = 0;
-        objetosSeleccionables.sumaAcido = 0;
-        objetosSeleccionables.sumaTotal = 0;
-
-        //Reiniciar la cuenta de pulsaciones y permitir nuevas pulsaciones. Maximo 5
-        ObjetosSeleccionables.contadorPulsaciones = 0;
-        ObjetosSeleccionables.permitirNuevasPulsaciones = true;
-
-        //Limpiar la lista de pulsaciones recientes
-        ObjetosSeleccionables.pulsacionesRecientes.Clear();
+        
+        objetosSeleccionables.ReiniciarMiniJuego();
 
         //Limpiar los textos de pulsaciones
         for (int i = 0; i < textosPulsaciones.Length; i++)

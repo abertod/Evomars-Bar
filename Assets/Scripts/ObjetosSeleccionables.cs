@@ -158,8 +158,8 @@ public class ObjetosSeleccionables : MonoBehaviour
     
     }
 
-/*   Este método está dentro de ReiniciarJuego
-    public void Reiniciar()
+    //Se llama a este método dentro de Reiniciar en ReiniciarJuego
+    public void ReiniciarMiniJuego()
     {
         permitirNuevasPulsaciones = true;
         pulsacionesRecientes.Clear();
@@ -169,7 +169,7 @@ public class ObjetosSeleccionables : MonoBehaviour
         sumaAcido = 0;
         sumaTotal = 0;
     }
-*/
+
     
     // Update is called once per frame
     void Update()
