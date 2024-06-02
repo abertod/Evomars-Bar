@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using DialogueEditor;
 using UnityEngine;
 
 public class Preparar_Bebida : MonoBehaviour
@@ -38,6 +39,11 @@ public class Preparar_Bebida : MonoBehaviour
                                         + objetosSeleccionables.sumaDulce + " de Dulce, " 
                                         + objetosSeleccionables.sumaPicante + " de Picante, " 
                                         + objetosSeleccionables.sumaTotal + " entre todas."  );
+        
+        ConversationManager.Instance.SetInt("Acido", objetosSeleccionables.sumaAcido);
+        ConversationManager.Instance.SetInt("Dulce", objetosSeleccionables.sumaDulce);
+        ConversationManager.Instance.SetInt("Picante", objetosSeleccionables.sumaPicante);
+        ConversationManager.Instance.SetInt("Total", objetosSeleccionables.sumaTotal);
     }
 
     void OnMouseEnter()
