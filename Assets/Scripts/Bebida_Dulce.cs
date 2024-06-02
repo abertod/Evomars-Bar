@@ -6,17 +6,18 @@ public class Bebida_Dulce : MonoBehaviour
 {
     public ObjetosSeleccionables objetosSeleccionables;
 
-    // Valores de la botella
+    //Valor de la botella
     public int dulce = 1;
 
-    // Referencias a los cuadrados de UI
+    //Array a los cuadrados de UI
     public SpriteRenderer[] dulceCuadrados;
 
-    // Sprites para cuadrado lleno y vacío
+    //Sprites para cuadrado lleno y vacío
     public Sprite cuadradoLleno;
     public Sprite cuadradoVacio;
 
-    private bool valorMantenido = false; // Flag para indicar si la botella ha sido seleccionada
+    //Para indicar si la botella ha sido seleccionada
+    private bool valorMantenido = false; 
     private int cuadradosRellenados  = 0;
 
     // Start is called before the first frame update
@@ -28,10 +29,10 @@ public class Bebida_Dulce : MonoBehaviour
     void OnMouseDown()
     {
         if (objetosSeleccionables.sumaTotal < 5)
-    {
-        MantenerValor();
-        SumarValor();
-    }
+        {
+            MantenerValor();
+            SumarValor();
+        }
     }
     void MantenerValor()
     {
@@ -44,29 +45,29 @@ public class Bebida_Dulce : MonoBehaviour
     {
        
         if (objetosSeleccionables.sumaTotal < 5)
-    {
-        if (!valorMantenido)
         {
-            MostrarValores();
+            if (!valorMantenido)
+            {
+                MostrarValores();
+            }
+            MostrarSiguienteCuadradoLleno();
         }
-        MostrarSiguienteCuadradoLleno();
-    }
     }
 
     void OnMouseExit()
     {
         
         if (objetosSeleccionables.sumaTotal < 5)
-    {
-        if (valorMantenido)
         {
-            MostrarValores(); // Volver al estado original cuando el ratón sale de la botella
+            if (valorMantenido)
+            {
+                MostrarValores(); // Volver al estado original cuando el ratón sale de la botella
+            }
+            else
+            {
+                LimpiarPrevisualizacion(); // Limpiar la previsualización
+            }
         }
-        else
-        {
-            LimpiarPrevisualizacion(); // Limpiar la previsualización
-        }
-    }
     }
 
     void MostrarValores()
@@ -75,15 +76,15 @@ public class Bebida_Dulce : MonoBehaviour
     }
 
     void MostrarSiguienteCuadradoLleno()
-{
-    if (cuadradosRellenados < dulceCuadrados.Length && objetosSeleccionables.sumaTotal < 5 )
     {
-        for (int i = 0; i <= cuadradosRellenados; i++)
+        if (cuadradosRellenados < dulceCuadrados.Length && objetosSeleccionables.sumaTotal < 5 )
         {
-            dulceCuadrados[i].sprite = cuadradoLleno;
+            for (int i = 0; i <= cuadradosRellenados; i++)
+            {
+                dulceCuadrados[i].sprite = cuadradoLleno;
+            }
         }
     }
-}
 
     void LimpiarPrevisualizacion()
     {
@@ -112,11 +113,12 @@ public class Bebida_Dulce : MonoBehaviour
     void SumarValor()
     {
         // Verificar si se alcanzó el límite de pulsaciones
-    if (objetosSeleccionables.sumaTotal >= 5)
-    {
-        Debug.Log("Se ha alcanzado el límite de pulsaciones.");
-        return; // Salir del método sin sumar el valor
-    }
+        if (objetosSeleccionables.sumaTotal >= 5)
+        {
+            Debug.Log("Se ha alcanzado el límite de pulsaciones.");
+            //Salir del método sin sumar el valor
+            return; 
+        }
 
         objetosSeleccionables.sumaDulce += dulce;
         objetosSeleccionables.sumaTotal += dulce;
@@ -125,7 +127,7 @@ public class Bebida_Dulce : MonoBehaviour
 
     public void Reiniciar()
     {
-        // Reiniciar los valores específicos de la botella picante
+        //Reiniciar los valores específicos de la botella picante
         cuadradosRellenados = 0;
         valorMantenido = false;
         LimpiarPrevisualizacion();

@@ -29,7 +29,7 @@ public class Preparar_Bebida : MonoBehaviour
 
     void OnMouseDown()
     {
-        // Esta función se activará cuando el jugador haga clic en la imagen
+        //Esta función se activará cuando el jugador haga clic en la imagen
         Seleccionar();
         apareceBebidas.AparecenBebidas();
         apareceBebidas.AparecenImagenesPreparación();
@@ -42,21 +42,21 @@ public class Preparar_Bebida : MonoBehaviour
 
     void OnMouseEnter()
     {
-        // Cuando el ratón entra en el objeto
+        //Cuando el ratón entra en el objeto
         spriteRenderer.color = colorAlPasarElRaton;
         AudioManager.Instance.SonarCLipUnaVez(AudioManager.Instance.fx[0]);
     }
 
     void OnMouseExit()
     {
-        // Cuando el ratón sale del objeto
+        //Cuando el ratón sale del objeto
         spriteRenderer.color = colorOriginal;
     }
 
     
     void Seleccionar()
     {
-        // Aquí se realizará la selección
+        //Aquí se realizará la selección
         Debug.Log("Imagen seleccionada: " + gameObject.name);
         //reiniciarBebida.SetActive(false);
         //Aqui se pondrá que el valor de la bebida haciendose vuelva a cero

@@ -183,6 +183,7 @@ namespace DialogueEditor
         public Sprite Icon;
 
          public Sprite Icon02;
+         public Sprite Icon03;
 
 
         /// <summary> Deprecated as of V1.03 </summary>
@@ -190,6 +191,7 @@ namespace DialogueEditor
 
 
         [DataMember] public string Icon02GUID;
+        [DataMember] public string Icon03GUID;
 
         /// <summary> The Audio Clip acompanying this Speech. </summary>
         public AudioClip Audio;
@@ -300,6 +302,7 @@ namespace DialogueEditor
             conversation.GetNodeData(this.ID).Icon = this.Icon;
 
             conversation.GetNodeData(this.ID).Icon02 = this.Icon02;
+            conversation.GetNodeData(this.ID).Icon03 = this.Icon03;
         }
 
         public override void DeserializeAssetData(NPCConversation conversation)
@@ -310,6 +313,7 @@ namespace DialogueEditor
             this.Icon = conversation.GetNodeData(this.ID).Icon;
 
             this.Icon02 = conversation.GetNodeData(this.ID).Icon02;
+            this.Icon03 = conversation.GetNodeData(this.ID).Icon03;
 
 #if UNITY_EDITOR
             // If under V1.03, Load from database via GUID, so data is not lost for people who are upgrading
@@ -342,6 +346,16 @@ namespace DialogueEditor
                     {
                         string path = UnityEditor.AssetDatabase.GUIDToAssetPath(Icon02GUID);
                         this.Icon02 = (Sprite)UnityEditor.AssetDatabase.LoadAssetAtPath(path, typeof(Sprite));
+
+                    }
+                }
+
+                if (this.Icon03 == null)
+                {
+                    if (!string.IsNullOrEmpty(Icon03GUID))
+                    {
+                        string path = UnityEditor.AssetDatabase.GUIDToAssetPath(Icon03GUID);
+                        this.Icon03 = (Sprite)UnityEditor.AssetDatabase.LoadAssetAtPath(path, typeof(Sprite));
 
                     }
                 }

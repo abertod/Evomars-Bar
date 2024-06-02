@@ -55,6 +55,7 @@ namespace DialogueEditor
         public Image DialogueBackground;
         public Image NpcIcon;
         public Image NpcIcon02;
+        public Image NpcIcon03;
         public TMPro.TextMeshProUGUI NameText;
         public TMPro.TextMeshProUGUI DialogueText;
         // Components
@@ -65,6 +66,7 @@ namespace DialogueEditor
         public Sprite BlankSprite;
 
         public Sprite BlankSprite02;
+        public Sprite BlankSprite03;
 
         // Getter properties
         public bool IsConversationActive
@@ -112,6 +114,7 @@ namespace DialogueEditor
 
             NpcIcon.sprite = BlankSprite;
             NpcIcon02.sprite = BlankSprite02;
+            NpcIcon03.sprite = BlankSprite03;
             DialogueText.text = "";
 
             AvanzarPanel = GameObject.Find("Panel_Avanzar");
@@ -337,6 +340,7 @@ namespace DialogueEditor
                     SetColorAlpha(DialogueBackground, 1);
                     SetColorAlpha(NpcIcon, 1);
                     SetColorAlpha(NpcIcon02, 1);
+                    SetColorAlpha(NpcIcon03, 1);
                     SetColorAlpha(NameText, 1);
                     break;
             }
@@ -352,6 +356,7 @@ namespace DialogueEditor
                         SetColorAlpha(DialogueBackground, 0);
                         SetColorAlpha(NpcIcon, 0);
                         SetColorAlpha(NpcIcon02, 0);
+                        SetColorAlpha(NpcIcon03, 0);
                         SetColorAlpha(NameText, 0);
 
                         DialogueText.text = "";
@@ -360,6 +365,7 @@ namespace DialogueEditor
 
 
                         NpcIcon02.sprite = m_currentSpeech.Icon02 != null ? m_currentSpeech.Icon02 : BlankSprite02;
+                        NpcIcon03.sprite = m_currentSpeech.Icon03 != null ? m_currentSpeech.Icon03 : BlankSprite03;
                     }
                     break;
 
@@ -406,6 +412,7 @@ namespace DialogueEditor
             SetColorAlpha(NpcIcon, t);
 
             SetColorAlpha(NpcIcon02, t);
+            SetColorAlpha(NpcIcon03, t);
             SetColorAlpha(NameText, t);
         }
 
@@ -534,6 +541,7 @@ namespace DialogueEditor
             SetColorAlpha(NpcIcon, 1 - t);
 
             SetColorAlpha(NpcIcon02, 1 - t);
+            SetColorAlpha(NpcIcon03, 1 - t);
 
             SetColorAlpha(NameText, 1 - t);
         }
@@ -579,6 +587,15 @@ namespace DialogueEditor
             else
             {
                 NpcIcon02.sprite = speech.Icon02;
+            }
+
+            if (speech.Icon03 == null)
+            {
+                NpcIcon03.sprite = BlankSprite03;
+            }
+            else
+            {
+                NpcIcon03.sprite = speech.Icon03;
             }
 
             // Set font
@@ -784,6 +801,7 @@ namespace DialogueEditor
             NpcIcon.sprite = BlankSprite;
 
             NpcIcon02.sprite = BlankSprite02;
+            NpcIcon03.sprite = BlankSprite03;
         }
 
         private void TurnOffUI()

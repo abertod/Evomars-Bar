@@ -354,6 +354,10 @@ namespace DialogueEditor
             Rect icon02 = new Rect(rect.x + TEXT_BORDER * 0.5f, rect.y + TITLE_HEIGHT + TITLE_GAP + NAME_HEIGHT, SPRITE_SZ, SPRITE_SZ);
             if (SpeechNode.Icon02 != null){
                 GUI.DrawTexture(icon02, SpeechNode.Icon02.texture, ScaleMode.ScaleToFit);}
+
+                Rect icon03 = new Rect(rect.x + TEXT_BORDER * 0.5f, rect.y + TITLE_HEIGHT + TITLE_GAP + NAME_HEIGHT, SPRITE_SZ, SPRITE_SZ);
+            if (SpeechNode.Icon03 != null){
+                GUI.DrawTexture(icon03, SpeechNode.Icon03.texture, ScaleMode.ScaleToFit);}
             // Text
             DrawInternalText(SpeechNode.Text, SPRITE_SZ + 5, NAME_HEIGHT + NAME_PADDING);
         }

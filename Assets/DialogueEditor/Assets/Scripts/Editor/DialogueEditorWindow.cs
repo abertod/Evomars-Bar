@@ -674,6 +674,11 @@ namespace DialogueEditor
                 CurrentAsset.DefaultSprite02 = (Sprite)EditorGUILayout.ObjectField(CurrentAsset.DefaultSprite02, typeof(Sprite), false, GUILayout.MaxWidth(fieldWidth));
                 EditorGUILayout.EndHorizontal();
 
+                EditorGUILayout.BeginHorizontal();
+                EditorGUILayout.LabelField("Default Icon03:", GUILayout.MinWidth(labelWidth), GUILayout.MaxWidth(labelWidth));
+                CurrentAsset.DefaultSprite03 = (Sprite)EditorGUILayout.ObjectField(CurrentAsset.DefaultSprite03, typeof(Sprite), false, GUILayout.MaxWidth(fieldWidth));
+                EditorGUILayout.EndHorizontal();
+
 
 
 
@@ -749,6 +754,10 @@ namespace DialogueEditor
 
                         GUILayout.Label("Icon02", EditorStyles.boldLabel);
                         node.Icon02 = (Sprite)EditorGUILayout.ObjectField(node.Icon02, typeof(Sprite), false, GUILayout.ExpandWidth(true));
+                        EditorGUILayout.Space();
+
+                        GUILayout.Label("Icon03", EditorStyles.boldLabel);
+                        node.Icon03 = (Sprite)EditorGUILayout.ObjectField(node.Icon03, typeof(Sprite), false, GUILayout.ExpandWidth(true));
                         EditorGUILayout.Space();
 
 
@@ -1312,6 +1321,7 @@ namespace DialogueEditor
             newSpeech.Icon = CurrentAsset.DefaultSprite;
 
                         newSpeech.Icon02 = CurrentAsset.DefaultSprite02;
+                        newSpeech.Icon03 = CurrentAsset.DefaultSprite03;
 
                         
             newSpeech.TMPFont = CurrentAsset.DefaultFont;

@@ -44,7 +44,7 @@ public class ReiniciarJuego : MonoBehaviour
 
     void OnMouseDown()
     {
-        // Esta función se activará cuando el jugador haga clic en la imagen
+        //Esta función se activará cuando el jugador haga clic en la imagen
         //Seleccionar();
         //apareceBebidas.AparecenBebidas();
         //apareceBebidas.AparecenImagenesPreparación();
@@ -55,14 +55,14 @@ public class ReiniciarJuego : MonoBehaviour
 
     void OnMouseEnter()
     {
-        // Cuando el ratón entra en el objeto
+        //Cuando el ratón entra en el objeto
         spriteRenderer.color = colorAlPasarElRaton;
         AudioManager.Instance.SonarCLipUnaVez(AudioManager.Instance.fx[0]);
     }
 
     void OnMouseExit()
     {
-        // Cuando el ratón sale del objeto
+        //Cuando el ratón sale del objeto
         spriteRenderer.color = colorOriginal;
     }
 
