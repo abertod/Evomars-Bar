@@ -55,6 +55,7 @@ public class Menu : MonoBehaviour
 
 
     bool opcionOn = false;
+    public GameObject botonAMenu;
 
 
     
@@ -66,16 +67,23 @@ public class Menu : MonoBehaviour
             DontDestroyOnLoad(this.gameObject);
         }
 
-
+        
+       
+        
     }
     
     
     // Start is called before the first frame update
     void Start()
     {
+        
+        
         //Abre panel opciones empieza desactivado
         panelOpciones = GameObject.Find("Panel_Opciones");
         panelOpciones.SetActive(false);
+
+        
+        
 
         // Busca los GameObjects
         volumenMaster = panelOpciones.transform.Find("VolumenMaster").gameObject;
@@ -90,6 +98,8 @@ public class Menu : MonoBehaviour
         numVolMus = volumenMusic.transform.Find("NumVolumenMusic").gameObject;
         numVolFx = volumenFx.transform.Find("NumVolumenFx").gameObject;
 
+        botonAMenu = panelOpciones.transform.Find("ButtonMenu").gameObject;
+        
         //imageMuteMaster = volumenMaster.transform.Find("VolumenMaster").gameObject;;
         velTexto = panelOpciones.transform.Find("VelocidadTexto").gameObject;
         sliderVelTexto = velTexto.transform.Find("SliderVel").gameObject;
@@ -117,8 +127,13 @@ public class Menu : MonoBehaviour
         //Debug.Log("Algo: "+volMusica);
         //Debug.Log("Mus: "+numVolMus);
         //Debug.Log("Fx: "+numVolFx);
+
+        
+
+        
                 
     }
+    
 
     
     // Update is called once per frame
@@ -154,6 +169,14 @@ public class Menu : MonoBehaviour
             panelOpciones.SetActive(false);
             opcionOn=false;
             Debug.Log("panel desde tecla: " + opcionOn);
+        }
+
+        //Cuando se esté en la escena 1Menu, el botón de Menu no se activará
+        if (SceneManager.GetActiveScene().name == "1Menu")
+        {
+            botonAMenu.SetActive(false);
+        } else {
+            botonAMenu.SetActive(true);
         }
                 
     }
