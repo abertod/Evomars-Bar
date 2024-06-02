@@ -358,6 +358,14 @@ namespace DialogueEditor
                 Rect icon03 = new Rect(rect.x + TEXT_BORDER * 0.5f, rect.y + TITLE_HEIGHT + TITLE_GAP + NAME_HEIGHT, SPRITE_SZ, SPRITE_SZ);
             if (SpeechNode.Icon03 != null){
                 GUI.DrawTexture(icon03, SpeechNode.Icon03.texture, ScaleMode.ScaleToFit);}
+
+                Rect icon04 = new Rect(rect.x + TEXT_BORDER * 0.5f, rect.y + TITLE_HEIGHT + TITLE_GAP + NAME_HEIGHT, SPRITE_SZ, SPRITE_SZ);
+            if (SpeechNode.Icon04 != null){
+                GUI.DrawTexture(icon04, SpeechNode.Icon04.texture, ScaleMode.ScaleToFit);}
+
+                Rect icon05 = new Rect(rect.x + TEXT_BORDER * 0.5f, rect.y + TITLE_HEIGHT + TITLE_GAP + NAME_HEIGHT, SPRITE_SZ, SPRITE_SZ);
+            if (SpeechNode.Icon05 != null){
+                GUI.DrawTexture(icon05, SpeechNode.Icon05.texture, ScaleMode.ScaleToFit);}
             // Text
             DrawInternalText(SpeechNode.Text, SPRITE_SZ + 5, NAME_HEIGHT + NAME_PADDING);
         }

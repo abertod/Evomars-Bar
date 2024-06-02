@@ -679,6 +679,16 @@ namespace DialogueEditor
                 CurrentAsset.DefaultSprite03 = (Sprite)EditorGUILayout.ObjectField(CurrentAsset.DefaultSprite03, typeof(Sprite), false, GUILayout.MaxWidth(fieldWidth));
                 EditorGUILayout.EndHorizontal();
 
+                EditorGUILayout.BeginHorizontal();
+                EditorGUILayout.LabelField("Default Icon04:", GUILayout.MinWidth(labelWidth), GUILayout.MaxWidth(labelWidth));
+                CurrentAsset.DefaultSprite04 = (Sprite)EditorGUILayout.ObjectField(CurrentAsset.DefaultSprite04, typeof(Sprite), false, GUILayout.MaxWidth(fieldWidth));
+                EditorGUILayout.EndHorizontal();
+
+                EditorGUILayout.BeginHorizontal();
+                EditorGUILayout.LabelField("Default Icon05:", GUILayout.MinWidth(labelWidth), GUILayout.MaxWidth(labelWidth));
+                CurrentAsset.DefaultSprite05 = (Sprite)EditorGUILayout.ObjectField(CurrentAsset.DefaultSprite05, typeof(Sprite), false, GUILayout.MaxWidth(fieldWidth));
+                EditorGUILayout.EndHorizontal();
+
 
 
 
@@ -758,6 +768,14 @@ namespace DialogueEditor
 
                         GUILayout.Label("Icon03", EditorStyles.boldLabel);
                         node.Icon03 = (Sprite)EditorGUILayout.ObjectField(node.Icon03, typeof(Sprite), false, GUILayout.ExpandWidth(true));
+                        EditorGUILayout.Space();
+
+                        GUILayout.Label("Icon04", EditorStyles.boldLabel);
+                        node.Icon04 = (Sprite)EditorGUILayout.ObjectField(node.Icon04, typeof(Sprite), false, GUILayout.ExpandWidth(true));
+                        EditorGUILayout.Space();
+
+                        GUILayout.Label("Icon05", EditorStyles.boldLabel);
+                        node.Icon05 = (Sprite)EditorGUILayout.ObjectField(node.Icon05, typeof(Sprite), false, GUILayout.ExpandWidth(true));
                         EditorGUILayout.Space();
 
 
@@ -1322,6 +1340,8 @@ namespace DialogueEditor
 
                         newSpeech.Icon02 = CurrentAsset.DefaultSprite02;
                         newSpeech.Icon03 = CurrentAsset.DefaultSprite03;
+                        newSpeech.Icon04 = CurrentAsset.DefaultSprite04;
+                        newSpeech.Icon05 = CurrentAsset.DefaultSprite05;
 
                         
             newSpeech.TMPFont = CurrentAsset.DefaultFont;

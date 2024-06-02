@@ -12,6 +12,10 @@ namespace DialogueEditor
 
         private const float BUFFER02 = 250;
         private const float BUFFER03 = 250;
+        private const float BUFFER04 = 250;
+        private const float BUFFER05 = 250;
+
+
         private const float ICON_SIZE = 50;
         private const float OPTION_HEIGHT = 35;
         private const float OPTION_BUFFER = 5;
@@ -28,9 +32,13 @@ namespace DialogueEditor
 
         SerializedProperty BlankSprite02;
         SerializedProperty BlankSprite03;
+        SerializedProperty BlankSprite04;
+        SerializedProperty BlankSprite05;
         SerializedProperty BlankSprite;
         SerializedProperty NpcIcon02;
         SerializedProperty NpcIcon03;
+        SerializedProperty NpcIcon04;
+        SerializedProperty NpcIcon05;
         SerializedProperty PanelAvance;
 
         private void OnEnable()
@@ -42,11 +50,15 @@ namespace DialogueEditor
             ScrollTextProperty = serializedObject.FindProperty("ScrollText");
             ScrollTextSpeedProperty = serializedObject.FindProperty("ScrollSpeed");
             AllowMouseInteractionProperty = serializedObject.FindProperty("AllowMouseInteraction");
+            BlankSprite = serializedObject.FindProperty("BlankSprite");
             BlankSprite02 = serializedObject.FindProperty("BlankSprite02");
             BlankSprite03 = serializedObject.FindProperty("BlankSprite03");
-            BlankSprite = serializedObject.FindProperty("BlankSprite");
+            BlankSprite04 = serializedObject.FindProperty("BlankSprite04");
+            BlankSprite05 = serializedObject.FindProperty("BlankSprite05");
             NpcIcon02 = serializedObject.FindProperty("NpcIcon02");
             NpcIcon03 = serializedObject.FindProperty("NpcIcon03");
+            NpcIcon04 = serializedObject.FindProperty("NpcIcon04");
+            NpcIcon05 = serializedObject.FindProperty("NpcIcon05");
             PanelAvance = serializedObject.FindProperty("AvanzarPanel");
         }
 
@@ -86,12 +98,17 @@ namespace DialogueEditor
             GUILayout.Label("Interaction options", EditorStyles.boldLabel);
             EditorGUILayout.PropertyField(AllowMouseInteractionProperty);
 
+            EditorGUILayout.PropertyField(BlankSprite);
             EditorGUILayout.PropertyField(BlankSprite02);
             EditorGUILayout.PropertyField(BlankSprite03);
-            EditorGUILayout.PropertyField(BlankSprite);
+            EditorGUILayout.PropertyField(BlankSprite04);
+            EditorGUILayout.PropertyField(BlankSprite05);
+            
 
             EditorGUILayout.PropertyField(NpcIcon02);
             EditorGUILayout.PropertyField(NpcIcon03);
+            EditorGUILayout.PropertyField(NpcIcon04);
+            EditorGUILayout.PropertyField(NpcIcon05);
 
             EditorGUILayout.PropertyField(PanelAvance);
 
@@ -163,6 +180,20 @@ namespace DialogueEditor
             tmpt03.y += ICON_SIZE * 0.1f;
             EditorGUI.LabelField(tmpt03, "<Icon03>");
 
+            Rect iconRect04 = new Rect(boxRect.x + BUFFER04, boxRect.y + difference * 0.5f, ICON_SIZE, ICON_SIZE);
+            EditorGUI.DrawRect(iconRect04, Color.red);
+            Rect tmpt04 = new Rect(iconRect04);
+            tmpt04.x += 1f;
+            tmpt04.y += ICON_SIZE * 0.1f;
+            EditorGUI.LabelField(tmpt04, "<Icon04>");
+
+            Rect iconRect05 = new Rect(boxRect.x + BUFFER05, boxRect.y + difference * 0.5f, ICON_SIZE, ICON_SIZE);
+            EditorGUI.DrawRect(iconRect05, Color.red);
+            Rect tmpt05 = new Rect(iconRect05);
+            tmpt05.x += 1f;
+            tmpt05.y += ICON_SIZE * 0.1f;
+            EditorGUI.LabelField(tmpt05, "<Icon05>");
+
 
 
 
@@ -196,6 +227,24 @@ namespace DialogueEditor
             textStyle03.wordWrap = true;
             textStyle03.clipping = TextClipping.Clip;
             EditorGUI.LabelField(textRect03, PREVIEW_TEXT, textStyle03);
+
+            text_x = iconRect04.x + iconRect04.width + difference * 0.2f;
+            text_wid = ((boxRect.x + boxRect.width) - difference * 0.5f) - text_x;
+            Rect textRect04 = new Rect(text_x, iconRect04.y, text_wid, ICON_SIZE);
+            GUIStyle textStyle04 = new GUIStyle();
+            textStyle04.normal.textColor = Color.blue;
+            textStyle04.wordWrap = true;
+            textStyle04.clipping = TextClipping.Clip;
+            EditorGUI.LabelField(textRect04, PREVIEW_TEXT, textStyle04);
+            
+            text_x = iconRect05.x + iconRect05.width + difference * 0.2f;
+            text_wid = ((boxRect.x + boxRect.width) - difference * 0.5f) - text_x;
+            Rect textRect05 = new Rect(text_x, iconRect05.y, text_wid, ICON_SIZE);
+            GUIStyle textStyle05 = new GUIStyle();
+            textStyle05.normal.textColor = Color.blue;
+            textStyle05.wordWrap = true;
+            textStyle05.clipping = TextClipping.Clip;
+            EditorGUI.LabelField(textRect05, PREVIEW_TEXT, textStyle05);
 
 
             // Option (left)

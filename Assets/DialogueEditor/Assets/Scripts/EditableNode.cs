@@ -184,6 +184,8 @@ namespace DialogueEditor
 
          public Sprite Icon02;
          public Sprite Icon03;
+         public Sprite Icon04;
+         public Sprite Icon05;
 
 
         /// <summary> Deprecated as of V1.03 </summary>
@@ -192,6 +194,8 @@ namespace DialogueEditor
 
         [DataMember] public string Icon02GUID;
         [DataMember] public string Icon03GUID;
+        [DataMember] public string Icon04GUID;
+        [DataMember] public string Icon05GUID;
 
         /// <summary> The Audio Clip acompanying this Speech. </summary>
         public AudioClip Audio;
@@ -303,6 +307,8 @@ namespace DialogueEditor
 
             conversation.GetNodeData(this.ID).Icon02 = this.Icon02;
             conversation.GetNodeData(this.ID).Icon03 = this.Icon03;
+            conversation.GetNodeData(this.ID).Icon04 = this.Icon04;
+            conversation.GetNodeData(this.ID).Icon05 = this.Icon05;
         }
 
         public override void DeserializeAssetData(NPCConversation conversation)
@@ -314,6 +320,8 @@ namespace DialogueEditor
 
             this.Icon02 = conversation.GetNodeData(this.ID).Icon02;
             this.Icon03 = conversation.GetNodeData(this.ID).Icon03;
+            this.Icon04 = conversation.GetNodeData(this.ID).Icon04;
+            this.Icon05 = conversation.GetNodeData(this.ID).Icon05;
 
 #if UNITY_EDITOR
             // If under V1.03, Load from database via GUID, so data is not lost for people who are upgrading
@@ -356,6 +364,26 @@ namespace DialogueEditor
                     {
                         string path = UnityEditor.AssetDatabase.GUIDToAssetPath(Icon03GUID);
                         this.Icon03 = (Sprite)UnityEditor.AssetDatabase.LoadAssetAtPath(path, typeof(Sprite));
+
+                    }
+                }
+
+                if (this.Icon04 == null)
+                {
+                    if (!string.IsNullOrEmpty(Icon04GUID))
+                    {
+                        string path = UnityEditor.AssetDatabase.GUIDToAssetPath(Icon04GUID);
+                        this.Icon04 = (Sprite)UnityEditor.AssetDatabase.LoadAssetAtPath(path, typeof(Sprite));
+
+                    }
+                }
+
+                if (this.Icon05 == null)
+                {
+                    if (!string.IsNullOrEmpty(Icon05GUID))
+                    {
+                        string path = UnityEditor.AssetDatabase.GUIDToAssetPath(Icon05GUID);
+                        this.Icon05 = (Sprite)UnityEditor.AssetDatabase.LoadAssetAtPath(path, typeof(Sprite));
 
                     }
                 }

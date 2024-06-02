@@ -69,6 +69,8 @@ namespace DialogueEditor
 
         public Sprite Icon02;
         public Sprite Icon03;
+        public Sprite Icon04;
+        public Sprite Icon05;
 
         public AudioClip Audio;
         public float Volume;

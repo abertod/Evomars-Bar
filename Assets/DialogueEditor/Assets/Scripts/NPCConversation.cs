@@ -40,6 +40,8 @@ namespace DialogueEditor
 
         [SerializeField] public Sprite DefaultSprite02;
         [SerializeField] public Sprite DefaultSprite03;
+        [SerializeField] public Sprite DefaultSprite04;
+        [SerializeField] public Sprite DefaultSprite05;
 
 
         [SerializeField] public TMPro.TMP_FontAsset DefaultFont;
@@ -400,6 +402,8 @@ namespace DialogueEditor
 
             speech.Icon02 = editableNode.Icon02;
             speech.Icon03 = editableNode.Icon03;
+            speech.Icon04 = editableNode.Icon04;
+            speech.Icon05 = editableNode.Icon05;
 
             
             speech.Audio = editableNode.Audio;

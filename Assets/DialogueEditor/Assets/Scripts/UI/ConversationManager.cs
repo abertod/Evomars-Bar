@@ -56,6 +56,8 @@ namespace DialogueEditor
         public Image NpcIcon;
         public Image NpcIcon02;
         public Image NpcIcon03;
+        public Image NpcIcon04;
+        public Image NpcIcon05;
         public TMPro.TextMeshProUGUI NameText;
         public TMPro.TextMeshProUGUI DialogueText;
         // Components
@@ -67,6 +69,8 @@ namespace DialogueEditor
 
         public Sprite BlankSprite02;
         public Sprite BlankSprite03;
+        public Sprite BlankSprite04;
+        public Sprite BlankSprite05;
 
         // Getter properties
         public bool IsConversationActive
@@ -115,6 +119,8 @@ namespace DialogueEditor
             NpcIcon.sprite = BlankSprite;
             NpcIcon02.sprite = BlankSprite02;
             NpcIcon03.sprite = BlankSprite03;
+            NpcIcon04.sprite = BlankSprite04;
+            NpcIcon05.sprite = BlankSprite05;
             DialogueText.text = "";
 
             AvanzarPanel = GameObject.Find("Panel_Avanzar");
@@ -341,6 +347,8 @@ namespace DialogueEditor
                     SetColorAlpha(NpcIcon, 1);
                     SetColorAlpha(NpcIcon02, 1);
                     SetColorAlpha(NpcIcon03, 1);
+                    SetColorAlpha(NpcIcon04, 1);
+                    SetColorAlpha(NpcIcon05, 1);
                     SetColorAlpha(NameText, 1);
                     break;
             }
@@ -357,6 +365,8 @@ namespace DialogueEditor
                         SetColorAlpha(NpcIcon, 0);
                         SetColorAlpha(NpcIcon02, 0);
                         SetColorAlpha(NpcIcon03, 0);
+                        SetColorAlpha(NpcIcon04, 0);
+                        SetColorAlpha(NpcIcon05, 0);
                         SetColorAlpha(NameText, 0);
 
                         DialogueText.text = "";
@@ -366,6 +376,8 @@ namespace DialogueEditor
 
                         NpcIcon02.sprite = m_currentSpeech.Icon02 != null ? m_currentSpeech.Icon02 : BlankSprite02;
                         NpcIcon03.sprite = m_currentSpeech.Icon03 != null ? m_currentSpeech.Icon03 : BlankSprite03;
+                        NpcIcon04.sprite = m_currentSpeech.Icon04 != null ? m_currentSpeech.Icon04 : BlankSprite04;
+                        NpcIcon05.sprite = m_currentSpeech.Icon05 != null ? m_currentSpeech.Icon05 : BlankSprite05;
                     }
                     break;
 
@@ -413,6 +425,8 @@ namespace DialogueEditor
 
             SetColorAlpha(NpcIcon02, t);
             SetColorAlpha(NpcIcon03, t);
+            SetColorAlpha(NpcIcon04, t);
+            SetColorAlpha(NpcIcon05, t);
             SetColorAlpha(NameText, t);
         }
 
@@ -542,6 +556,8 @@ namespace DialogueEditor
 
             SetColorAlpha(NpcIcon02, 1 - t);
             SetColorAlpha(NpcIcon03, 1 - t);
+            SetColorAlpha(NpcIcon04, 1 - t);
+            SetColorAlpha(NpcIcon05, 1 - t);
 
             SetColorAlpha(NameText, 1 - t);
         }
@@ -596,6 +612,24 @@ namespace DialogueEditor
             else
             {
                 NpcIcon03.sprite = speech.Icon03;
+            }
+
+            if (speech.Icon04 == null)
+            {
+                NpcIcon04.sprite = BlankSprite04;
+            }
+            else
+            {
+                NpcIcon04.sprite = speech.Icon04;
+            }
+
+            if (speech.Icon05 == null)
+            {
+                NpcIcon05.sprite = BlankSprite05;
+            }
+            else
+            {
+                NpcIcon05.sprite = speech.Icon05;
             }
 
             // Set font
@@ -802,6 +836,8 @@ namespace DialogueEditor
 
             NpcIcon02.sprite = BlankSprite02;
             NpcIcon03.sprite = BlankSprite03;
+            NpcIcon04.sprite = BlankSprite04;
+            NpcIcon05.sprite = BlankSprite05;
         }
 
         private void TurnOffUI()

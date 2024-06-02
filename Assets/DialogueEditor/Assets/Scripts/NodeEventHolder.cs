@@ -17,6 +17,8 @@ namespace DialogueEditor
 
         [SerializeField] public Sprite Icon02;
         [SerializeField] public Sprite Icon03;
+        [SerializeField] public Sprite Icon04;
+        [SerializeField] public Sprite Icon05;
 
         
         [SerializeField] public AudioClip Audio;
