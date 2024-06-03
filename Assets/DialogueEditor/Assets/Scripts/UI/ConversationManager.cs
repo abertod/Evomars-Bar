@@ -56,7 +56,6 @@ namespace DialogueEditor
         public Image DialogueBackground;
         public Image NpcIcon;
         public Image NpcIcon02;
-        public Image NpcIcon03;
         public Image NpcIcon04;
         public Image NpcIcon05;
         public TMPro.TextMeshProUGUI NameText;
@@ -125,7 +124,6 @@ namespace DialogueEditor
 
             NpcIcon.sprite = BlankSprite;
             NpcIcon02.sprite = BlankSprite02;
-            NpcIcon03.sprite = BlankSprite03;
             NpcIcon04.sprite = BlankSprite04;
             NpcIcon05.sprite = BlankSprite05;
             DialogueText.text = "";
@@ -375,7 +373,6 @@ namespace DialogueEditor
                     SetColorAlpha(DialogueBackground, 1);
                     SetColorAlpha(NpcIcon, 1);
                     SetColorAlpha(NpcIcon02, 1);
-                    SetColorAlpha(NpcIcon03, 1);
                     SetColorAlpha(NpcIcon04, 1);
                     SetColorAlpha(NpcIcon05, 1);
                     SetColorAlpha(NameText, 1);
@@ -393,7 +390,6 @@ namespace DialogueEditor
                         SetColorAlpha(DialogueBackground, 0);
                         SetColorAlpha(NpcIcon, 0);
                         SetColorAlpha(NpcIcon02, 0);
-                        SetColorAlpha(NpcIcon03, 0);
                         SetColorAlpha(NpcIcon04, 0);
                         SetColorAlpha(NpcIcon05, 0);
                         SetColorAlpha(NameText, 0);
@@ -404,7 +400,6 @@ namespace DialogueEditor
 
 
                         NpcIcon02.sprite = m_currentSpeech.Icon02 != null ? m_currentSpeech.Icon02 : BlankSprite02;
-                        NpcIcon03.sprite = m_currentSpeech.Icon03 != null ? m_currentSpeech.Icon03 : BlankSprite03;
                         NpcIcon04.sprite = m_currentSpeech.Icon04 != null ? m_currentSpeech.Icon04 : BlankSprite04;
                         NpcIcon05.sprite = m_currentSpeech.Icon05 != null ? m_currentSpeech.Icon05 : BlankSprite05;
                     }
@@ -453,7 +448,6 @@ namespace DialogueEditor
             SetColorAlpha(NpcIcon, t);
 
             SetColorAlpha(NpcIcon02, t);
-            SetColorAlpha(NpcIcon03, t);
             SetColorAlpha(NpcIcon04, t);
             SetColorAlpha(NpcIcon05, t);
             SetColorAlpha(NameText, t);
@@ -584,7 +578,6 @@ namespace DialogueEditor
             SetColorAlpha(NpcIcon, 1 - t);
 
             SetColorAlpha(NpcIcon02, 1 - t);
-            SetColorAlpha(NpcIcon03, 1 - t);
             SetColorAlpha(NpcIcon04, 1 - t);
             SetColorAlpha(NpcIcon05, 1 - t);
 
@@ -632,15 +625,6 @@ namespace DialogueEditor
             else
             {
                 NpcIcon02.sprite = speech.Icon02;
-            }
-
-            if (speech.Icon03 == null)
-            {
-                NpcIcon03.sprite = BlankSprite03;
-            }
-            else
-            {
-                NpcIcon03.sprite = speech.Icon03;
             }
 
             if (speech.Icon04 == null)
@@ -864,7 +848,6 @@ namespace DialogueEditor
             NpcIcon.sprite = BlankSprite;
 
             NpcIcon02.sprite = BlankSprite02;
-            NpcIcon03.sprite = BlankSprite03;
             NpcIcon04.sprite = BlankSprite04;
             NpcIcon05.sprite = BlankSprite05;
         }
