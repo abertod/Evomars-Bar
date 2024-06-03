@@ -16,7 +16,7 @@ public class ApareceBebidasKoemi : MonoBehaviour
     //public bool activated = false;
 
     //para controlar si se debe empezar a contar el tiempo
-    public bool empiezaContar = false; 
+    public bool empiezaContar02 = false; 
 
     // Start is called before the first frame update
     void Start()
@@ -41,44 +41,44 @@ public class ApareceBebidasKoemi : MonoBehaviour
         //Debug.Log(prepBebida01 + "está: " + activated);
     }
 
-    /*public void AparecenBebidas(){
+    public void Aparecen02Bebidas(){
 
         // Cuando se llama a este método, se empieza a contar el tiempo
-        empiezaContar = true; 
+        empiezaContar02 = true; 
 
     }
 
-    public void AparecenImagenesPreparación()
+    public void Aparecen02ImagenesPreparación()
     {
         // Si empiezaContar es verdadero, comienza a contar el tiempo
-        if (empiezaContar)
+        if (empiezaContar02)
         {
             timearAparicion = timearAparicion + Time.deltaTime;
 
             //prepBebidaCanvas.SetActive(true);
 
             // Activa las bebidas después de ciertos intervalos de tiempo
-            if (timearAparicion > 0.5 && !prepBebida01.activeSelf)
+            if (timearAparicion > 0.5 && !prepBebida05.activeSelf)
             {
-                prepBebida01.SetActive(true);
+                prepBebida05.SetActive(true);
                 AudioManager.Instance.SonarCLipUnaVez(AudioManager.Instance.fx[2]);
                 //Debug.Log("boton está: " + prepBebida01);
             }
-            else if (timearAparicion > 1.2 && !prepBebida02.activeSelf)
+            else if (timearAparicion > 1.2 && !prepBebida06.activeSelf)
             {
-                prepBebida02.SetActive(true);
+                prepBebida06.SetActive(true);
                 AudioManager.Instance.SonarCLipUnaVez(AudioManager.Instance.fx[3]);
                 //Debug.Log("boton está: " + prepBebida02);
             }
-            else if (timearAparicion > 2 && !prepBebida03.activeSelf)
+            else if (timearAparicion > 2 && !prepBebida07.activeSelf)
             {
-                prepBebida03.SetActive(true);
+                prepBebida07.SetActive(true);
                 AudioManager.Instance.SonarCLipUnaVez(AudioManager.Instance.fx[4]);
                 //Debug.Log("boton está: " + prepBebida03);
             }
-            else if (timearAparicion > 3 && !prepBebida04.activeSelf)
+            else if (timearAparicion > 3 && !prepBebida08.activeSelf)
             {
-                prepBebida04.SetActive(true);
+                prepBebida08.SetActive(true);
                 //Debug.Log("boton está: " + prepBebida03);
             }
         }
@@ -88,8 +88,8 @@ public class ApareceBebidasKoemi : MonoBehaviour
     public void Update()
     {
 
-        AparecenImagenesPreparación();
+        Aparecen02ImagenesPreparación();
         
-    }*/
+    }
 }
 
