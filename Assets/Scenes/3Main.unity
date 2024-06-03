@@ -608,13 +608,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-<<<<<<< HEAD
-    m_Center: {x: 0.24209999, y: -3.01285, z: 0}
-    m_Extent: {x: 0.6701, y: 3.27265, z: 0}
-=======
     m_Center: {x: 0.24315001, y: -3.0147998, z: 0}
     m_Extent: {x: 0.67475003, y: 3.2695, z: 0}
->>>>>>> 88e9ec2 (Ajuste tamaño fuente dialogos)
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1838,13 +1833,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-<<<<<<< HEAD
-    m_Center: {x: -0.016599998, y: -1.0159999, z: 0}
-    m_Extent: {x: 0.3566, y: 1.2773, z: 0}
-=======
     m_Center: {x: -0.017499998, y: -1.0109, z: 0}
     m_Extent: {x: 0.34390002, y: 1.2681, z: 0}
->>>>>>> 88e9ec2 (Ajuste tamaño fuente dialogos)
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -2390,13 +2380,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-<<<<<<< HEAD
-    m_Center: {x: 0.06635001, y: -1.2922001, z: 0}
-    m_Extent: {x: 0.44595, y: 0.89290005, z: 0}
-=======
     m_Center: {x: 0.07824999, y: -1.29395, z: 0}
     m_Extent: {x: 0.44744998, y: 0.89294994, z: 0}
->>>>>>> 88e9ec2 (Ajuste tamaño fuente dialogos)
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -3061,13 +3046,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-<<<<<<< HEAD
-    m_Center: {x: -1.05585, y: 0.82565, z: 0}
-    m_Extent: {x: 5.18305, y: 5.2857504, z: 0}
-=======
     m_Center: {x: -1.05305, y: 0.81949997, z: 0}
     m_Extent: {x: 5.18015, y: 5.2815, z: 0}
->>>>>>> 88e9ec2 (Ajuste tamaño fuente dialogos)
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -3901,13 +3881,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-<<<<<<< HEAD
-    m_Center: {x: 0.068450004, y: -1.44765, z: 0}
-    m_Extent: {x: 0.52245, y: 1.17485, z: 0}
-=======
     m_Center: {x: 0.06894998, y: -1.4578, z: 0}
     m_Extent: {x: 0.51745, y: 1.1834, z: 0}
->>>>>>> 88e9ec2 (Ajuste tamaño fuente dialogos)
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -4379,13 +4354,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-<<<<<<< HEAD
-    m_Center: {x: 0.07089999, y: -1.29465, z: 0}
-    m_Extent: {x: 0.4427, y: 0.89364994, z: 0}
-=======
     m_Center: {x: 0.0705, y: -1.29865, z: 0}
     m_Extent: {x: 0.44099998, y: 0.88495, z: 0}
->>>>>>> 88e9ec2 (Ajuste tamaño fuente dialogos)
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -5682,23 +5652,7 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-<<<<<<< HEAD
-      m_Calls:
-      - m_Target: {fileID: 1656415714}
-        m_TargetAssemblyTypeName: ApareceMinijuego, Assembly-CSharp
-        m_MethodName: Minijuego
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-=======
       m_Calls: []
->>>>>>> 88e9ec2 (Ajuste tamaño fuente dialogos)
 --- !u!4 &1270508035
 Transform:
   m_ObjectHideFlags: 0
@@ -6125,11 +6079,8 @@ MonoBehaviour:
   btn: {fileID: 0}
   timear: 0
   activated: 0
-<<<<<<< HEAD
-=======
   KoemiInicio: {fileID: 0}
   KaneInicio: {fileID: 0}
->>>>>>> 88e9ec2 (Ajuste tamaño fuente dialogos)
   contarT: 0
 --- !u!1 &1348403382
 GameObject:
@@ -6303,13 +6254,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-<<<<<<< HEAD
-    m_Center: {x: 0.50295, y: -2.6968, z: 0}
-    m_Extent: {x: 1.0044501, y: 1.1036999, z: 0}
-=======
     m_Center: {x: 0.51235, y: -2.70085, z: 0}
     m_Extent: {x: 1.0016501, y: 1.10255, z: 0}
->>>>>>> 88e9ec2 (Ajuste tamaño fuente dialogos)
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -6390,13 +6336,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-<<<<<<< HEAD
-    m_Center: {x: -0.02155, y: -1.0164, z: 0}
-    m_Extent: {x: 0.35215, y: 1.2648, z: 0}
-=======
     m_Center: {x: -0.015049994, y: -1.0181999, z: 0}
     m_Extent: {x: 0.35385, y: 1.2728, z: 0}
->>>>>>> 88e9ec2 (Ajuste tamaño fuente dialogos)
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -6509,13 +6450,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-<<<<<<< HEAD
-    m_Center: {x: 0.06670001, y: -1.4645, z: 0}
-    m_Extent: {x: 0.5286, y: 1.1756, z: 0}
-=======
     m_Center: {x: 0.07105, y: -1.45395, z: 0}
     m_Extent: {x: 0.52445, y: 1.17685, z: 0}
->>>>>>> 88e9ec2 (Ajuste tamaño fuente dialogos)
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -7534,13 +7470,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-<<<<<<< HEAD
-    m_Center: {x: 0.07510002, y: -1.3053, z: 0}
-    m_Extent: {x: 0.44660002, y: 0.89580005, z: 0}
-=======
     m_Center: {x: 0.06730002, y: -1.2973, z: 0}
     m_Extent: {x: 0.4476, y: 0.89399993, z: 0}
->>>>>>> 88e9ec2 (Ajuste tamaño fuente dialogos)
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -7720,13 +7651,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-<<<<<<< HEAD
-    m_Center: {x: 0.23985, y: -3.0176501, z: 0}
-    m_Extent: {x: 0.67795, y: 3.27885, z: 0}
-=======
     m_Center: {x: 0.24495, y: -3.0222502, z: 0}
     m_Extent: {x: 0.67305, y: 3.27805, z: 0}
->>>>>>> 88e9ec2 (Ajuste tamaño fuente dialogos)
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -7841,13 +7767,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-<<<<<<< HEAD
-    m_Center: {x: -0.051950004, y: 0.12489998, z: 0}
-    m_Extent: {x: 0.17365, y: 0.5513, z: 0}
-=======
     m_Center: {x: -0.056950003, y: 0.12850001, z: 0}
     m_Extent: {x: 0.17835, y: 0.56270003, z: 0}
->>>>>>> 88e9ec2 (Ajuste tamaño fuente dialogos)
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -8025,13 +7946,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-<<<<<<< HEAD
-    m_Center: {x: 0.51045, y: -2.68775, z: 0}
-    m_Extent: {x: 1.0028499, y: 1.1012499, z: 0}
-=======
     m_Center: {x: 0.50295, y: -2.6950998, z: 0}
     m_Extent: {x: 0.99805003, y: 1.1042, z: 0}
->>>>>>> 88e9ec2 (Ajuste tamaño fuente dialogos)
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -8188,13 +8104,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-<<<<<<< HEAD
-    m_Center: {x: 0.12429999, y: 0.023850009, z: 0}
-    m_Extent: {x: 0.52279997, y: 0.26555002, z: 0}
-=======
     m_Center: {x: 0.122449994, y: 0.028700002, z: 0}
     m_Extent: {x: 0.51945, y: 0.2662, z: 0}
->>>>>>> 88e9ec2 (Ajuste tamaño fuente dialogos)
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
