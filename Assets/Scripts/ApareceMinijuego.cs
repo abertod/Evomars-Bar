@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class ApareceMinijuego : MonoBehaviour
 {
-    public bool activado;
+    public static ApareceMinijuego apareceMinijuego;
+    public bool activado = false;
     //public static ApareceMinijuego Instance;
 
     public GameObject pantallaMinijuego;
@@ -22,10 +23,12 @@ public class ApareceMinijuego : MonoBehaviour
     public void Minijuego(){
         pantallaMinijuego.SetActive(true);
         //canvasBotonPreparar.SetActive(true);
+        activado = true;
     }
 
     public void DesactivarMinijuego(){
         pantallaMinijuego.SetActive(false);
+        activado = false;
         //canvasBotonPreparar.SetActive(false);
     }
 

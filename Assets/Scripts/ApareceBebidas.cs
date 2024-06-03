@@ -9,6 +9,10 @@ public class ApareceBebidas : MonoBehaviour
     public GameObject prepBebida02;
     public GameObject prepBebida03;
     public GameObject prepBebida04;
+
+    public GameObject prepBebida05;
+    public GameObject prepBebida06;
+    public GameObject prepBebida07;
     //public GameObject botonPrep;
     public float timearAparicion = 0;
     //public bool activated = false;
@@ -24,6 +28,10 @@ public class ApareceBebidas : MonoBehaviour
         prepBebida02 = GameObject.Find("preparacion_cocteles_02");
         prepBebida03 = GameObject.Find("preparacion_cocteles_03");
         prepBebida04 = GameObject.Find("preparacion_cocteles_04");
+
+        prepBebida05 = GameObject.Find("preparacion_cocteles_chica_01");
+        prepBebida06 = GameObject.Find("preparacion_cocteles_chica_02");
+        prepBebida07 = GameObject.Find("preparacion_cocteles_chica_03");
         //botonPrep = GameObject.Find("BotonPrep");
 
         //prepBebidaCanvas.SetActive(false);
@@ -31,6 +39,10 @@ public class ApareceBebidas : MonoBehaviour
         prepBebida02.SetActive(false);
         prepBebida03.SetActive(false);
         prepBebida04.SetActive(false);
+
+        prepBebida05.SetActive(false);
+        prepBebida06.SetActive(false);
+        prepBebida07.SetActive(false);
         //botonPrep.SetActive(false);
         //Debug.Log(prepBebida01 + "está: " + activated);
     }
