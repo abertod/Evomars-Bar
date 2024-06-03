@@ -26,11 +26,16 @@ public class ApareceBoton : MonoBehaviour
     {
         btn = GameObject.Find("Botones");
         btn.SetActive(false);
+<<<<<<< HEAD
         //AvanzarPanel = GameObject.Find("Panel_Avanzar");
+=======
+        btn.SetActive(true);
+        activated = true;
+>>>>>>> 1770f61 (Fundido a negro, cambio de música y un par de retoques)
         //Debug.Log("boton esta: " + activated);
         //Añade un listener al botón para que llame a la función OnButtonClick cuando se pulse
         //btn.GetComponent<Button>().onClick.AddListener(OnButtonClick);
-        
+
 
         KoemiInicio = GameObject.Find("Character - [Koemi]");
         KaneInicio = GameObject.Find("Character - [Kane]");
@@ -62,7 +67,7 @@ public class ApareceBoton : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-  
+        /*
         timear += Time.deltaTime;
  
         // Activa el botón después de 2 segundos
@@ -84,7 +89,7 @@ public class ApareceBoton : MonoBehaviour
 
         // Para mostrar el número de toques en pantalla
         //Debug.Log("Toque " + Input.touchCount);
-          
+        */
 
     }
 

@@ -283,6 +283,7 @@ namespace DialogueEditor
             SetSelectedOption(previous);
         }
 
+
         public void PressSelectedOption()
         {
             if (m_state != eState.Idle) { return; }

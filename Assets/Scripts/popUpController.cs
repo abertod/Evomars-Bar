@@ -12,11 +12,12 @@ public class popUpController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        /*
         if (Input.GetKeyDown("space")) 
         {             
             animarPopUp();               
         }
+        */
 
     }
 
