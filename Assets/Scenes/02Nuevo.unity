@@ -161,7 +161,7 @@ Transform:
   - {fileID: 719687177}
   - {fileID: 611067293}
   m_Father: {fileID: 549630506}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &50380550
 GameObject:
@@ -1195,7 +1195,7 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 498245139}
         m_TargetAssemblyTypeName: FundidoANegro, Assembly-CSharp
         m_MethodName: fundirFundido
         m_Mode: 1
@@ -1207,7 +1207,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 498245139}
         m_TargetAssemblyTypeName: FundidoANegro, Assembly-CSharp
         m_MethodName: alLobyLaT
         m_Mode: 1
@@ -2082,6 +2082,134 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 497598087}
   m_CullTransparentMesh: 1
+--- !u!1 &498245136
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 498245137}
+  - component: {fileID: 498245140}
+  - component: {fileID: 498245139}
+  - component: {fileID: 498245138}
+  m_Layer: 5
+  m_Name: Fondo Negro
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &498245137
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498245136}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 169912.73, y: 72882.125, z: -9059.25}
+  m_LocalScale: {x: 342775.03, y: 167846.72, z: 114774.836}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 549630506}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &498245138
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498245136}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 55d2a92f44ebb4647becfa277d9c7220, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &498245139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498245136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d2fd3b4d7d363b449c24c2073372eaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Fundido: {fileID: 498245136}
+  ListaFundida:
+  - {fileID: 50059365}
+  - {fileID: 3205606180634691891}
+  - {fileID: 3205606180634691890}
+  - {fileID: 3205606180634691889}
+  - {fileID: 3205606180634691888}
+  cosaT: {fileID: 3205606180634691887}
+  fundirAnim: {fileID: 498245138}
+--- !u!212 &498245140
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498245136}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &520309488
 GameObject:
   m_ObjectHideFlags: 0
@@ -2532,6 +2660,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 498245137}
   - {fileID: 50059366}
   - {fileID: 2098593940}
   - {fileID: 802163383959695579}
@@ -6967,7 +7096,7 @@ RectTransform:
   m_Children:
   - {fileID: 871040016}
   m_Father: {fileID: 549630506}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -7188,9 +7317,21 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1816887989}
-        m_TargetAssemblyTypeName: ApareceMinijuego, Assembly-CSharp
-        m_MethodName: Minijuego
+      - m_Target: {fileID: 498245139}
+        m_TargetAssemblyTypeName: FundidoANegro, Assembly-CSharp
+        m_MethodName: fundirFundido
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 498245139}
+        m_TargetAssemblyTypeName: FundidoANegro, Assembly-CSharp
+        m_MethodName: alLobyLaT
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7434,7 +7575,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2836496523707628021, guid: b13b055f5f515cf4ea3bff17c3f4a7a9, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2836496523707628021, guid: b13b055f5f515cf4ea3bff17c3f4a7a9, type: 3}
       propertyPath: m_AnchorMax.x
@@ -7534,6 +7675,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b13b055f5f515cf4ea3bff17c3f4a7a9, type: 3}
+--- !u!1 &3205606180634691887 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3134216188395654109, guid: b13b055f5f515cf4ea3bff17c3f4a7a9, type: 3}
+  m_PrefabInstance: {fileID: 3205606180634691886}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3205606180634691888 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 583446694482385361, guid: b13b055f5f515cf4ea3bff17c3f4a7a9, type: 3}
+  m_PrefabInstance: {fileID: 3205606180634691886}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3205606180634691889 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2714869383990885737, guid: b13b055f5f515cf4ea3bff17c3f4a7a9, type: 3}
+  m_PrefabInstance: {fileID: 3205606180634691886}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3205606180634691890 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3205606180532618642, guid: b13b055f5f515cf4ea3bff17c3f4a7a9, type: 3}
+  m_PrefabInstance: {fileID: 3205606180634691886}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3205606180634691891 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2836496523503378969, guid: b13b055f5f515cf4ea3bff17c3f4a7a9, type: 3}
+  m_PrefabInstance: {fileID: 3205606180634691886}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7814879686829226666
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7639,7 +7805,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7814879688233629720, guid: 98f50ca85c1971b4caa762367c834baf, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7814879688233629720, guid: 98f50ca85c1971b4caa762367c834baf, type: 3}
       propertyPath: m_AnchorMax.x
