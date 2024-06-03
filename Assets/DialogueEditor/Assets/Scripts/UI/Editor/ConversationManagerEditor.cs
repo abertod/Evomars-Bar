@@ -40,6 +40,7 @@ namespace DialogueEditor
         SerializedProperty NpcIcon04;
         SerializedProperty NpcIcon05;
         SerializedProperty PanelAvance;
+        //SerializedProperty apareceboton;
 
         private void OnEnable()
         {
@@ -60,6 +61,7 @@ namespace DialogueEditor
             NpcIcon04 = serializedObject.FindProperty("NpcIcon04");
             NpcIcon05 = serializedObject.FindProperty("NpcIcon05");
             PanelAvance = serializedObject.FindProperty("AvanzarPanel");
+            //apareceboton = serializedObject.FindProperty("ApareceBoton");
         }
 
         public override void OnInspectorGUI()
@@ -111,6 +113,8 @@ namespace DialogueEditor
             EditorGUILayout.PropertyField(NpcIcon05);
 
             EditorGUILayout.PropertyField(PanelAvance);
+
+            //EditorGUILayout.PropertyField(apareceboton);
 
 
 

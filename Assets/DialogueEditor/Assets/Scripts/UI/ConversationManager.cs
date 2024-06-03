@@ -72,6 +72,10 @@ namespace DialogueEditor
         public Sprite BlankSprite04;
         public Sprite BlankSprite05;
 
+        //public GameObject btn;
+
+        //public float timeT;
+
         // Getter properties
         public bool IsConversationActive
         {
@@ -130,6 +134,10 @@ namespace DialogueEditor
             //ScrollSpeed = Dialogo.velTexto;
         }
 
+        void Start(){
+            //btn = GameObject.Find("Botones");
+        }
+
         private void OnDestroy()
         {
             Instance = null;
@@ -174,6 +182,10 @@ namespace DialogueEditor
                     SetState(eState.TransitioningOptionsOn);
                 }
             }
+
+            /*if(btn.activeSelf){
+                timeT = timeT + Time.deltaTime;
+            }*/
 
 /*
             if (Input.GetKeyDown(KeyCode.T)){

@@ -13,6 +13,8 @@ public class ApareceBoton : MonoBehaviour
     public GameObject KoemiInicio;
     public GameObject KaneInicio;
 
+    public float timeT;
+
 
     // Start is called before the first frame update
     void Start()
@@ -58,6 +60,10 @@ public class ApareceBoton : MonoBehaviour
             //Debug.Log("boton esta: " + activated);
             
         }
+
+        if(btn.activeSelf && activated){
+                timeT = timeT + Time.deltaTime;
+            }
 
         // Para mostrar el número de toques en pantalla
         //Debug.Log("Toque " + Input.touchCount);

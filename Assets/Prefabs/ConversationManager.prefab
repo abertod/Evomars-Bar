@@ -142,7 +142,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Pulsa T para avanzar di\xE1logo"
+  m_text: "Pulsa T para completar di\xE1logo"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7c8521af513c6114ba6c5ba6369745a0, type: 2}
   m_sharedMaterial: {fileID: -851124970698165954, guid: 7c8521af513c6114ba6c5ba6369745a0, type: 2}
