@@ -9,6 +9,8 @@ public class Luces : MonoBehaviour
     //public GameObject minijuego;
     //public bool activado = false;
 
+    
+
     // Start is called before the first frame update
     void Start()
     {
