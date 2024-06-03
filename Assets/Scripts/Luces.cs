@@ -8,7 +8,7 @@ public class Luces : MonoBehaviour
     public GameObject luces;
     public GameObject minijuego;
 
-    //public GameObject minijuego2;
+    public GameObject minijuego2;
     //public bool activado = false;
 
     
@@ -18,7 +18,7 @@ public class Luces : MonoBehaviour
     {
         luces = GameObject.Find("luces");
         minijuego = GameObject.Find("Minijuego");
-        //minijuego2 = GameObject.Find("Minijuego_2");
+        minijuego2 = GameObject.Find("Minijuego_2");
     }
 
     public void DesactivarLuces()
@@ -32,32 +32,17 @@ public class Luces : MonoBehaviour
         luces.SetActive(true);
     }
 
-    /*public void DesactivarLuces02()
-    {
-        luces.SetActive(false);
-        
-    }
-
-    public void ActivarLuces02()
-    {
-        luces.SetActive(true);
-    }*/
 
     // Update is called once per frame
     void Update()
     {
-        if(minijuego.activeSelf){
+        if(minijuego.activeSelf || minijuego2.activeSelf){
             DesactivarLuces();
         }else{
             ActivarLuces();
         }
 
-        /*if(minijuego2.activeSelf){
-            DesactivarLuces02();
-        }else{
-            ActivarLuces02();
-        }*/
-
+    
         
     }
 }
