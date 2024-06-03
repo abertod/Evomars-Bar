@@ -732,6 +732,7 @@ MonoBehaviour:
   BlankSprite03: {fileID: 21300000, guid: 70e433de46068504fa56fcf7f49b32b1, type: 3}
   BlankSprite04: {fileID: 21300000, guid: 70e433de46068504fa56fcf7f49b32b1, type: 3}
   BlankSprite05: {fileID: 21300000, guid: 70e433de46068504fa56fcf7f49b32b1, type: 3}
+  timeTB: 0
   m_targetScrollTextCount: 0
 --- !u!82 &2836496523841325408
 AudioSource:

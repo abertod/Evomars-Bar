@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
+using UnityEditor.Rendering;
 
 namespace DialogueEditor
 {
@@ -72,9 +73,11 @@ namespace DialogueEditor
         public Sprite BlankSprite04;
         public Sprite BlankSprite05;
 
-        //public GameObject btn;
+        //public float timeTB;
+        //public Canvas CanvasApa;
+        public float timeT;
+        //public bool contarT;
 
-        //public float timeT;
 
         // Getter properties
         public bool IsConversationActive
@@ -135,7 +138,7 @@ namespace DialogueEditor
         }
 
         void Start(){
-            //btn = GameObject.Find("Botones");
+            //timeTB = ApareceBoton.apareceBoton.timeT;
         }
 
         private void OnDestroy()
@@ -143,6 +146,7 @@ namespace DialogueEditor
             Instance = null;
         }
 
+        
         private void Update()
         {
             switch (m_state)
@@ -183,9 +187,21 @@ namespace DialogueEditor
                 }
             }
 
-            /*if(btn.activeSelf){
+            //Si el panel de Avanzar está activado, comienza a contar
+            if (AvanzarPanel.activeSelf){
                 timeT = timeT + Time.deltaTime;
-            }*/
+            }
+
+            //Debug.Log("TimeT es " + timeT);
+
+            //Si supera esa cifra, el panel se desactiva
+            if( timeT >= 10f){
+                AvanzarPanel.SetActive(false);
+            }
+
+            
+
+            
 
 /*
             if (Input.GetKeyDown(KeyCode.T)){
