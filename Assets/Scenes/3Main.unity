@@ -608,8 +608,13 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
+<<<<<<< HEAD
     m_Center: {x: 0.24209999, y: -3.01285, z: 0}
     m_Extent: {x: 0.6701, y: 3.27265, z: 0}
+=======
+    m_Center: {x: 0.24315001, y: -3.0147998, z: 0}
+    m_Extent: {x: 0.67475003, y: 3.2695, z: 0}
+>>>>>>> 88e9ec2 (Ajuste tamaño fuente dialogos)
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1833,8 +1838,13 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
+<<<<<<< HEAD
     m_Center: {x: -0.016599998, y: -1.0159999, z: 0}
     m_Extent: {x: 0.3566, y: 1.2773, z: 0}
+=======
+    m_Center: {x: -0.017499998, y: -1.0109, z: 0}
+    m_Extent: {x: 0.34390002, y: 1.2681, z: 0}
+>>>>>>> 88e9ec2 (Ajuste tamaño fuente dialogos)
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -2380,8 +2390,13 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
+<<<<<<< HEAD
     m_Center: {x: 0.06635001, y: -1.2922001, z: 0}
     m_Extent: {x: 0.44595, y: 0.89290005, z: 0}
+=======
+    m_Center: {x: 0.07824999, y: -1.29395, z: 0}
+    m_Extent: {x: 0.44744998, y: 0.89294994, z: 0}
+>>>>>>> 88e9ec2 (Ajuste tamaño fuente dialogos)
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -3046,8 +3061,13 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
+<<<<<<< HEAD
     m_Center: {x: -1.05585, y: 0.82565, z: 0}
     m_Extent: {x: 5.18305, y: 5.2857504, z: 0}
+=======
+    m_Center: {x: -1.05305, y: 0.81949997, z: 0}
+    m_Extent: {x: 5.18015, y: 5.2815, z: 0}
+>>>>>>> 88e9ec2 (Ajuste tamaño fuente dialogos)
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -3881,8 +3901,13 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
+<<<<<<< HEAD
     m_Center: {x: 0.068450004, y: -1.44765, z: 0}
     m_Extent: {x: 0.52245, y: 1.17485, z: 0}
+=======
+    m_Center: {x: 0.06894998, y: -1.4578, z: 0}
+    m_Extent: {x: 0.51745, y: 1.1834, z: 0}
+>>>>>>> 88e9ec2 (Ajuste tamaño fuente dialogos)
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -4354,8 +4379,13 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
+<<<<<<< HEAD
     m_Center: {x: 0.07089999, y: -1.29465, z: 0}
     m_Extent: {x: 0.4427, y: 0.89364994, z: 0}
+=======
+    m_Center: {x: 0.0705, y: -1.29865, z: 0}
+    m_Extent: {x: 0.44099998, y: 0.88495, z: 0}
+>>>>>>> 88e9ec2 (Ajuste tamaño fuente dialogos)
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -5245,6 +5275,38 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2836496522338475483, guid: b13b055f5f515cf4ea3bff17c3f4a7a9, type: 3}
+      propertyPath: m_fontSize
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2836496522338475483, guid: b13b055f5f515cf4ea3bff17c3f4a7a9, type: 3}
+      propertyPath: m_margin.w
+      value: -46.571655
+      objectReference: {fileID: 0}
+    - target: {fileID: 2836496522338475483, guid: b13b055f5f515cf4ea3bff17c3f4a7a9, type: 3}
+      propertyPath: m_margin.x
+      value: -143.70473
+      objectReference: {fileID: 0}
+    - target: {fileID: 2836496522338475483, guid: b13b055f5f515cf4ea3bff17c3f4a7a9, type: 3}
+      propertyPath: m_margin.y
+      value: 51.06156
+      objectReference: {fileID: 0}
+    - target: {fileID: 2836496522338475483, guid: b13b055f5f515cf4ea3bff17c3f4a7a9, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2836496522338475483, guid: b13b055f5f515cf4ea3bff17c3f4a7a9, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2836496522338475485, guid: b13b055f5f515cf4ea3bff17c3f4a7a9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 75.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2836496522338475485, guid: b13b055f5f515cf4ea3bff17c3f4a7a9, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 41.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2836496523503378969, guid: b13b055f5f515cf4ea3bff17c3f4a7a9, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -5413,6 +5475,34 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -104
       objectReference: {fileID: 0}
+    - target: {fileID: 5017930099525010763, guid: b13b055f5f515cf4ea3bff17c3f4a7a9, type: 3}
+      propertyPath: m_fontSize
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 5017930099525010763, guid: b13b055f5f515cf4ea3bff17c3f4a7a9, type: 3}
+      propertyPath: m_margin.w
+      value: 4.5429077
+      objectReference: {fileID: 0}
+    - target: {fileID: 5017930099525010763, guid: b13b055f5f515cf4ea3bff17c3f4a7a9, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 5017930099525010763, guid: b13b055f5f515cf4ea3bff17c3f4a7a9, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5017930099525010763, guid: b13b055f5f515cf4ea3bff17c3f4a7a9, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5242225784723844398, guid: b13b055f5f515cf4ea3bff17c3f4a7a9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 99.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5242225784723844398, guid: b13b055f5f515cf4ea3bff17c3f4a7a9, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 71.9
+      objectReference: {fileID: 0}
     - target: {fileID: 8553574325599596420, guid: b13b055f5f515cf4ea3bff17c3f4a7a9, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 131
@@ -5473,70 +5563,69 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 68
-  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":48}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":613.3996,\"yPos\":1871.3999},\"ID\":46,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Seguro
-    que est\xE1 muy orgulloso.\",\"parentUIDs\":[45],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":48}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":844.5992,\"yPos\":1870.60107},\"ID\":52,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Me
-    alegro mucho por ti.\",\"parentUIDs\":[45],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":50}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":415.0003,\"yPos\":2053.39453},\"ID\":53,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xBFAlgo
-    personal?\",\"parentUIDs\":[48],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":57}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":654.9997,\"yPos\":2055.395},\"ID\":54,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xBFSu
-    trabajo le mantiene ocupado?\",\"parentUIDs\":[48],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":56}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":896.198669,\"yPos\":2056.19482},\"ID\":55,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xBFY
-    eso?\",\"parentUIDs\":[48],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":48}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":380.999939,\"yPos\":1873.79736},\"ID\":63,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xBFY
-    no lo aprecia?\",\"parentUIDs\":[45],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":24}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":-340.800049,\"yPos\":-40.39998},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":\"\",\"Text\":\"...\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":\"\",\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":\"2c2a5be59b4a36648a911535c6e46ab8\",\"Name\":\"(Your
-    Name)\",\"OptionUIDs\":[1,2],\"SpeechUID\":-1,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":25}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":188.200668,\"yPos\":84.00075},\"ID\":23,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"(La
+  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":48}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":300.3987,\"yPos\":243.797424},\"ID\":46,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Seguro
+    que est\xE1 muy orgulloso.\",\"parentUIDs\":[45],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":48}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":531.5978,\"yPos\":242.9986},\"ID\":52,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Me
+    alegro mucho por ti.\",\"parentUIDs\":[45],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":50}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":101.999283,\"yPos\":425.390778},\"ID\":53,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xBFAlgo
+    personal?\",\"parentUIDs\":[48],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":57}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":341.9987,\"yPos\":427.791168},\"ID\":54,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xBFSu
+    trabajo le mantiene ocupado?\",\"parentUIDs\":[48],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":56}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":583.197266,\"yPos\":428.590973},\"ID\":55,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xBFY
+    eso?\",\"parentUIDs\":[48],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":48}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":67.9985352,\"yPos\":246.194946},\"ID\":63,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xBFY
+    no lo aprecia?\",\"parentUIDs\":[45],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":24}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":-653.7999,\"yPos\":-1667.99963},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":\"\",\"Text\":\"...\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":\"\",\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":\"2c2a5be59b4a36648a911535c6e46ab8\",\"Name\":\"(Your
+    Name)\",\"OptionUIDs\":[1,2],\"SpeechUID\":-1,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":25}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-124.799072,\"yPos\":-1543.60022},\"ID\":23,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"(La
     campanilla de la puerta resuena, los pasos firmes y el crujir de la madera se
     hacen m\xE1s fuertes y cercanos, por lo que me volte\xF3 para atender al nuevo
     cliente mientras con un trapo abrillanto un vaso)\",\"parentUIDs\":[67],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":null,\"Name\":\"(Your
-    Name)\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.407},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":67}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-329.000427,\"yPos\":86.80147},\"ID\":24,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"(Un
+    Name)\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.407},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":67}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-642.0001,\"yPos\":-1540.79944},\"ID\":24,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"(Un
     d\xEDa m\xE1s, me dirijo al local para empezar el turno despu\xE9s de unos d\xEDas
     sin abrir por las fuertes tormentas.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":null,\"Name\":\"(Your
-    name)\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":26}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-103.398979,\"yPos\":201.998215},\"ID\":25,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Buenas
-    noches, un Whisky, por favor.\",\"parentUIDs\":[23],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":null,\"Name\":\"Kane\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":29}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-105.799,\"yPos\":320.795654},\"ID\":26,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Marchando.\",\"parentUIDs\":[25],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":null,\"Name\":\"(Your
-    Name)\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":30}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-97.39886,\"yPos\":536.3937},\"ID\":27,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Aqu\xED
+    name)\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":26}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-416.398682,\"yPos\":-1425.601},\"ID\":25,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Buenas
+    noches, un Whisky, por favor.\",\"parentUIDs\":[23],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":null,\"Name\":\"KANE\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":29}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-411.998657,\"yPos\":-1304.004},\"ID\":26,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Marchando.\",\"parentUIDs\":[25],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":null,\"Name\":\"(Your
+    Name)\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":30}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-410.398438,\"yPos\":-1091.20642},\"ID\":27,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Aqu\xED
     tienes.\",\"parentUIDs\":[29],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":null,\"Name\":\"(Your
-    Name)\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":27}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-102.598991,\"yPos\":430.7942},\"ID\":29,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"...\",\"parentUIDs\":[26],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":64}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-240.198654,\"yPos\":630.795532},\"ID\":30,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"(Suena
-    de nuevo la campanilla, aunque mucho m\xE1s delicada. \",\"parentUIDs\":[27],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":null,\"Name\":\"(Your
-    Name)\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":33}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-99.79821,\"yPos\":738.395},\"ID\":32,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1Hola!
-    Puedes ponerme algo dulce por favor? Con hielo.\",\"parentUIDs\":[64],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":null,\"Name\":\"Koemi\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":34}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-96.59831,\"yPos\":848.7969},\"ID\":33,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Claro,
+    Name)\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":27}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-415.598755,\"yPos\":-1196.80554},\"ID\":29,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"...\",\"parentUIDs\":[26],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":64}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-553.1985,\"yPos\":-996.8038},\"ID\":30,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"(Suena
+    de nuevo la campanilla, aunque mucho m\xE1s delicada) \",\"parentUIDs\":[27],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":null,\"Name\":\"(Your
+    Name)\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":33}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-412.797974,\"yPos\":-889.2039},\"ID\":32,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1Hola!
+    Puedes ponerme algo dulce por favor? Con hielo.\",\"parentUIDs\":[64],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":null,\"Name\":\"KOEMI\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":34}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-409.597778,\"yPos\":-778.8029},\"ID\":33,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Claro,
     enseguida.\\n\",\"parentUIDs\":[32],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":null,\"Name\":\"(Your
-    Name)\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":35}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-91.79845,\"yPos\":958.000366},\"ID\":34,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ring
-    ring...\",\"parentUIDs\":[33],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.272},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":36}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-98.19842,\"yPos\":1064.80249},\"ID\":35,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u201CHola
-    pap\xE1, perdona por no contestar antes, acabo de salir de la biblioteca\u201D\",\"parentUIDs\":[34],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":null,\"Name\":\"Koemi\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.402},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":37}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":145.00209,\"yPos\":1065.20215},\"ID\":36,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Aj\xE1.\",\"parentUIDs\":[35],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":null,\"Name\":\"Koemi\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":38}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":369.800354,\"yPos\":1059.2019},\"ID\":37,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xBFQu\xE9
-    tal est\xE1 Andrea? Ya se encuentra mejor?\\n\",\"parentUIDs\":[36],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":null,\"Name\":\"Koemi\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":39}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":604.999939,\"yPos\":1067.20166},\"ID\":38,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Genial,
-    ma\xF1ana por la ma\xF1ana preparar\xE9 t\xE9.\\n\",\"parentUIDs\":[37],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":null,\"Name\":\"Koemi\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":65}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":393.399231,\"yPos\":1176.40161},\"ID\":39,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"(El
+    Name)\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":35}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-404.797882,\"yPos\":-669.598938},\"ID\":34,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ring
+    ring...\",\"parentUIDs\":[33],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.272},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":36}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-411.198,\"yPos\":-562.7967},\"ID\":35,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u201CHola
+    pap\xE1, perdona por no contestar antes, acabo de salir de la biblioteca\u201D\",\"parentUIDs\":[34],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":null,\"Name\":\"KOEMI\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.402},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":37}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-186.398315,\"yPos\":-556.3971},\"ID\":36,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Aj\xE1.\",\"parentUIDs\":[35],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":null,\"Name\":\"KOEMI\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":38}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":56.7992554,\"yPos\":-568.397156},\"ID\":37,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xBFQu\xE9
+    tal est\xE1 Andrea? Ya se encuentra mejor?\\n\",\"parentUIDs\":[36],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":null,\"Name\":\"KOEMI\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":39}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":291.998962,\"yPos\":-560.397644},\"ID\":38,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Genial,
+    ma\xF1ana por la ma\xF1ana preparar\xE9 t\xE9.\\n\",\"parentUIDs\":[37],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":null,\"Name\":\"KOEMI\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":65}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":80.397644,\"yPos\":-451.198334},\"ID\":39,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"(El
     hombre la mira por un segundo sin mover un m\xFAsculo, parece un poco molesto
     por el ruido pero de inmediato contin\xFAa apuntando en su cuaderno)\",\"parentUIDs\":[38],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":null,\"Name\":\"(Your
-    Name)\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":41}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":609.8007,\"yPos\":1295.60449},\"ID\":40,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1Esto
-    est\xE1 riqu\xEDsimo!\",\"parentUIDs\":[66],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":null,\"Name\":\"Koemi\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":42}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":613.4001,\"yPos\":1406.40625},\"ID\":41,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Me
+    Name)\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":41}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":296.799744,\"yPos\":-331.9965},\"ID\":40,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1Esto
+    est\xE1 riqu\xEDsimo!\",\"parentUIDs\":[66],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":null,\"Name\":\"KOEMI\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":42}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":272.799225,\"yPos\":-209.995026},\"ID\":41,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Me
     alegro de que te guste, aqu\xED lo llamamos Raspberry Sugar, por si quieres volverlo
-    a pedir alguna vez.\",\"parentUIDs\":[40],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":null,\"Name\":\"(Your
-    Name)\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":43}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":559.4001,\"yPos\":1534.80762},\"ID\":42,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1Gracias!
-    Volver\xE9 pronto ahora que los ex\xE1menes se han terminado por fin.\",\"parentUIDs\":[41],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":null,\"Name\":\"Koemi\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":44}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":853.399231,\"yPos\":1521.20728},\"ID\":43,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"(A
+    a pedir alguna vez.\",\"parentUIDs\":[40],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":null,\"Name\":\"KOEMI\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":43}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":246.398941,\"yPos\":-92.79462},\"ID\":42,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1Gracias!
+    Volver\xE9 pronto ahora que los ex\xE1menes se han terminado por fin.\",\"parentUIDs\":[41],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":null,\"Name\":\"KOEMI\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":44}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":540.397949,\"yPos\":-106.394104},\"ID\":43,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"(A
     pesar de su fachada risue\xF1a, su expresi\xF3n se muestra preocupada, parece
     que hay algo que le preocupa)\\n\",\"parentUIDs\":[42],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":null,\"Name\":\"(Your
-    Name)\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":45}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":786.198059,\"yPos\":1644.4043},\"ID\":44,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xBFQu\xE9
+    name)\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":45}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":472.3969,\"yPos\":16.8017311},\"ID\":44,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xBFQu\xE9
     tal han ido los ex\xE1menes?\\n\",\"parentUIDs\":[43],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":null,\"Name\":\"(Your
-    Name)\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":63},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":46},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":52}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":694.201233,\"yPos\":1754.80176},\"ID\":45,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Oh,
+    Name)\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":63},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":46},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":52}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":381.200348,\"yPos\":127.1997},\"ID\":45,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Oh,
     sin demasiados problemas, he estado estudiando muy duro para no decepcionar a
-    mi padre y poder conseguir un buen trabajo en el futuro.\",\"parentUIDs\":[44],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":null,\"Name\":\"Koemi\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":53},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":54},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":55}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":646.2004,\"yPos\":1947.99976},\"ID\":48,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Bueno,
-    ahora tiene otras preocupaciones as\xED que no suele prestarle mucha atenci\xF3n.\",\"parentUIDs\":[46,52,63],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":null,\"Name\":\"Koemi\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":58}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":414.6004,\"yPos\":2149.19482},\"ID\":50,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Bueno,
-    s\xED, ahora mismo estamos ayudando a nuestra t\xEDa...\\n\\n\",\"parentUIDs\":[53],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":null,\"Name\":\"Koemi\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":655.8007,\"yPos\":2373.99756},\"ID\":51,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Perdona,
-    no deber\xEDa estar hablando de esto.\_Tengo\_que\_irme.\",\"parentUIDs\":[58,60],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":null,\"Name\":\"Koemi\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":58}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":896.59906,\"yPos\":2145.99365},\"ID\":56,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ahora
-    mismo estamos ayudando a nuestra t\xEDa\u2026\\n\",\"parentUIDs\":[55],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":null,\"Name\":\"Koemi\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":60}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":649.0007,\"yPos\":2158.79346},\"ID\":57,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"S\xED,
+    mi padre y poder conseguir un buen trabajo en el futuro.\",\"parentUIDs\":[44],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":null,\"Name\":\"KOEMI\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":53},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":54},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":55}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":333.199066,\"yPos\":320.396149},\"ID\":48,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Bueno,
+    ahora tiene otras preocupaciones as\xED que no suele prestarle mucha atenci\xF3n.\",\"parentUIDs\":[46,52,63],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":null,\"Name\":\"KOEMI\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":58}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":101.599266,\"yPos\":521.592346},\"ID\":50,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Bueno,
+    s\xED, ahora mismo estamos ayudando a nuestra t\xEDa...\\n\\n\",\"parentUIDs\":[53],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":null,\"Name\":\"KOEMI\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":342.7997,\"yPos\":746.7945},\"ID\":51,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Perdona,
+    no deber\xEDa estar hablando de esto.\_Tengo\_que\_irme.\",\"parentUIDs\":[58,60],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":null,\"Name\":\"KOEMI\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":58}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":583.597656,\"yPos\":518.3912},\"ID\":56,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ahora
+    mismo estamos ayudando a nuestra t\xEDa\u2026\\n\",\"parentUIDs\":[55],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":null,\"Name\":\"KOEMI\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":60}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":335.999359,\"yPos\":531.1906},\"ID\":57,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"S\xED,
     bastante, se dedica en cuerpo y alma a ello y me encanta ver lo mucho que es
-    capaz de ayudar a la gente.\\n\",\"parentUIDs\":[54],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":null,\"Name\":\"Koemi\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":51}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":674.601,\"yPos\":2642.40039},\"ID\":58,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"(Por
+    capaz de ayudar a la gente.\\n\",\"parentUIDs\":[54],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":null,\"Name\":\"KOEMI\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":51}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":361.5999,\"yPos\":1014.80127},\"ID\":58,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"(Por
     un momento parece que se encuentra en otro lugar pero r\xE1pidamente vuelve en
     s\xED y contin\xFAa)\\n\",\"parentUIDs\":[50,56],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":null,\"Name\":\"(Your
-    Name)\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":51}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":650.6015,\"yPos\":2262.40186},\"ID\":60,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xBFA
+    Name)\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":51}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":337.60025,\"yPos\":634.7994},\"ID\":60,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xBFA
     qu\xE9 se dedica?\",\"parentUIDs\":[57],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":null,\"Name\":\"(Your
-    Name)\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":32}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":46.6000824,\"yPos\":630.399536},\"ID\":64,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"En
+    Name)\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":32}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-266.400146,\"yPos\":-997.2},\"ID\":64,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"En
     un paso apresurado pero suave, la madera en el parqu\xE9 no cruje esta vez y
     la chica cyborg que acaba de entrar se acerca a la barra, se aprecia en el aire
     un perfume acaramelado casi al instante)\",\"parentUIDs\":[30],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":null,\"Name\":\"(Your
-    name)\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":66}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":652.1994,\"yPos\":1177.59839},\"ID\":65,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"(Observ\xE1ndole
+    name)\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":66}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":339.198151,\"yPos\":-450.001556},\"ID\":65,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"(Observ\xE1ndole
     m\xE1s detenidamente, tiene una apariencia un tanto inusual, no parece un cyborg
     pues no se aprecia ning\xFAn implante pero sus ojos son completamente negros)\",\"parentUIDs\":[39],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":null,\"Name\":\"(Your
-    name)\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":40}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":889.799744,\"yPos\":1175.20068},\"ID\":66,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"(Por
+    name)\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":40}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":576.798,\"yPos\":-452.399261},\"ID\":66,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"(Por
     un momento levanta la mirada y me doy cuenta de que quiz\xE1 le hab\xEDa estado
     mirando demasiado fijamente, r\xE1pidamente dirijo la mirada a la otra clienta)\",\"parentUIDs\":[65],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":null,\"Name\":\"(Your
-    name)\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":23}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-86.2004547,\"yPos\":85.600296},\"ID\":67,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"El
+    name)\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":23}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-399.2001,\"yPos\":-1542.00061},\"ID\":67,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"El
     cielo nocturno est\xE1 despejado, las estrellas y los neones de New Sky City
     iluminan la ciudad y puede escucharse cierto barullo en la lejan\xEDa, procedente
     de la estaci\xF3n Evo-Mars)\",\"parentUIDs\":[24],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"Icon02GUID\":null,\"Icon03GUID\":null,\"Icon04GUID\":null,\"Icon05GUID\":null,\"IconGUID\":null,\"Name\":\"(Your
@@ -5593,6 +5682,7 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
+<<<<<<< HEAD
       m_Calls:
       - m_Target: {fileID: 1656415714}
         m_TargetAssemblyTypeName: ApareceMinijuego, Assembly-CSharp
@@ -5606,6 +5696,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+=======
+      m_Calls: []
+>>>>>>> 88e9ec2 (Ajuste tamaño fuente dialogos)
 --- !u!4 &1270508035
 Transform:
   m_ObjectHideFlags: 0
@@ -6032,6 +6125,11 @@ MonoBehaviour:
   btn: {fileID: 0}
   timear: 0
   activated: 0
+<<<<<<< HEAD
+=======
+  KoemiInicio: {fileID: 0}
+  KaneInicio: {fileID: 0}
+>>>>>>> 88e9ec2 (Ajuste tamaño fuente dialogos)
   contarT: 0
 --- !u!1 &1348403382
 GameObject:
@@ -6205,8 +6303,13 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
+<<<<<<< HEAD
     m_Center: {x: 0.50295, y: -2.6968, z: 0}
     m_Extent: {x: 1.0044501, y: 1.1036999, z: 0}
+=======
+    m_Center: {x: 0.51235, y: -2.70085, z: 0}
+    m_Extent: {x: 1.0016501, y: 1.10255, z: 0}
+>>>>>>> 88e9ec2 (Ajuste tamaño fuente dialogos)
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -6287,8 +6390,13 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
+<<<<<<< HEAD
     m_Center: {x: -0.02155, y: -1.0164, z: 0}
     m_Extent: {x: 0.35215, y: 1.2648, z: 0}
+=======
+    m_Center: {x: -0.015049994, y: -1.0181999, z: 0}
+    m_Extent: {x: 0.35385, y: 1.2728, z: 0}
+>>>>>>> 88e9ec2 (Ajuste tamaño fuente dialogos)
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -6401,8 +6509,13 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
+<<<<<<< HEAD
     m_Center: {x: 0.06670001, y: -1.4645, z: 0}
     m_Extent: {x: 0.5286, y: 1.1756, z: 0}
+=======
+    m_Center: {x: 0.07105, y: -1.45395, z: 0}
+    m_Extent: {x: 0.52445, y: 1.17685, z: 0}
+>>>>>>> 88e9ec2 (Ajuste tamaño fuente dialogos)
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -6549,7 +6662,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 68a2f31e9837c4a44b808329b0eeeb00, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a81ac1c8a450aaa45a153d999b5c2081, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7421,8 +7534,13 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
+<<<<<<< HEAD
     m_Center: {x: 0.07510002, y: -1.3053, z: 0}
     m_Extent: {x: 0.44660002, y: 0.89580005, z: 0}
+=======
+    m_Center: {x: 0.06730002, y: -1.2973, z: 0}
+    m_Extent: {x: 0.4476, y: 0.89399993, z: 0}
+>>>>>>> 88e9ec2 (Ajuste tamaño fuente dialogos)
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -7602,8 +7720,13 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
+<<<<<<< HEAD
     m_Center: {x: 0.23985, y: -3.0176501, z: 0}
     m_Extent: {x: 0.67795, y: 3.27885, z: 0}
+=======
+    m_Center: {x: 0.24495, y: -3.0222502, z: 0}
+    m_Extent: {x: 0.67305, y: 3.27805, z: 0}
+>>>>>>> 88e9ec2 (Ajuste tamaño fuente dialogos)
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -7718,8 +7841,13 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
+<<<<<<< HEAD
     m_Center: {x: -0.051950004, y: 0.12489998, z: 0}
     m_Extent: {x: 0.17365, y: 0.5513, z: 0}
+=======
+    m_Center: {x: -0.056950003, y: 0.12850001, z: 0}
+    m_Extent: {x: 0.17835, y: 0.56270003, z: 0}
+>>>>>>> 88e9ec2 (Ajuste tamaño fuente dialogos)
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -7897,8 +8025,13 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
+<<<<<<< HEAD
     m_Center: {x: 0.51045, y: -2.68775, z: 0}
     m_Extent: {x: 1.0028499, y: 1.1012499, z: 0}
+=======
+    m_Center: {x: 0.50295, y: -2.6950998, z: 0}
+    m_Extent: {x: 0.99805003, y: 1.1042, z: 0}
+>>>>>>> 88e9ec2 (Ajuste tamaño fuente dialogos)
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -8055,8 +8188,13 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
+<<<<<<< HEAD
     m_Center: {x: 0.12429999, y: 0.023850009, z: 0}
     m_Extent: {x: 0.52279997, y: 0.26555002, z: 0}
+=======
+    m_Center: {x: 0.122449994, y: 0.028700002, z: 0}
+    m_Extent: {x: 0.51945, y: 0.2662, z: 0}
+>>>>>>> 88e9ec2 (Ajuste tamaño fuente dialogos)
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -8180,7 +8318,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 60
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: 7c8521af513c6114ba6c5ba6369745a0, type: 2}
   Icon: {fileID: 201221213, guid: 05f57af4acbad224f89fefe599134855, type: 3}
   Icon02: {fileID: -1852138353, guid: 727694578c6097b4e953a8eb5ffd1ca6, type: 3}
   Icon03: {fileID: 0}
@@ -8203,7 +8341,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 58
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: 7c8521af513c6114ba6c5ba6369745a0, type: 2}
   Icon: {fileID: -2025841361, guid: 22e7ef51449934c4abfb6fe8f4283019, type: 3}
   Icon02: {fileID: 1160223230, guid: 1c448fc6ddd03334092994eec3126cc4, type: 3}
   Icon03: {fileID: 0}
@@ -8226,7 +8364,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 57
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: 7c8521af513c6114ba6c5ba6369745a0, type: 2}
   Icon: {fileID: -331967786, guid: bac3482f353301e4382f08087ff22cee, type: 3}
   Icon02: {fileID: -1883830555, guid: d396579ec2bab0742b1b9635db2b9820, type: 3}
   Icon03: {fileID: 0}
@@ -8249,7 +8387,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 56
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: 7c8521af513c6114ba6c5ba6369745a0, type: 2}
   Icon: {fileID: 201221213, guid: 05f57af4acbad224f89fefe599134855, type: 3}
   Icon02: {fileID: 1269664602, guid: ed7a77e269c2a674c9b413506fb3d1be, type: 3}
   Icon03: {fileID: 0}
@@ -8272,7 +8410,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 55
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: 7c8521af513c6114ba6c5ba6369745a0, type: 2}
   Icon: {fileID: 0}
   Icon02: {fileID: 0}
   Icon03: {fileID: 0}
@@ -8295,7 +8433,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 54
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: 7c8521af513c6114ba6c5ba6369745a0, type: 2}
   Icon: {fileID: 0}
   Icon02: {fileID: 0}
   Icon03: {fileID: 0}
@@ -8318,7 +8456,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 53
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: 7c8521af513c6114ba6c5ba6369745a0, type: 2}
   Icon: {fileID: 0}
   Icon02: {fileID: 0}
   Icon03: {fileID: 0}
@@ -8341,7 +8479,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 52
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: 7c8521af513c6114ba6c5ba6369745a0, type: 2}
   Icon: {fileID: 0}
   Icon02: {fileID: 0}
   Icon03: {fileID: 0}
@@ -8364,7 +8502,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 51
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: 7c8521af513c6114ba6c5ba6369745a0, type: 2}
   Icon: {fileID: -2025841361, guid: 22e7ef51449934c4abfb6fe8f4283019, type: 3}
   Icon02: {fileID: 276543731, guid: f2016ce0721b6914c8ac686e4ab4acc8, type: 3}
   Icon03: {fileID: 0}
@@ -8387,7 +8525,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 50
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: 7c8521af513c6114ba6c5ba6369745a0, type: 2}
   Icon: {fileID: 201221213, guid: 05f57af4acbad224f89fefe599134855, type: 3}
   Icon02: {fileID: 276543731, guid: f2016ce0721b6914c8ac686e4ab4acc8, type: 3}
   Icon03: {fileID: 0}
@@ -8410,7 +8548,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 48
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: 7c8521af513c6114ba6c5ba6369745a0, type: 2}
   Icon: {fileID: 201221213, guid: 05f57af4acbad224f89fefe599134855, type: 3}
   Icon02: {fileID: 1160223230, guid: 1c448fc6ddd03334092994eec3126cc4, type: 3}
   Icon03: {fileID: 0}
@@ -8433,7 +8571,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 46
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: 7c8521af513c6114ba6c5ba6369745a0, type: 2}
   Icon: {fileID: 0}
   Icon02: {fileID: 0}
   Icon03: {fileID: 0}
@@ -8456,7 +8594,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 45
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: 7c8521af513c6114ba6c5ba6369745a0, type: 2}
   Icon: {fileID: 201221213, guid: 05f57af4acbad224f89fefe599134855, type: 3}
   Icon02: {fileID: 1269664602, guid: ed7a77e269c2a674c9b413506fb3d1be, type: 3}
   Icon03: {fileID: 0}
@@ -8479,7 +8617,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 44
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: 7c8521af513c6114ba6c5ba6369745a0, type: 2}
   Icon: {fileID: 201221213, guid: 05f57af4acbad224f89fefe599134855, type: 3}
   Icon02: {fileID: -1852138353, guid: 727694578c6097b4e953a8eb5ffd1ca6, type: 3}
   Icon03: {fileID: 0}
@@ -8502,7 +8640,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 43
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: 7c8521af513c6114ba6c5ba6369745a0, type: 2}
   Icon: {fileID: 201221213, guid: 05f57af4acbad224f89fefe599134855, type: 3}
   Icon02: {fileID: 1160223230, guid: 1c448fc6ddd03334092994eec3126cc4, type: 3}
   Icon03: {fileID: 0}
@@ -8525,7 +8663,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 42
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: 7c8521af513c6114ba6c5ba6369745a0, type: 2}
   Icon: {fileID: 201221213, guid: 05f57af4acbad224f89fefe599134855, type: 3}
   Icon02: {fileID: 1269664602, guid: ed7a77e269c2a674c9b413506fb3d1be, type: 3}
   Icon03: {fileID: 0}
@@ -8548,7 +8686,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 41
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: 7c8521af513c6114ba6c5ba6369745a0, type: 2}
   Icon: {fileID: 201221213, guid: 05f57af4acbad224f89fefe599134855, type: 3}
   Icon02: {fileID: -310361756, guid: d4a7bd4021483184884d2ebba840d598, type: 3}
   Icon03: {fileID: 0}
@@ -8571,7 +8709,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 40
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: 7c8521af513c6114ba6c5ba6369745a0, type: 2}
   Icon: {fileID: -1836182839, guid: 336651cbc6227d942884bb978493f187, type: 3}
   Icon02: {fileID: -1327087289, guid: eb8c4b8398180074cb9244c175597bf7, type: 3}
   Icon03: {fileID: 0}
@@ -8594,7 +8732,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 39
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: 7c8521af513c6114ba6c5ba6369745a0, type: 2}
   Icon: {fileID: -2025841361, guid: 22e7ef51449934c4abfb6fe8f4283019, type: 3}
   Icon02: {fileID: -310361756, guid: d4a7bd4021483184884d2ebba840d598, type: 3}
   Icon03: {fileID: 0}
@@ -8617,7 +8755,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 38
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: 7c8521af513c6114ba6c5ba6369745a0, type: 2}
   Icon: {fileID: -1836182839, guid: 336651cbc6227d942884bb978493f187, type: 3}
   Icon02: {fileID: 0}
   Icon03: {fileID: 0}
@@ -8640,7 +8778,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 37
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: 7c8521af513c6114ba6c5ba6369745a0, type: 2}
   Icon: {fileID: -1836182839, guid: 336651cbc6227d942884bb978493f187, type: 3}
   Icon02: {fileID: 0}
   Icon03: {fileID: 0}
@@ -8663,7 +8801,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 36
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: 7c8521af513c6114ba6c5ba6369745a0, type: 2}
   Icon: {fileID: -1836182839, guid: 336651cbc6227d942884bb978493f187, type: 3}
   Icon02: {fileID: 0}
   Icon03: {fileID: 0}
@@ -8686,7 +8824,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 35
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: 7c8521af513c6114ba6c5ba6369745a0, type: 2}
   Icon: {fileID: -1836182839, guid: 336651cbc6227d942884bb978493f187, type: 3}
   Icon02: {fileID: 0}
   Icon03: {fileID: 0}
@@ -8709,7 +8847,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 34
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: 7c8521af513c6114ba6c5ba6369745a0, type: 2}
   Icon: {fileID: -1836182839, guid: 336651cbc6227d942884bb978493f187, type: 3}
   Icon02: {fileID: -1852138353, guid: 727694578c6097b4e953a8eb5ffd1ca6, type: 3}
   Icon03: {fileID: 0}
@@ -8732,7 +8870,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 33
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: 7c8521af513c6114ba6c5ba6369745a0, type: 2}
   Icon: {fileID: -1836182839, guid: 336651cbc6227d942884bb978493f187, type: 3}
   Icon02: {fileID: -1883830555, guid: d396579ec2bab0742b1b9635db2b9820, type: 3}
   Icon03: {fileID: 0}
@@ -8755,7 +8893,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 32
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: 7c8521af513c6114ba6c5ba6369745a0, type: 2}
   Icon: {fileID: -1836182839, guid: 336651cbc6227d942884bb978493f187, type: 3}
   Icon02: {fileID: -1883830555, guid: d396579ec2bab0742b1b9635db2b9820, type: 3}
   Icon03: {fileID: 0}
@@ -8778,7 +8916,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 30
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: 7c8521af513c6114ba6c5ba6369745a0, type: 2}
   Icon: {fileID: -1836182839, guid: 336651cbc6227d942884bb978493f187, type: 3}
   Icon02: {fileID: 0}
   Icon03: {fileID: 0}
@@ -8813,7 +8951,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   NodeID: 29
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: 7c8521af513c6114ba6c5ba6369745a0, type: 2}
   Icon: {fileID: 201221213, guid: 05f57af4acbad224f89fefe599134855, type: 3}
   Icon02: {fileID: 0}
   Icon03: {fileID: 0}
@@ -8836,7 +8974,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 27
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: 7c8521af513c6114ba6c5ba6369745a0, type: 2}
   Icon: {fileID: 201221213, guid: 05f57af4acbad224f89fefe599134855, type: 3}
   Icon02: {fileID: 0}
   Icon03: {fileID: 0}
@@ -8859,7 +8997,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 26
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: 7c8521af513c6114ba6c5ba6369745a0, type: 2}
   Icon: {fileID: 201221213, guid: 05f57af4acbad224f89fefe599134855, type: 3}
   Icon02: {fileID: 0}
   Icon03: {fileID: 0}
@@ -8882,7 +9020,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 25
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: 7c8521af513c6114ba6c5ba6369745a0, type: 2}
   Icon: {fileID: 1323327665, guid: 52f61f5a2f8c7dd4f92ea5817b097600, type: 3}
   Icon02: {fileID: 0}
   Icon03: {fileID: 0}
@@ -8905,7 +9043,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 24
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: 7c8521af513c6114ba6c5ba6369745a0, type: 2}
   Icon: {fileID: 0}
   Icon02: {fileID: 0}
   Icon03: {fileID: 0}
@@ -8952,7 +9090,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   NodeID: 23
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: 7c8521af513c6114ba6c5ba6369745a0, type: 2}
   Icon: {fileID: 0}
   Icon02: {fileID: 0}
   Icon03: {fileID: 0}
@@ -8998,7 +9136,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 65
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: 7c8521af513c6114ba6c5ba6369745a0, type: 2}
   Icon: {fileID: -1836182839, guid: 336651cbc6227d942884bb978493f187, type: 3}
   Icon02: {fileID: -310361756, guid: d4a7bd4021483184884d2ebba840d598, type: 3}
   Icon03: {fileID: 0}
@@ -9021,7 +9159,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 64
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: 7c8521af513c6114ba6c5ba6369745a0, type: 2}
   Icon: {fileID: -1836182839, guid: 336651cbc6227d942884bb978493f187, type: 3}
   Icon02: {fileID: 0}
   Icon03: {fileID: 0}
@@ -9044,7 +9182,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 66
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: 7c8521af513c6114ba6c5ba6369745a0, type: 2}
   Icon: {fileID: -1836182839, guid: 336651cbc6227d942884bb978493f187, type: 3}
   Icon02: {fileID: -310361756, guid: d4a7bd4021483184884d2ebba840d598, type: 3}
   Icon03: {fileID: 0}
