@@ -612,8 +612,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 4.720001, y: -45.425003}
-  m_SizeDelta: {x: -20.38, y: 57.593}
+  m_AnchoredPosition: {x: 697.5099, y: -266.56818}
+  m_SizeDelta: {x: -314.58023, y: 26.456387}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2836496523759623196
 CanvasRenderer:
@@ -719,7 +719,6 @@ MonoBehaviour:
   DialogueBackground: {fileID: 2836496523504213610}
   NpcIcon: {fileID: 2836496523503378970}
   NpcIcon02: {fileID: 3205606180532618640}
-  NpcIcon03: {fileID: 0}
   NpcIcon04: {fileID: 8175072908416003777}
   NpcIcon05: {fileID: 7567066408014888720}
   NameText: {fileID: 5017930099525010763}
@@ -865,7 +864,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 594, y: -481}
+  m_AnchoredPosition: {x: 48, y: -192}
   m_SizeDelta: {x: -195.49997, y: -127.914986}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8912454506568219315
