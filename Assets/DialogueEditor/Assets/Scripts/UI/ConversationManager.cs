@@ -56,6 +56,7 @@ namespace DialogueEditor
         public Image DialogueBackground;
         public Image NpcIcon;
         public Image NpcIcon02;
+        //public Image NpcIcon03;
         public Image NpcIcon04;
         public Image NpcIcon05;
         public TMPro.TextMeshProUGUI NameText;

@@ -36,7 +36,7 @@ namespace DialogueEditor
         SerializedProperty BlankSprite05;
         SerializedProperty BlankSprite;
         SerializedProperty NpcIcon02;
-        SerializedProperty NpcIcon03;
+        //SerializedProperty NpcIcon03;
         SerializedProperty NpcIcon04;
         SerializedProperty NpcIcon05;
         SerializedProperty PanelAvance;
@@ -57,7 +57,7 @@ namespace DialogueEditor
             BlankSprite04 = serializedObject.FindProperty("BlankSprite04");
             BlankSprite05 = serializedObject.FindProperty("BlankSprite05");
             NpcIcon02 = serializedObject.FindProperty("NpcIcon02");
-            NpcIcon03 = serializedObject.FindProperty("NpcIcon03");
+            //NpcIcon03 = serializedObject.FindProperty("NpcIcon03");
             NpcIcon04 = serializedObject.FindProperty("NpcIcon04");
             NpcIcon05 = serializedObject.FindProperty("NpcIcon05");
             PanelAvance = serializedObject.FindProperty("AvanzarPanel");
@@ -108,7 +108,7 @@ namespace DialogueEditor
             
 
             EditorGUILayout.PropertyField(NpcIcon02);
-            EditorGUILayout.PropertyField(NpcIcon03);
+            //EditorGUILayout.PropertyField(NpcIcon03);
             EditorGUILayout.PropertyField(NpcIcon04);
             EditorGUILayout.PropertyField(NpcIcon05);
 

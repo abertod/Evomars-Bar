@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8694909434922420859}
-  - component: {fileID: 8589448958041137006}
+  - component: {fileID: 1339938142121912300}
   m_Layer: 5
   m_Name: PreparandoBebidaKoemi
   m_TagString: Untagged
@@ -41,7 +41,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &8589448958041137006
+--- !u!114 &1339938142121912300
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -50,13 +50,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2620429980226659114}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6f95b24891d5a4db87962f23c74a73, type: 3}
+  m_Script: {fileID: 11500000, guid: b00c15d4b0e58874aaa5fcc1e18a0294, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prepBebida01: {fileID: 0}
-  prepBebida02: {fileID: 0}
-  prepBebida03: {fileID: 0}
-  prepBebida04: {fileID: 0}
+  prepBebida08: {fileID: 0}
   prepBebida05: {fileID: 0}
   prepBebida06: {fileID: 0}
   prepBebida07: {fileID: 0}
@@ -159,7 +156,7 @@ GameObject:
   - component: {fileID: 6462206697556899941}
   - component: {fileID: 958031746221288901}
   m_Layer: 0
-  m_Name: preparacion_cocteles_04
+  m_Name: preparacion_cocteles_08
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -275,7 +272,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   colorAlPasarElRaton: {r: 1, g: 1, b: 1, a: 0.5}
   pantallaMinijuego: {fileID: 7814879688233629723}
-  apareceBebidas: {fileID: 8589448958041137006}
+  apareceBebidas: {fileID: 0}
   reiniciarJuego: {fileID: 7814879688221041625}
 --- !u!1 &3848855749443720551
 GameObject:
@@ -2753,9 +2750,6 @@ MonoBehaviour:
   prepBebida02: {fileID: 0}
   prepBebida03: {fileID: 0}
   prepBebida04: {fileID: 0}
-  prepBebida05: {fileID: 0}
-  prepBebida06: {fileID: 0}
-  prepBebida07: {fileID: 0}
   timearAparicion: 0
   empiezaContar: 0
 --- !u!1 &7814879687777914158

@@ -2,15 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ApareceBebidas : MonoBehaviour
+public class ApareceBebidasKoemi : MonoBehaviour
 {
     //public GameObject prepBebidaCanvas;
-    public GameObject prepBebida01;
-    public GameObject prepBebida02;
-    public GameObject prepBebida03;
-    public GameObject prepBebida04;
-
     
+    public GameObject prepBebida08;
+
+    public GameObject prepBebida05;
+    public GameObject prepBebida06;
+    public GameObject prepBebida07;
     //public GameObject botonPrep;
     public float timearAparicion = 0;
     //public bool activated = false;
@@ -22,25 +22,26 @@ public class ApareceBebidas : MonoBehaviour
     void Start()
     {
         //prepBebidaCanvas = GameObject.Find("Imagenes_Prep");
-        prepBebida01 = GameObject.Find("preparacion_cocteles_01");
-        prepBebida02 = GameObject.Find("preparacion_cocteles_02");
-        prepBebida03 = GameObject.Find("preparacion_cocteles_03");
-        prepBebida04 = GameObject.Find("preparacion_cocteles_04");
+       
+        prepBebida08 = GameObject.Find("preparacion_cocteles_08");
 
-        
+        prepBebida05 = GameObject.Find("preparacion_cocteles_chica_01");
+        prepBebida06 = GameObject.Find("preparacion_cocteles_chica_02");
+        prepBebida07 = GameObject.Find("preparacion_cocteles_chica_03");
         //botonPrep = GameObject.Find("BotonPrep");
 
         //prepBebidaCanvas.SetActive(false);
-        prepBebida01.SetActive(false);
-        prepBebida02.SetActive(false);
-        prepBebida03.SetActive(false);
-        prepBebida04.SetActive(false);
+       
+        prepBebida08.SetActive(false);
 
+        prepBebida05.SetActive(false);
+        prepBebida06.SetActive(false);
+        prepBebida07.SetActive(false);
         //botonPrep.SetActive(false);
         //Debug.Log(prepBebida01 + "está: " + activated);
     }
 
-    public void AparecenBebidas(){
+    /*public void AparecenBebidas(){
 
         // Cuando se llama a este método, se empieza a contar el tiempo
         empiezaContar = true; 
@@ -89,6 +90,6 @@ public class ApareceBebidas : MonoBehaviour
 
         AparecenImagenesPreparación();
         
-    }
+    }*/
 }
 
