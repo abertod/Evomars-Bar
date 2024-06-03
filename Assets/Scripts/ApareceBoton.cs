@@ -12,8 +12,8 @@ public class ApareceBoton : MonoBehaviour
     public float timear = 0;
     public bool activated = false;
 
-    public GameObject KoemiInicio;
-    public GameObject KaneInicio;
+    //public GameObject KoemiInicio;
+    //public GameObject KaneInicio;
 
     //public float timeT;
     public bool contarT;
@@ -33,10 +33,10 @@ public class ApareceBoton : MonoBehaviour
         //btn.GetComponent<Button>().onClick.AddListener(OnButtonClick);
 
 
-        KoemiInicio = GameObject.Find("Character - [Koemi]");
+        /*KoemiInicio = GameObject.Find("Character - [Koemi]");
         KaneInicio = GameObject.Find("Character - [Kane]");
         KoemiInicio.SetActive(true);
-        KaneInicio.SetActive(true);
+        KaneInicio.SetActive(true);*/
     }
 
     public void DesactivarBtn()
@@ -50,11 +50,11 @@ public class ApareceBoton : MonoBehaviour
         
     }
 
-    public void DesactivarFrameInicial(){
+    /*public void DesactivarFrameInicial(){
         KoemiInicio.SetActive(false);
         KaneInicio.SetActive(false);
     }
-
+*/
     /*public void CuentaTimeT(){
         timeT = timeT + Time.deltaTime;
     }*/
