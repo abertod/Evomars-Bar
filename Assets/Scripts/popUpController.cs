@@ -8,7 +8,7 @@ public class popUpController : MonoBehaviour
     public Animator popUpAnimator;
     public bool activado = false;
 
-   /* int sweet = 0;
+    /*int sweet = 0;
     double sweetCosa = 0;
     int sour = 0;
     double sourCosa = 0;
