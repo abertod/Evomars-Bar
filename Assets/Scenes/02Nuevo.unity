@@ -1621,8 +1621,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.80515003, y: 0.67120004, z: 0}
-    m_Extent: {x: 5.97295, y: 5.3819, z: 0}
+    m_Center: {x: -0.8039, y: 0.6603, z: 0}
+    m_Extent: {x: 5.9869003, y: 5.3749, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -2597,8 +2597,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.099649996, y: 0.046000004, z: 0}
-    m_Extent: {x: 0.62845004, y: 1.0538, z: 0}
+    m_Center: {x: -0.10069999, y: 0.04400003, z: 0}
+    m_Extent: {x: 0.6227, y: 1.0532, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -5225,8 +5225,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.50905, y: -2.6951, z: 0}
-    m_Extent: {x: 0.99944997, y: 1.0969, z: 0}
+    m_Center: {x: 0.5086, y: -2.6954, z: 0}
+    m_Extent: {x: 0.9942, y: 1.1099999, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -7596,8 +7596,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.06895, y: -1.45765, z: 0}
-    m_Extent: {x: 0.52735, y: 1.16855, z: 0}
+    m_Center: {x: 0.0703, y: -1.4611, z: 0}
+    m_Extent: {x: 0.5219, y: 1.1813, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -8642,8 +8642,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.018749997, y: -1.0175, z: 0}
-    m_Extent: {x: 0.35495, y: 1.2662, z: 0}
+    m_Center: {x: -0.012050003, y: -1.0141, z: 0}
+    m_Extent: {x: 0.35375, y: 1.2675999, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -10685,8 +10685,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.010749996, y: 0.040249974, z: 0}
-    m_Extent: {x: 1.05405, y: 0.72035, z: 0}
+    m_Center: {x: -0.00999999, y: 0.032599986, z: 0}
+    m_Extent: {x: 1.0482, y: 0.7145, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -12479,8 +12479,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.24225, y: -3.02085, z: 0}
-    m_Extent: {x: 0.68055, y: 3.26835, z: 0}
+    m_Center: {x: 0.24085, y: -3.0246, z: 0}
+    m_Extent: {x: 0.68125, y: 3.2722, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -14808,8 +14808,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.075, y: -1.3034999, z: 0}
-    m_Extent: {x: 0.4487, y: 0.8919, z: 0}
+    m_Center: {x: 0.07880001, y: -1.2943, z: 0}
+    m_Extent: {x: 0.4479, y: 0.8955, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -16139,7 +16139,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2836496522338475485, guid: b13b055f5f515cf4ea3bff17c3f4a7a9, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 30.6
+      value: 30.599998
       objectReference: {fileID: 0}
     - target: {fileID: 2836496523503378972, guid: b13b055f5f515cf4ea3bff17c3f4a7a9, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -16274,8 +16274,12 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5242225784723844398, guid: b13b055f5f515cf4ea3bff17c3f4a7a9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 84.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5242225784723844398, guid: b13b055f5f515cf4ea3bff17c3f4a7a9, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 87.3
+      value: 82.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b13b055f5f515cf4ea3bff17c3f4a7a9, type: 3}
