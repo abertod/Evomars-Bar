@@ -1645,8 +1645,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.80575013, y: 0.67159986, z: 0}
-    m_Extent: {x: 5.98015, y: 5.3705, z: 0}
+    m_Center: {x: -0.8117001, y: 0.66884995, z: 0}
+    m_Extent: {x: 5.9791, y: 5.37285, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -2621,8 +2621,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.10525, y: 0.045750022, z: 0}
-    m_Extent: {x: 0.62675, y: 1.05875, z: 0}
+    m_Center: {x: -0.10124999, y: 0.040799975, z: 0}
+    m_Extent: {x: 0.62725, y: 1.0494, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -5249,8 +5249,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.5044, y: -2.7001, z: 0}
-    m_Extent: {x: 0.9927, y: 1.1068001, z: 0}
+    m_Center: {x: 0.50745, y: -2.6866999, z: 0}
+    m_Extent: {x: 1.00345, y: 1.1028, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -7366,7 +7366,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 062f2eae37c67b845b1020442a805855, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objetosSeleccionables: {fileID: 0}
+  objetosSeleccionables: {fileID: 1202705142}
   dulce: 1
   dulceCuadrados:
   - {fileID: 896236572}
@@ -7657,8 +7657,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.07034999, y: -1.44995, z: 0}
-    m_Extent: {x: 0.53055, y: 1.17295, z: 0}
+    m_Center: {x: 0.0747, y: -1.46015, z: 0}
+    m_Extent: {x: 0.5204, y: 1.18015, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -8703,8 +8703,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.015149996, y: -1.02085, z: 0}
-    m_Extent: {x: 0.35555, y: 1.27005, z: 0}
+    m_Center: {x: -0.016200006, y: -1.0192001, z: 0}
+    m_Extent: {x: 0.3513, y: 1.2707, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -8890,7 +8890,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df97910475707514aba36327b2ef7ab0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objetosSeleccionables: {fileID: 0}
+  objetosSeleccionables: {fileID: 1202705142}
   picante: 1
   picanteCuadrados:
   - {fileID: 356295084}
@@ -10746,8 +10746,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.013700008, y: 0.034499973, z: 0}
-    m_Extent: {x: 1.0408, y: 0.7211, z: 0}
+    m_Center: {x: -0.011749983, y: 0.03190002, z: 0}
+    m_Extent: {x: 1.04705, y: 0.72249997, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -12540,8 +12540,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.2427, y: -3.0217001, z: 0}
-    m_Extent: {x: 0.6785, y: 3.28, z: 0}
+    m_Center: {x: 0.2319, y: -3.02265, z: 0}
+    m_Extent: {x: 0.67840004, y: 3.27515, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -14310,7 +14310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53e5a3bdb693f754e9c0019dc239103f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objetosSeleccionables: {fileID: 0}
+  objetosSeleccionables: {fileID: 1202705142}
   acido: 1
   acidoCuadrados:
   - {fileID: 1855540855}
@@ -14906,8 +14906,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.07729998, y: -1.30095, z: 0}
-    m_Extent: {x: 0.447, y: 0.90025, z: 0}
+    m_Center: {x: 0.075100005, y: -1.3024501, z: 0}
+    m_Extent: {x: 0.4533, y: 0.89455, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0

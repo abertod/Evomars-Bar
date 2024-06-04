@@ -15,6 +15,7 @@ public class Preparar_Bebida : MonoBehaviour
     
 
     public ApareceBebidas apareceBebidas;
+   
     public ObjetosSeleccionables objetosSeleccionables;
     
 
@@ -33,7 +34,8 @@ public class Preparar_Bebida : MonoBehaviour
         //Esta función se activará cuando el jugador haga clic en la imagen
         Seleccionar();
         apareceBebidas.AparecenBebidas();
-        apareceBebidas.AparecenImagenesPreparación();
+        //apareceBebidas.AparecenImagenesPreparación();
+        //apareceBebidas.Aparecen02Bebidas();
         AudioManager.Instance.SonarCLipUnaVez(AudioManager.Instance.fx[1]);
         Debug.Log("Has seleccionado: "  + objetosSeleccionables.sumaAcido + " de Ácido, "
                                         + objetosSeleccionables.sumaDulce + " de Dulce, " 

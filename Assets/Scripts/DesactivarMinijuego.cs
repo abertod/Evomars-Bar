@@ -54,6 +54,9 @@ public class DesactivarMinijuego : MonoBehaviour
         apareceBebidas.prepBebida02.SetActive(false);
         apareceBebidas.prepBebida03.SetActive(false);
         apareceBebidas.prepBebida04.SetActive(false);
+        apareceBebidas.seHaPulsadoBoton = false;
+        apareceBebidas.seHaPulsadoBoton02 = false;
+
 
         reiniciarJuego.Reiniciar();
     }
