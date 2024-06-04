@@ -10,7 +10,7 @@ public class ApareceBebidas : MonoBehaviour
     public GameObject prepBebida03;
     public GameObject prepBebida04;
 
-
+    //Estos 3 gameObjects hacen referencia a las viñetas de Koemi
     public GameObject prepBebida05;
     public GameObject prepBebida06;
     public GameObject prepBebida07;
@@ -37,7 +37,7 @@ public class ApareceBebidas : MonoBehaviour
         prepBebida03 = GameObject.Find("preparacion_cocteles_03");
         prepBebida04 = GameObject.Find("preparacion_cocteles_04");
 
-
+        //Las 3 viñetas de Koemi
         prepBebida05 = GameObject.Find("preparacion_cocteles_chica_01");
         prepBebida06 = GameObject.Find("preparacion_cocteles_chica_02");
         prepBebida07 = GameObject.Find("preparacion_cocteles_chica_03");
@@ -51,7 +51,7 @@ public class ApareceBebidas : MonoBehaviour
         prepBebida03.SetActive(false);
         prepBebida04.SetActive(false);
 
-
+        //Viñetas de Koemi empiezan desactivadas
         prepBebida05.SetActive(false);
         prepBebida06.SetActive(false);
         prepBebida07.SetActive(false);
@@ -60,6 +60,7 @@ public class ApareceBebidas : MonoBehaviour
         //Debug.Log(prepBebida01 + "está: " + activated);
     }
 
+    //Desde el script de Preparar_Bebida, al pulsar con el ratón encima de la imagen que dice Preparar, se activa este método que convierte empiezaContar en verdadero 
     public void AparecenBebidas(){
 
         // Cuando se llama a este método, se empieza a contar el tiempo
@@ -67,6 +68,7 @@ public class ApareceBebidas : MonoBehaviour
 
     }
 
+    //Cuando empiezaContar es verdadero y seHaPulsadoBoton tambien es verdadero, el tiempo comienza a contar y se activan las viñetas del vaso de Kane
     public void AparecenImagenesPreparación()
     {
         // Si empiezaContar es verdadero, comienza a contar el tiempo
@@ -103,6 +105,7 @@ public class ApareceBebidas : MonoBehaviour
         }
     }
 
+    //Este método ya no es necesario. Por si acaso, lo dejo
     public void Aparecen02Bebidas(){
 
         // Cuando se llama a este método, se empieza a contar el tiempo
@@ -110,6 +113,7 @@ public class ApareceBebidas : MonoBehaviour
 
     }
 
+    //Cuando empiezaContar es verdadero y seHaPulsadoBoton02 tambien es verdadero, el tiempo comienza a contar y se activan las viñetas del vaso de Koemi
     public void Aparecen02ImagenesPreparación()
     {
         // Si empiezaContar es verdadero, comienza a contar el tiempo
@@ -146,13 +150,17 @@ public class ApareceBebidas : MonoBehaviour
         }
     }
 
-
+    //Esto se activa en el nodo del diálogo en el que también se activa el Minijuego
+    //El orden es el siguiente: Al crear un evento en dialogue editor con este método, este se activa a la vez que el Minijuego.
+    //Luego, pulsas en la bebida y aparece el boton de Preparar
+    //Al pulsar en Preparar, se activa empiezaContar. Y como está activa junto a seHaPulsadoBoton, salen las viñetas de Kane
     public void DetectarPulsacionBoton()
     {
         
         seHaPulsadoBoton = true;
     }
 
+    //Si quieres que salgan las viñetas de Koemi, se añade este evento en dialogue editor en lugar del anterior
     public void DetectarPulsacionBoton02()
     {
         
@@ -162,7 +170,7 @@ public class ApareceBebidas : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {
-
+        //Sirve para que timearAparicion sume segundos
         AparecenImagenesPreparación();
         Aparecen02ImagenesPreparación();
         
