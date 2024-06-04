@@ -11,7 +11,13 @@ public class Luces : MonoBehaviour
     //public GameObject minijuego2;
     //public bool activado = false;
 
-    
+
+    //Si las luces se rompen seguir estos pasos:
+    //Abre Unity.
+    //Ve al menú "Edit" en la parte superior de la ventana.
+    //Selecciona "Project Settings" (Configuración del proyecto).
+    //En el submenú que aparece, busca y haz clic en "Graphics" (Gráficos).
+    //Scriptable render Pipeline poner el universalRP si está desactivado
 
     // Start is called before the first frame update
     void Start()
