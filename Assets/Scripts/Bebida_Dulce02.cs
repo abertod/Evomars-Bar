@@ -2,24 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bebida_Acido : MonoBehaviour
+public class Bebida_Dulce02 : MonoBehaviour
 {
     public ObjetosSeleccionables objetosSeleccionables;
 
     //Valor de la botella
-    public int acido = 1;
+    public int dulce = 1;
 
     //Array a los cuadrados de UI
-    public SpriteRenderer[] acidoCuadrados;
+    public SpriteRenderer[] dulceCuadrados;
 
     //Sprites para cuadrado lleno y vacío
     public Sprite cuadradoLleno;
     public Sprite cuadradoVacio;
-    
+
     //Para indicar si la botella ha sido seleccionada
     private bool valorMantenido = false; 
-    
     private int cuadradosRellenados  = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -43,7 +43,7 @@ public class Bebida_Acido : MonoBehaviour
 
     void OnMouseEnter()
     {
-
+       
         if (objetosSeleccionables.sumaTotal < 5)
         {
             if (!valorMantenido)
@@ -56,6 +56,7 @@ public class Bebida_Acido : MonoBehaviour
 
     void OnMouseExit()
     {
+        
         if (objetosSeleccionables.sumaTotal < 5)
         {
             if (valorMantenido)
@@ -71,31 +72,31 @@ public class Bebida_Acido : MonoBehaviour
 
     void MostrarValores()
     {
-        RellenarCuadrados(acidoCuadrados, cuadradosRellenados);
+        RellenarCuadrados(dulceCuadrados, cuadradosRellenados);
     }
 
     void MostrarSiguienteCuadradoLleno()
     {
-        if (cuadradosRellenados < acidoCuadrados.Length && objetosSeleccionables.sumaTotal < 5 )
+        if (cuadradosRellenados < dulceCuadrados.Length && objetosSeleccionables.sumaTotal < 5 )
         {
             for (int i = 0; i <= cuadradosRellenados; i++)
             {
-                acidoCuadrados[i].sprite = cuadradoLleno;
+                dulceCuadrados[i].sprite = cuadradoLleno;
             }
         }
     }
 
     void LimpiarPrevisualizacion()
     {
-        if (cuadradosRellenados < acidoCuadrados.Length && objetosSeleccionables.sumaTotal < 5)
+        if (cuadradosRellenados < dulceCuadrados.Length && objetosSeleccionables.sumaTotal < 5)
         {
-            acidoCuadrados[cuadradosRellenados].sprite = cuadradoVacio;
+            dulceCuadrados[cuadradosRellenados].sprite = cuadradoVacio;
         }
     }
 
     void RellenarCuadrados(SpriteRenderer[] cuadrados, int cantidad)
     {
-        
+      
         for (int i = 0; i < cuadrados.Length; i++)
         {
             if (i < cantidad && objetosSeleccionables.sumaTotal < 5)
@@ -108,21 +109,21 @@ public class Bebida_Acido : MonoBehaviour
             }
         }
     }
-
+    
     void SumarValor()
     {
-        //Verificar si se alcanzó el límite de pulsaciones
+        // Verificar si se alcanzó el límite de pulsaciones
         if (objetosSeleccionables.sumaTotal >= 5)
         {
             Debug.Log("Se ha alcanzado el límite de pulsaciones.");
-            return; // Salir del método sin sumar el valor
+            //Salir del método sin sumar el valor
+            return; 
         }
 
-        objetosSeleccionables.sumaAcido += acido;
-        objetosSeleccionables.sumaTotal += acido;
-        Debug.Log("Valor actual de ácido: " + objetosSeleccionables.sumaAcido);
+        objetosSeleccionables.sumaDulce += dulce;
+        objetosSeleccionables.sumaTotal += dulce;
+        Debug.Log("Valor actual de dulce: " + objetosSeleccionables.sumaDulce);
     }
-
 
     public void Reiniciar()
     {

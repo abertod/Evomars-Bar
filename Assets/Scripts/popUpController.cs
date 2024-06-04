@@ -8,7 +8,7 @@ public class popUpController : MonoBehaviour
     public Animator popUpAnimator;
     public bool activado = false;
 
-    int sweet = 0;
+   /* int sweet = 0;
     double sweetCosa = 0;
     int sour = 0;
     double sourCosa = 0;
@@ -20,13 +20,13 @@ public class popUpController : MonoBehaviour
     public GameObject barra1;
     public GameObject barra2;
     public GameObject barra3;
-    public GameObject barra4;
+    public GameObject barra4;*/
 
 
     // Update is called once per frame
     void Update()
     {
-        if(sweet > sweetCosa)
+       /* if(sweet > sweetCosa)
         {
             sweetCosa += 1f;
             barra1.transform.localScale += new Vector3(1, 0, 0);
@@ -49,7 +49,7 @@ public class popUpController : MonoBehaviour
             coolCosa += 1f;
             barra4.transform.localScale += new Vector3(1, 0, 0);
         }
-
+            */
 
     }
 
@@ -61,7 +61,7 @@ public class popUpController : MonoBehaviour
     }
 
 
-    public void clickCoctelera()
+   /* public void clickCoctelera()
     {
         sweet = 0;
         cool = 0;
@@ -106,6 +106,6 @@ public class popUpController : MonoBehaviour
         }
     }
 
-
+*/
 
 }

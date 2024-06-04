@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bebida_Acido : MonoBehaviour
+public class Bebida_Acido02 : MonoBehaviour
 {
     public ObjetosSeleccionables objetosSeleccionables;
 

@@ -26,7 +26,7 @@ public class Bebida_Picante : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        objetosSeleccionables = GameObject.Find("Picante").GetComponent<ObjetosSeleccionables>();
+        //objetosSeleccionables = GameObject.Find("Picante").GetComponent<ObjetosSeleccionables>();
     }
     void OnMouseDown()
     {
