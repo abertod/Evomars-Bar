@@ -397,6 +397,7 @@ namespace DialogueEditor
 
                         DialogueText.text = "";
                         NameText.text = m_currentSpeech.Name;
+                        //NameText.text = Salvapantallas.Instance.nombre;
                         NpcIcon.sprite = m_currentSpeech.Icon != null ? m_currentSpeech.Icon : BlankSprite;
 
 
@@ -658,6 +659,7 @@ namespace DialogueEditor
 
             // Set name
             NameText.text = speech.Name;
+            //NameText.text = Salvapantallas.Instance.nombre;
 
             // Set text
             if (string.IsNullOrEmpty(speech.Text))

@@ -393,6 +393,7 @@ namespace DialogueEditor
         {
             SpeechNode speech = new SpeechNode();
             speech.Name = editableNode.Name;
+            //speech.Name = Salvapantallas.Instance.nombre;
             speech.Text = editableNode.Text;
             speech.AutomaticallyAdvance = editableNode.AdvanceDialogueAutomatically;
             speech.AutoAdvanceShouldDisplayOption = editableNode.AutoAdvanceShouldDisplayOption;
