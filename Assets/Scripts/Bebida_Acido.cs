@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Bebida_Acido : MonoBehaviour
 {
@@ -9,21 +10,32 @@ public class Bebida_Acido : MonoBehaviour
     //Valor de la botella
     public int acido = 1;
 
+    public Slider acidoSlider;
+    public Image sliderFill;
+    private Color colorRojo;
+
     //Array a los cuadrados de UI
-    public SpriteRenderer[] acidoCuadrados;
+    //public SpriteRenderer[] acidoCuadrados;
 
     //Sprites para cuadrado lleno y vacío
-    public Sprite cuadradoLleno;
-    public Sprite cuadradoVacio;
+    //public Sprite cuadradoLleno;
+    //public Sprite cuadradoVacio;
     
     //Para indicar si la botella ha sido seleccionada
     private bool valorMantenido = false; 
+
     
-    private int cuadradosRellenados  = 0;
+    
+    //private int cuadradosRellenados  = 0;
+
     // Start is called before the first frame update
     void Start()
     {
         //objetosSeleccionables = GameObject.Find("Picante").GetComponent<ObjetosSeleccionables>();
+        //acidoSlider = Slider.Find
+        sliderFill= GameObject.Find("FillAcido").GetComponent<Image>();
+        colorRojo = sliderFill.color;
+
     }
 
     void OnMouseDown()
@@ -37,7 +49,9 @@ public class Bebida_Acido : MonoBehaviour
     void MantenerValor()
     {
         valorMantenido = true;
-        cuadradosRellenados++;
+        //cuadradosRellenados++;
+        //acidoSlider.value += acido;
+        acidoSlider.value++;
         MostrarValores();
     }
 
@@ -48,9 +62,11 @@ public class Bebida_Acido : MonoBehaviour
         {
             if (!valorMantenido)
             {
+                
                 MostrarValores();
             }
-            MostrarSiguienteCuadradoLleno();
+            //MostrarSiguienteCuadradoLleno();
+            //acidoSlider.value += acido;
         }
     }
 
@@ -60,21 +76,24 @@ public class Bebida_Acido : MonoBehaviour
         {
             if (valorMantenido)
             {
+               
                 MostrarValores(); // Volver al estado original cuando el ratón sale de la botella
             }
-            else
+            /*else
             {
-                LimpiarPrevisualizacion(); // Limpiar la previsualización
-            }
+                //LimpiarPrevisualizacion(); // Limpiar la previsualización
+                //acidoSlider.value -= acido;
+            }*/
         }
     }
 
     void MostrarValores()
     {
-        RellenarCuadrados(acidoCuadrados, cuadradosRellenados);
+        
+        //RellenarCuadrados(acidoCuadrados, cuadradosRellenados);
     }
 
-    void MostrarSiguienteCuadradoLleno()
+    /*void MostrarSiguienteCuadradoLleno()
     {
         if (cuadradosRellenados < acidoCuadrados.Length && objetosSeleccionables.sumaTotal < 5 )
         {
@@ -107,7 +126,7 @@ public class Bebida_Acido : MonoBehaviour
                 cuadrados[i].sprite = cuadradoVacio;
             }
         }
-    }
+    }*/
 
     void SumarValor()
     {
@@ -127,14 +146,28 @@ public class Bebida_Acido : MonoBehaviour
     public void Reiniciar()
     {
         //Reiniciar los valores específicos de la botella picante
-        cuadradosRellenados = 0;
+        //cuadradosRellenados = 0;
         valorMantenido = false;
-        LimpiarPrevisualizacion();
+        acidoSlider.value = 0;
+        //LimpiarPrevisualizacion();
     }
     
     // Update is called once per frame
     void Update()
     {
+        if (acidoSlider.value == 0)
+        {
+            //Cambia el color de la barra a transparente
+            sliderFill.color = Color.clear;
+        }
+        else
+        {
+            //Deja el color a su original
+            sliderFill.color = colorRojo;
+        }
+
         
     }
+
+    
 }

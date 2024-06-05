@@ -14,8 +14,8 @@ public class ReiniciarJuego : MonoBehaviour
     public TMP_Text[] textosPulsaciones;
     public TMP_Text textoConsola;
 
-    public Sprite cuadradoLleno;
-    public Sprite cuadradoVacio;
+    //public Sprite cuadradoLleno;
+    //public Sprite cuadradoVacio;
 
 
     private SpriteRenderer spriteRenderer;
@@ -83,7 +83,7 @@ public class ReiniciarJuego : MonoBehaviour
         //Reiniciar los cuadrados de la barra 
         RellenarCuadrados(bebidaPicante.picanteCuadrados, 0);
         RellenarCuadrados(bebidaDulce.dulceCuadrados, 0);
-        RellenarCuadrados(bebidaAcido.acidoCuadrados, 0);
+        //RellenarCuadrados(bebidaAcido.acidoCuadrados, 0);
 
         //Reiniciar los valores en los scripts de las botellas
         bebidaPicante.Reiniciar();
@@ -96,7 +96,7 @@ public class ReiniciarJuego : MonoBehaviour
 
     void RellenarCuadrados(SpriteRenderer[] cuadrados, int cantidad)
     {
-        for (int i = 0; i < cuadrados.Length; i++)
+        /*for (int i = 0; i < cuadrados.Length; i++)
         {
             if (i < cantidad && objetosSeleccionables.sumaTotal < 5)
             {
@@ -106,6 +106,6 @@ public class ReiniciarJuego : MonoBehaviour
             {
                 cuadrados[i].sprite = cuadradoVacio;
             }
-        }
+        }*/
     }
 }
