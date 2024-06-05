@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Bebida_Dulce : MonoBehaviour
 {
@@ -9,48 +10,48 @@ public class Bebida_Dulce : MonoBehaviour
     //Valor de la botella
     public int dulce = 1;
 
-    //Array a los cuadrados de UI
-    public SpriteRenderer[] dulceCuadrados;
-
-    //Sprites para cuadrado lleno y vacío
-    public Sprite cuadradoLleno;
-    public Sprite cuadradoVacio;
+    public Slider dulceSlider;
+    public Image sliderFill;
+    private Color colorRojo;
 
     //Para indicar si la botella ha sido seleccionada
-    private bool valorMantenido = false; 
-    private int cuadradosRellenados  = 0;
-
+    //private bool valorMantenido = false; 
+    
     // Start is called before the first frame update
     void Start()
     {
         //objetosSeleccionables = GameObject.Find("Picante").GetComponent<ObjetosSeleccionables>();
+        sliderFill= GameObject.Find("FillDulce").GetComponent<Image>();
+        colorRojo = sliderFill.color;
     }
 
     void OnMouseDown()
     {
         if (objetosSeleccionables.sumaTotal < 5)
         {
+            //Suma en +1 la barra del Slider
             MantenerValor();
+            //Suma en +1 las variables de sumaAcido y sumaTotal
             SumarValor();
+        }
+        else
+        {
+            Debug.Log("No se puede pulsar más en dulce, suma total es 5 o mayor.");
         }
     }
     void MantenerValor()
     {
-        valorMantenido = true;
-        cuadradosRellenados++;
-        MostrarValores();
+        //valorMantenido = true;
+        //acidoSlider.value += acido;
+        dulceSlider.value++;
     }
 
     void OnMouseEnter()
     {
        
-        if (objetosSeleccionables.sumaTotal < 5)
+        if (objetosSeleccionables.sumaTotal < 4)
         {
-            if (!valorMantenido)
-            {
-                MostrarValores();
-            }
-            MostrarSiguienteCuadradoLleno();
+            dulceSlider.value += dulce;
         }
     }
 
@@ -59,56 +60,12 @@ public class Bebida_Dulce : MonoBehaviour
         
         if (objetosSeleccionables.sumaTotal < 5)
         {
-            if (valorMantenido)
-            {
-                MostrarValores(); // Volver al estado original cuando el ratón sale de la botella
-            }
-            else
-            {
-                LimpiarPrevisualizacion(); // Limpiar la previsualización
-            }
+            dulceSlider.value -= dulce;
+           
         }
     }
 
-    void MostrarValores()
-    {
-        RellenarCuadrados(dulceCuadrados, cuadradosRellenados);
-    }
-
-    void MostrarSiguienteCuadradoLleno()
-    {
-        if (cuadradosRellenados < dulceCuadrados.Length && objetosSeleccionables.sumaTotal < 5 )
-        {
-            for (int i = 0; i <= cuadradosRellenados; i++)
-            {
-                dulceCuadrados[i].sprite = cuadradoLleno;
-            }
-        }
-    }
-
-    void LimpiarPrevisualizacion()
-    {
-        if (cuadradosRellenados < dulceCuadrados.Length && objetosSeleccionables.sumaTotal < 5)
-        {
-            dulceCuadrados[cuadradosRellenados].sprite = cuadradoVacio;
-        }
-    }
-
-    void RellenarCuadrados(SpriteRenderer[] cuadrados, int cantidad)
-    {
-      
-        for (int i = 0; i < cuadrados.Length; i++)
-        {
-            if (i < cantidad && objetosSeleccionables.sumaTotal < 5)
-            {
-                cuadrados[i].sprite = cuadradoLleno;
-            }
-            else
-            {
-                cuadrados[i].sprite = cuadradoVacio;
-            }
-        }
-    }
+    
     
     void SumarValor()
     {
@@ -128,14 +85,21 @@ public class Bebida_Dulce : MonoBehaviour
     public void Reiniciar()
     {
         //Reiniciar los valores específicos de la botella picante
-        cuadradosRellenados = 0;
-        valorMantenido = false;
-        LimpiarPrevisualizacion();
+        dulceSlider.value = 0;     
     }
     
     // Update is called once per frame
     void Update()
     {
-        
+        if (dulceSlider.value == 0)
+        {
+            //Cambia el color de la barra a transparente
+            sliderFill.color = Color.clear;
+        }
+        else
+        {
+            //Deja el color a su original
+            sliderFill.color = colorRojo;
+        }
     }
 }

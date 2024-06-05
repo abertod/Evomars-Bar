@@ -9,6 +9,7 @@ public class ReiniciarJuego : MonoBehaviour
     public Bebida_Picante bebidaPicante;
     public Bebida_Dulce bebidaDulce;
     public Bebida_Acido bebidaAcido;
+    public Bebida_Sweet bebidasweet;
     public ObjetosSeleccionables objetosSeleccionables;
 
     public TMP_Text[] textosPulsaciones;
@@ -36,7 +37,7 @@ public class ReiniciarJuego : MonoBehaviour
             textosPulsaciones[i] = GameObject.Find("Texto" + (i + 1)).GetComponent<TMP_Text>();
         }
 
-        objetosSeleccionables = GameObject.Find("Picante").GetComponent<ObjetosSeleccionables>();
+        objetosSeleccionables = GameObject.Find("Spicy").GetComponent<ObjetosSeleccionables>();
 
         spriteRenderer = GetComponent<SpriteRenderer>();
         colorOriginal = spriteRenderer.color;
@@ -80,32 +81,16 @@ public class ReiniciarJuego : MonoBehaviour
         //Limpiar el texto de la consola de depués de 5 pulsaciones
         textoConsola.text = "";
 
-        //Reiniciar los cuadrados de la barra 
-        RellenarCuadrados(bebidaPicante.picanteCuadrados, 0);
-        RellenarCuadrados(bebidaDulce.dulceCuadrados, 0);
-        //RellenarCuadrados(bebidaAcido.acidoCuadrados, 0);
 
         //Reiniciar los valores en los scripts de las botellas
         bebidaPicante.Reiniciar();
         bebidaDulce.Reiniciar();
         bebidaAcido.Reiniciar();
+        bebidasweet.Reiniciar();
         //objetosSeleccionables.Reiniciar();
 
         Debug.Log("El juego ha sido reiniciado.");
     }
 
-    void RellenarCuadrados(SpriteRenderer[] cuadrados, int cantidad)
-    {
-        /*for (int i = 0; i < cuadrados.Length; i++)
-        {
-            if (i < cantidad && objetosSeleccionables.sumaTotal < 5)
-            {
-                cuadrados[i].sprite = cuadradoLleno;
-            }
-            else
-            {
-                cuadrados[i].sprite = cuadradoVacio;
-            }
-        }*/
-    }
+   
 }

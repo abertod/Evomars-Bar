@@ -17,7 +17,7 @@ public class Boton_Servir_Prep : MonoBehaviour
         reiniciarBebida = GameObject.Find("Reiniciar_Bebida"); 
         reiniciarBebida.SetActive(false);
 
-        objetosSeleccionables = GameObject.Find("Picante").GetComponent<ObjetosSeleccionables>();
+        objetosSeleccionables = GameObject.Find("Spicy").GetComponent<ObjetosSeleccionables>();
         
     }
     public void ApareceBotonServir(){

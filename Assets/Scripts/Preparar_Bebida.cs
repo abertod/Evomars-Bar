@@ -39,12 +39,14 @@ public class Preparar_Bebida : MonoBehaviour
         AudioManager.Instance.SonarCLipUnaVez(AudioManager.Instance.fx[1]);
         Debug.Log("Has seleccionado: "  + objetosSeleccionables.sumaAcido + " de Ácido, "
                                         + objetosSeleccionables.sumaDulce + " de Dulce, " 
-                                        + objetosSeleccionables.sumaPicante + " de Picante, " 
+                                        + objetosSeleccionables.sumaPicante + " de Picante, "
+                                        + objetosSeleccionables.sumaSweet + " de Sweet, " 
                                         + objetosSeleccionables.sumaTotal + " entre todas."  );
         
         ConversationManager.Instance.SetInt("Acido", objetosSeleccionables.sumaAcido);
         ConversationManager.Instance.SetInt("Dulce", objetosSeleccionables.sumaDulce);
         ConversationManager.Instance.SetInt("Picante", objetosSeleccionables.sumaPicante);
+        ConversationManager.Instance.SetInt("Sweet", objetosSeleccionables.sumaSweet);
         ConversationManager.Instance.SetInt("Total", objetosSeleccionables.sumaTotal);
     }
 
@@ -64,10 +66,10 @@ public class Preparar_Bebida : MonoBehaviour
     
     void Seleccionar()
     {
-        //Aquí se realizará la selección
+       
         Debug.Log("Imagen seleccionada: " + gameObject.name);
-        //reiniciarBebida.SetActive(false);
-        //Aqui se pondrá que el valor de la bebida haciendose vuelva a cero
+        
+        
     }
 
     // Update is called once per frame

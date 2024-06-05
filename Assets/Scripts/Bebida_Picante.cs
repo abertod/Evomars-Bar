@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class Bebida_Picante : MonoBehaviour
@@ -11,53 +12,50 @@ public class Bebida_Picante : MonoBehaviour
     //Valor de la botella
     public int picante = 1;
 
-    //Array a los cuadrados de UI
-    public SpriteRenderer[] picanteCuadrados;
-
-    // Sprites para cuadrado lleno y vacío
-    public Sprite cuadradoLleno;
-    public Sprite cuadradoVacio;
+    public Slider picanteSlider;
+    public Image sliderFill;
+    private Color colorRojo;
 
     //Para indicar si la botella ha sido seleccionada
-    private bool valorMantenido = false; 
-    private int cuadradosRellenados  = 0;
+    //private bool valorMantenido = false; 
+    
 
 
     // Start is called before the first frame update
     void Start()
     {
         //objetosSeleccionables = GameObject.Find("Picante").GetComponent<ObjetosSeleccionables>();
+        sliderFill= GameObject.Find("FillPicante").GetComponent<Image>();
+        colorRojo = sliderFill.color;
     }
     void OnMouseDown()
     {
         if (objetosSeleccionables.sumaTotal < 5)
         {
+            //Suma en +1 la barra del Slider
             MantenerValor();
+            //Suma en +1 las variables de sumaAcido y sumaTotal
             SumarValor();
         }
         else
         {
-            Debug.Log("No se puede pulsar más, suma total es 5 o mayor.");
+            Debug.Log("No se puede pulsar más en picante, suma total es 5 o mayor.");
         }
     }
 
     void MantenerValor()
     {
-        valorMantenido = true;
-        cuadradosRellenados++;
-        MostrarValores();
+        //valorMantenido = true;
+        //acidoSlider.value += acido;
+        picanteSlider.value++;
     }
 
     void OnMouseEnter()
     {
 
-        if (objetosSeleccionables.sumaTotal < 5)
+        if (objetosSeleccionables.sumaTotal < 4)
         {
-            if (!valorMantenido)
-            {
-                MostrarValores();
-            }
-            MostrarSiguienteCuadradoLleno();
+            picanteSlider.value += picante;
         }
     }
 
@@ -66,61 +64,13 @@ public class Bebida_Picante : MonoBehaviour
 
         if (objetosSeleccionables.sumaTotal < 5)
         {
-            if (valorMantenido)
-            {
-                //Volver al estado original cuando el ratón sale de la botella
-                MostrarValores(); 
-            }
-            else
-            {
-                //Limpiar la previsualización
-                LimpiarPrevisualizacion(); 
-            }
+            picanteSlider.value -= picante;
+           
         }
     }
 
-    void MostrarValores()
-    {
-        RellenarCuadrados(picanteCuadrados, cuadradosRellenados);
-    }
-    void MostrarSiguienteCuadradoLleno()
-    {
-        
-        if (cuadradosRellenados < picanteCuadrados.Length && objetosSeleccionables.sumaTotal < 5 )
-        {
-            for (int i = 0; i <= cuadradosRellenados; i++)
-            {
-                picanteCuadrados[i].sprite = cuadradoLleno;
-            }
-        }
-    }
-
-
-    void LimpiarPrevisualizacion()
-    {
-        if (cuadradosRellenados < picanteCuadrados.Length && objetosSeleccionables.sumaTotal < 5)
-        {
-            picanteCuadrados[cuadradosRellenados].sprite = cuadradoVacio;
-        }
-    }
-
-    void RellenarCuadrados(SpriteRenderer[] cuadrados, int cantidad)
-    {
     
-        for (int i = 0; i < cuadrados.Length; i++)
-        {
-            if (i < cantidad && objetosSeleccionables.sumaTotal < 5)
-            {
-                cuadrados[i].sprite = cuadradoLleno;
-            }
-            else
-            {
-                cuadrados[i].sprite = cuadradoVacio;
-            }
-        }
-    }
  
-
     void SumarValor()
     {
         //Verificar si se alcanzó el límite de pulsaciones
@@ -141,15 +91,22 @@ public class Bebida_Picante : MonoBehaviour
     public void Reiniciar()
     {
         //Reiniciar los valores específicos de la botella picante
-        cuadradosRellenados = 0;
-        valorMantenido = false;
-        LimpiarPrevisualizacion();
+        picanteSlider.value = 0;
     }
     
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (picanteSlider.value == 0)
+        {
+            //Cambia el color de la barra a transparente
+            sliderFill.color = Color.clear;
+        }
+        else
+        {
+            //Deja el color a su original
+            sliderFill.color = colorRojo;
+        }
     }
 }

@@ -34,6 +34,7 @@ public class ObjetosSeleccionables : MonoBehaviour
     public int sumaPicante = 0;
     public int sumaDulce = 0;
     public int sumaAcido = 0;
+    public int sumaSweet = 0;
 
     public int sumaTotal;
 
@@ -116,7 +117,7 @@ public class ObjetosSeleccionables : MonoBehaviour
     void ActualizarSumaTotal()
     {
         //Suma los clics hechos entre las tres botellas y para si llega a 5
-        sumaTotal = sumaPicante + sumaDulce + sumaAcido;
+        sumaTotal = sumaPicante + sumaDulce + sumaAcido + sumaSweet;
 
         if (sumaTotal >= 5)
         {
@@ -152,6 +153,7 @@ public class ObjetosSeleccionables : MonoBehaviour
         Debug.Log("Suma picante: " + sumaPicante);
         Debug.Log("Suma dulce: " + sumaDulce);
         Debug.Log("Suma ácido: " + sumaAcido);
+        Debug.Log("Suma sweet: " + sumaSweet);
         Debug.Log("Suma total: " + sumaTotal);
 
     
@@ -167,6 +169,7 @@ public class ObjetosSeleccionables : MonoBehaviour
         sumaPicante = 0;
         sumaDulce = 0;
         sumaAcido = 0;
+        sumaSweet = 0;
         sumaTotal = 0;
     }
 
