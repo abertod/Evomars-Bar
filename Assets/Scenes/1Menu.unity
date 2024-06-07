@@ -7084,7 +7084,7 @@ MonoBehaviour:
   sliderMaster: {fileID: 0}
   sliderMusic: {fileID: 0}
   sliderFx: {fileID: 0}
-  valor: 0
+  valor: -10
   velTexto: {fileID: 0}
   sliderVelTexto: {fileID: 0}
   textoVelociad: {fileID: 0}
