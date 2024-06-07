@@ -9,10 +9,12 @@ public class NoPerderSonidos : MonoBehaviour
     bool opcionOn = false;
     //public GameObject panelOpciones;
 
+    public GameObject panel_Nombre;
+
     // Start is called before the first frame update
     void Start()
     {
-       
+       panel_Nombre.SetActive(false);
     }
 
     // Update is called once per frame
@@ -21,12 +23,16 @@ public class NoPerderSonidos : MonoBehaviour
         
     }
 
-    public static void AJugar(){
+    public void AJugar(){
         //Empieza el juego
-        SceneManager.LoadScene(2);
-        Debug.Log("A Jugar");
+        //SceneManager.LoadScene(2);
+        //Debug.Log("A Jugar");
+        AbrePanelNombre();
         
-        
+    }
+
+    public void AbrePanelNombre(){
+        panel_Nombre.SetActive(true);
     }
 
     public void SuenaBoton(){

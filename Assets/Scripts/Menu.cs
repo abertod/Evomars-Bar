@@ -250,9 +250,9 @@ public class Menu : MonoBehaviour
 
     public static void AJugar(){
         //Empieza el juego
-        SceneManager.LoadScene(2);
-        Debug.Log("A Jugar");
-        
+        //SceneManager.LoadScene(2);
+        //Debug.Log("A Jugar");
+        Nombre.nombreInstance.panel_Nombre.SetActive(true);  
         
     }
 

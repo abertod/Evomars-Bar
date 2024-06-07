@@ -12,17 +12,17 @@ public class Salvapantallas : MonoBehaviour
     //variable para texto de pulsar cualquier tecla
     public GameObject textoIni;
     //Panel opcional de escribir tu nombre
-    public GameObject panel_Nombre;
+    //public GameObject panel_Nombre;
     
     //variable para texto parpadeante
     public float timer;
     public static bool activated = false;
 
     //Poner nombre a tu personaje
-    public string nombre;
+    //public string nombre;
     //panel de confirmacion
-    public GameObject confirmaNombre;
-    public GameObject textoConfirmacion;
+    //public GameObject confirmaNombre;
+    //public GameObject textoConfirmacion;
 
 
     // Start is called before the first frame update
@@ -30,6 +30,7 @@ public class Salvapantallas : MonoBehaviour
     {
         //pulsar cualquier tecla
         textoIni = GameObject.Find("PulsaTeclas");
+        /*
         //escribir tu nombre empieza desactivado
         panel_Nombre = GameObject.Find("Panel_Nombre");
         panel_Nombre.SetActive(false);
@@ -39,7 +40,7 @@ public class Salvapantallas : MonoBehaviour
         confirmaNombre.SetActive(false);
         //Busca el objeto hijo de Seguro_Nombre
         textoConfirmacion = confirmaNombre.transform.Find("Confirma_Nombre").gameObject;
-
+        */
         
 
     }
@@ -54,6 +55,7 @@ public class Salvapantallas : MonoBehaviour
         }
     }
 
+/*
     //Poner Nombre al personaje que controlas para que cambie en la historia
     public void LeerNombre(string miNombre){
         nombre = miNombre;
@@ -65,7 +67,7 @@ public class Salvapantallas : MonoBehaviour
         }
 
     }
-    
+    */
 
       // Update is called once per frame
     void Update()
@@ -75,7 +77,8 @@ public class Salvapantallas : MonoBehaviour
         textoIni.GetComponent<TextMeshProUGUI>().text = "Pulsa cualquier tecla";
         //activa panel del nombre
         if(Input.anyKeyDown){
-            panel_Nombre.SetActive(true);
+            //panel_Nombre.SetActive(true);
+            AMenu();
         }
 
         //texto parpadeo
@@ -91,6 +94,7 @@ public class Salvapantallas : MonoBehaviour
                 timer = 0;
           }
 
+        /*
         //Frase para confirmar tu nombre
         if(nombre == ""){
             textoConfirmacion.GetComponent<TextMeshProUGUI>().text = "¿Te llamas Pepe?";
@@ -98,11 +102,10 @@ public class Salvapantallas : MonoBehaviour
             textoConfirmacion.GetComponent<TextMeshProUGUI>().text = "¿Te llamas " +nombre+ "?";
             Debug.Log("¿Te llamas " +nombre+ "?");
         }
-        
+        */
         
     }
-
-    public void EstasSeguro(){
+/*    public void EstasSeguro(){
         //Carga el panel de confirmar tu nombre
         confirmaNombre.SetActive(true);
     }
@@ -111,6 +114,7 @@ public class Salvapantallas : MonoBehaviour
         //Oculta el panel de confirmar tu nombre
         confirmaNombre.SetActive(false);
     }
+    */
 
     public void AMenu(){
         //Carga el menu

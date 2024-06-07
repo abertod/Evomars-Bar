@@ -1335,8 +1335,8 @@ namespace DialogueEditor
             newSpeech.ID = CurrentAsset.CurrentIDCounter++;
 
             // Give the speech it's default values
-            //newSpeech.Name = CurrentAsset.DefaultName;
-            newSpeech.Name = Salvapantallas.Instance.nombre;
+            newSpeech.Name = CurrentAsset.DefaultName;
+            //newSpeech.Name = Salvapantallas.Instance.nombre;
             newSpeech.Icon = CurrentAsset.DefaultSprite;
 
                         newSpeech.Icon02 = CurrentAsset.DefaultSprite02;
