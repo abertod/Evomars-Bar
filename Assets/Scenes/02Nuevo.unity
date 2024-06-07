@@ -1784,8 +1784,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.80190015, y: 0.6701, z: 0}
-    m_Extent: {x: 5.9876003, y: 5.3672, z: 0}
+    m_Center: {x: -0.79990005, y: 0.66429996, z: 0}
+    m_Extent: {x: 5.9808, y: 5.3746, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -2199,6 +2199,7 @@ GameObject:
   m_Component:
   - component: {fileID: 268836390}
   - component: {fileID: 268836391}
+  - component: {fileID: 268836392}
   m_Layer: 0
   m_Name: estrella (7)
   m_TagString: Untagged
@@ -2271,6 +2272,20 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &268836392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268836389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3253c173e1942bf4db3125f66771fd44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frecuenciaTintineo: 0.92
+  potenciaTintineo: 40.19
 --- !u!1 &285292910
 GameObject:
   m_ObjectHideFlags: 0
@@ -2581,8 +2596,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.09854999, y: 0.036300004, z: 0}
-    m_Extent: {x: 0.63444996, y: 1.0552001, z: 0}
+    m_Center: {x: -0.09560001, y: 0.049000025, z: 0}
+    m_Extent: {x: 0.6322, y: 1.0555, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -3754,6 +3769,7 @@ GameObject:
   m_Component:
   - component: {fileID: 525693463}
   - component: {fileID: 525693464}
+  - component: {fileID: 525693465}
   m_Layer: 0
   m_Name: estrella (3)
   m_TagString: Untagged
@@ -3826,6 +3842,20 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &525693465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 525693462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3253c173e1942bf4db3125f66771fd44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frecuenciaTintineo: 0.65
+  potenciaTintineo: 22.38
 --- !u!1 &548467722
 GameObject:
   m_ObjectHideFlags: 0
@@ -4160,6 +4190,7 @@ GameObject:
   m_Component:
   - component: {fileID: 557829670}
   - component: {fileID: 557829671}
+  - component: {fileID: 557829672}
   m_Layer: 0
   m_Name: estrella (10)
   m_TagString: Untagged
@@ -4232,6 +4263,20 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &557829672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557829669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3253c173e1942bf4db3125f66771fd44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frecuenciaTintineo: 4.56
+  potenciaTintineo: 24.73
 --- !u!1 &577229047
 GameObject:
   m_ObjectHideFlags: 0
@@ -4769,8 +4814,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.50509995, y: -2.69305, z: 0}
-    m_Extent: {x: 1.0002999, y: 1.1056501, z: 0}
+    m_Center: {x: 0.5101, y: -2.6956, z: 0}
+    m_Extent: {x: 1.0005, y: 1.1066, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -5799,6 +5844,7 @@ GameObject:
   m_Component:
   - component: {fileID: 889023748}
   - component: {fileID: 889023749}
+  - component: {fileID: 889023750}
   m_Layer: 0
   m_Name: estrella (8)
   m_TagString: Untagged
@@ -5871,6 +5917,20 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &889023750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889023747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3253c173e1942bf4db3125f66771fd44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frecuenciaTintineo: 1
+  potenciaTintineo: 25.29
 --- !u!1 &896236570
 GameObject:
   m_ObjectHideFlags: 0
@@ -6958,8 +7018,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.06674999, y: -1.4634, z: 0}
-    m_Extent: {x: 0.52335, y: 1.1762, z: 0}
+    m_Center: {x: 0.068149984, y: -1.45795, z: 0}
+    m_Extent: {x: 0.51935, y: 1.17755, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -7102,6 +7162,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1062439600}
   - component: {fileID: 1062439601}
+  - component: {fileID: 1062439602}
   m_Layer: 0
   m_Name: estrella
   m_TagString: Untagged
@@ -7174,6 +7235,20 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1062439602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062439599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3253c173e1942bf4db3125f66771fd44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frecuenciaTintineo: 0.92
+  potenciaTintineo: 40.19
 --- !u!1 &1065530613
 GameObject:
   m_ObjectHideFlags: 0
@@ -7184,6 +7259,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1065530614}
   - component: {fileID: 1065530615}
+  - component: {fileID: 1065530616}
   m_Layer: 0
   m_Name: estrella (4)
   m_TagString: Untagged
@@ -7256,6 +7332,20 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1065530616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1065530613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3253c173e1942bf4db3125f66771fd44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frecuenciaTintineo: 0.79
+  potenciaTintineo: 21.47
 --- !u!1 &1070496469
 GameObject:
   m_ObjectHideFlags: 0
@@ -8006,8 +8096,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.012349993, y: -1.01195, z: 0}
-    m_Extent: {x: 0.35475, y: 1.2650499, z: 0}
+    m_Center: {x: -0.016800001, y: -1.0221, z: 0}
+    m_Extent: {x: 0.35500002, y: 1.2683, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -8819,6 +8909,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1326953703}
   - component: {fileID: 1326953704}
+  - component: {fileID: 1326953705}
   m_Layer: 0
   m_Name: estrella (6)
   m_TagString: Untagged
@@ -8891,6 +8982,20 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1326953705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326953702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3253c173e1942bf4db3125f66771fd44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frecuenciaTintineo: 4.56
+  potenciaTintineo: 24.73
 --- !u!1 &1329155134
 GameObject:
   m_ObjectHideFlags: 0
@@ -8901,6 +9006,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1329155135}
   - component: {fileID: 1329155136}
+  - component: {fileID: 1329155137}
   m_Layer: 0
   m_Name: estrella (1)
   m_TagString: Untagged
@@ -8973,6 +9079,20 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1329155137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1329155134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3253c173e1942bf4db3125f66771fd44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frecuenciaTintineo: 1
+  potenciaTintineo: 25.29
 --- !u!1 &1335110648
 GameObject:
   m_ObjectHideFlags: 0
@@ -9714,8 +9834,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.009950042, y: 0.026950002, z: 0}
-    m_Extent: {x: 1.04565, y: 0.71845, z: 0}
+    m_Center: {x: -0.015350044, y: 0.02884999, z: 0}
+    m_Extent: {x: 1.04245, y: 0.71784997, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -10305,6 +10425,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1623738523}
   - component: {fileID: 1623738524}
+  - component: {fileID: 1623738525}
   m_Layer: 0
   m_Name: estrella (5)
   m_TagString: Untagged
@@ -10377,6 +10498,20 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1623738525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623738522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3253c173e1942bf4db3125f66771fd44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frecuenciaTintineo: 3.06
+  potenciaTintineo: 18.73
 --- !u!1 &1624019061
 GameObject:
   m_ObjectHideFlags: 0
@@ -10855,8 +10990,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.2375, y: -3.02135, z: 0}
-    m_Extent: {x: 0.6712, y: 3.27565, z: 0}
+    m_Center: {x: 0.23194999, y: -3.0253499, z: 0}
+    m_Extent: {x: 0.67915, y: 3.27235, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -11528,6 +11663,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1830241695}
   - component: {fileID: 1830241696}
+  - component: {fileID: 1830241697}
   m_Layer: 0
   m_Name: estrella (2)
   m_TagString: Untagged
@@ -11600,6 +11736,20 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1830241697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830241694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3253c173e1942bf4db3125f66771fd44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frecuenciaTintineo: 1.99
+  potenciaTintineo: 1
 --- !u!1 &1838701851
 GameObject:
   m_ObjectHideFlags: 0
@@ -11610,6 +11760,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1838701852}
   - component: {fileID: 1838701853}
+  - component: {fileID: 1838701854}
   m_Layer: 0
   m_Name: estrella (9)
   m_TagString: Untagged
@@ -11682,6 +11833,20 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1838701854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1838701851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3253c173e1942bf4db3125f66771fd44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frecuenciaTintineo: 0.79
+  potenciaTintineo: 21.47
 --- !u!1 &1852510759
 GameObject:
   m_ObjectHideFlags: 0
@@ -12961,8 +13126,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.07305001, y: -1.2952499, z: 0}
-    m_Extent: {x: 0.44605, y: 0.89555, z: 0}
+    m_Center: {x: 0.070700005, y: -1.3041999, z: 0}
+    m_Extent: {x: 0.44550002, y: 0.89379996, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
